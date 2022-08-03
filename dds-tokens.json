@@ -1,0 +1,508 @@
+{
+  "global": {
+    "dds": {
+      "color": {
+        "brand": {
+          "primary": {
+            "value": "#0097E0",
+            "type": "color",
+            "description": "Primary brand blue"
+          },
+          "secondary": {
+            "value": "#54c3f1",
+            "type": "color",
+            "description": "Primary secondary brand blue"
+          },
+          "neutral": {
+            "darkest": {
+              "value": "#000000",
+              "type": "color",
+              "description": "Black is a core brand color"
+            },
+            "dark": {
+              "value": "#4c4c4c",
+              "type": "color",
+              "description": "Dark grey is a core DDS color"
+            },
+            "medium": {
+              "value": "#8c8c8c",
+              "type": "color",
+              "description": "Medium grey is a core DDS color"
+            },
+            "brightest": {
+              "value": "#ffffff",
+              "type": "color",
+              "description": "White is a core brand color"
+            }
+          }
+        },
+        "feedback": {
+          "positive": {
+            "value": "#13ce66",
+            "type": "color",
+            "description": "System status is positive"
+          },
+          "warning": {
+            "value": "#ffcc3d",
+            "type": "color",
+            "description": "System status has a warning"
+          },
+          "negative": {
+            "value": "#ff4949",
+            "type": "color",
+            "description": "System status is negative"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "primary": {
+            "active": {
+              "value": "{dds.color.brand.primary}",
+              "type": "color",
+              "description": "Color used for the active state of a primary button"
+            },
+            "hover": {
+              "value": "{dds.color.brand.secondary}",
+              "type": "color",
+              "description": "Color used if a user hovers over a button (Desktop only)"
+            },
+            "focus": {
+              "value": "{dds.color.brand.primary}",
+              "type": "color",
+              "description": "Color used when a primary button is in focus"
+            },
+            "press": {
+              "value": "#007db9",
+              "type": "color",
+              "description": "Color used when a primary button is pressed"
+            },
+            "disabled": {
+              "value": "#d5d5d5",
+              "type": "color",
+              "description": "Color used if a primary button is disabled"
+            }
+          },
+          "secondary": {
+            "active": {
+              "value": "#8C8C8C",
+              "type": "color",
+              "description": "Color used for the default state of a secondary button"
+            },
+            "hover": {
+              "value": "#D5D5D5",
+              "type": "color",
+              "description": "Color used if a user hovers over a button (Desktop only)"
+            },
+            "focus": {
+              "value": "#8C8C8C",
+              "type": "color",
+              "description": "Color used when a secondary button is in focus"
+            },
+            "press": {
+              "value": "#4C4C4C",
+              "type": "color",
+              "description": "Color used when a secondary button is pressed"
+            },
+            "disabled": {
+              "value": "#F2F2F2",
+              "type": "color",
+              "description": "Color used if a secondary button is disabled"
+            }
+          }
+        }
+      },
+      "header": {
+        "h0": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.0",
+            "fontSize": "$fontSize.7",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h1": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.1",
+            "fontSize": "$fontSize.6",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h2": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.2",
+            "fontSize": "$fontSize.5",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h3": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.3",
+            "fontSize": "$fontSize.4",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h4": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.4",
+            "fontSize": "$fontSize.3",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h5": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.5",
+            "fontSize": "$fontSize.2",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h6": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.6",
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h7": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.7",
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        }
+      },
+      "body": {
+        "b0": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.0",
+            "fontSize": "$fontSize.8",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b1": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.1",
+            "fontSize": "$fontSize.6",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b2": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.2",
+            "fontSize": "$fontSize.5",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b3": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.3",
+            "fontSize": "$fontSize.4",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b4": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.4",
+            "fontSize": "$fontSize.3",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b5": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.5",
+            "fontSize": "$fontSize.2",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b6": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.6",
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "b7": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.7",
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        },
+        "link": {
+          "h6": {
+            "value": {
+              "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+              "fontWeight": "{fontWeights.sans-regular}",
+              "lineHeight": "$lineHeights.6",
+              "fontSize": "$fontSize.1",
+              "letterSpacing": "$letterSpacing.1",
+              "paragraphSpacing": "$paragraphSpacing.0",
+              "textCase": "$textCase.none",
+              "textDecoration": "$textDecoration.underline"
+            },
+            "type": "typography",
+            "description": "body type style"
+          }
+        }
+      },
+      "label": {
+        "h7": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.8",
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "body type style"
+        }
+      },
+      "link": {
+        "h6": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-regular}",
+            "lineHeight": "$lineHeights.6",
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.underline"
+          },
+          "type": "typography"
+        }
+      },
+      "fontFamilies": {
+        "primary-font-sans": {
+          "value": "Roboto",
+          "type": "fontFamilies",
+          "description": "The primary font used in the DDS Design Kit is Roboto"
+        }
+      },
+      "fontWeights": {
+        "sans-bold": {
+          "value": "Bold",
+          "type": "fontWeights"
+        },
+        "sans-regular": {
+          "value": "Regular",
+          "type": "fontWeights"
+        }
+      }
+    },
+    "lineHeights": {
+      "0": {
+        "value": "80",
+        "type": "lineHeights"
+      },
+      "1": {
+        "value": "48",
+        "type": "lineHeights"
+      },
+      "2": {
+        "value": "36",
+        "type": "lineHeights"
+      },
+      "3": {
+        "value": "32",
+        "type": "lineHeights"
+      },
+      "4": {
+        "value": "26",
+        "type": "lineHeights"
+      },
+      "5": {
+        "value": "24",
+        "type": "lineHeights"
+      },
+      "6": {
+        "value": "22",
+        "type": "lineHeights"
+      },
+      "7": {
+        "value": "20",
+        "type": "lineHeights"
+      },
+      "8": {
+        "value": "AUTO",
+        "type": "lineHeights"
+      }
+    },
+    "fontSize": {
+      "0": {
+        "value": "13",
+        "type": "fontSizes"
+      },
+      "1": {
+        "value": "15",
+        "type": "fontSizes"
+      },
+      "2": {
+        "value": "17",
+        "type": "fontSizes"
+      },
+      "3": {
+        "value": "19",
+        "type": "fontSizes"
+      },
+      "4": {
+        "value": "23",
+        "type": "fontSizes"
+      },
+      "5": {
+        "value": "29",
+        "type": "fontSizes"
+      },
+      "6": {
+        "value": "41",
+        "type": "fontSizes"
+      },
+      "7": {
+        "value": "71",
+        "type": "fontSizes"
+      },
+      "8": {
+        "value": "73",
+        "type": "fontSizes"
+      }
+    },
+    "letterSpacing": {
+      "0": {
+        "value": "0%",
+        "type": "letterSpacing"
+      },
+      "1": {
+        "value": "0",
+        "type": "letterSpacing"
+      }
+    },
+    "paragraphSpacing": {
+      "0": {
+        "value": "0",
+        "type": "paragraphSpacing"
+      }
+    },
+    "textCase": {
+      "none": {
+        "value": "none",
+        "type": "textCase"
+      }
+    }
+  },
+  "$themes": []
+}
