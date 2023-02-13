@@ -122,7 +122,7 @@
             "letterSpacing": "{letterSpacing.0}",
             "paragraphSpacing": "{paragraphSpacing.0}",
             "textCase": "{textCase.none}",
-            "textDecoration": "",
+            "textDecoration": "$textDecoration.none",
             "paragraphIndent": ""
           },
           "type": "typography",
@@ -184,12 +184,12 @@
           "type": "typography",
           "description": "header type style"
         },
-        "h5": {
+        "h6": {
           "value": {
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
-            "lineHeight": "$lineHeights.5",
-            "fontSize": "$fontSize.2",
+            "lineHeight": "$lineHeights.6",
+            "fontSize": "$fontSize.1",
             "letterSpacing": "$letterSpacing.0",
             "paragraphSpacing": "$paragraphSpacing.0",
             "textCase": "$textCase.none",
@@ -198,12 +198,12 @@
           "type": "typography",
           "description": "header type style"
         },
-        "h6": {
+        "h5": {
           "value": {
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
-            "lineHeight": "$lineHeights.6",
-            "fontSize": "$fontSize.1",
+            "lineHeight": "$lineHeights.5",
+            "fontSize": "$fontSize.2",
             "letterSpacing": "$letterSpacing.0",
             "paragraphSpacing": "$paragraphSpacing.0",
             "textCase": "$textCase.none",
@@ -225,6 +225,12 @@
           },
           "type": "typography",
           "description": "header type style"
+        },
+        "h8": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}"
+          },
+          "type": "typography"
         }
       },
       "body": {
