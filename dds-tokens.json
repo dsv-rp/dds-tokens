@@ -119,10 +119,11 @@
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.0",
             "fontSize": "$fontSize.7",
-            "letterSpacing": "$letterSpacing.0",
-            "paragraphSpacing": "$paragraphSpacing.0",
-            "textCase": "$textCase.none",
-            "textDecoration": "$textDecoration.none"
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "",
+            "paragraphIndent": ""
           },
           "type": "typography",
           "description": "header type style"
