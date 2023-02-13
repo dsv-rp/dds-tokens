@@ -118,7 +118,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.0",
-            "fontSize": "$fontSize.7"
+            "fontSize": "$fontSize.7",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -128,7 +132,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.1",
-            "fontSize": "$fontSize.6"
+            "fontSize": "$fontSize.6",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -138,7 +146,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.2",
-            "fontSize": "$fontSize.5"
+            "fontSize": "$fontSize.5",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -148,7 +160,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.3",
-            "fontSize": "$fontSize.4"
+            "fontSize": "$fontSize.4",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -158,17 +174,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.4",
-            "fontSize": "$fontSize.3"
-          },
-          "type": "typography",
-          "description": "header type style"
-        },
-        "h6": {
-          "value": {
-            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
-            "fontWeight": "{fontWeights.sans-bold}",
-            "lineHeight": "$lineHeights.6",
-            "fontSize": "$fontSize.1"
+            "fontSize": "$fontSize.3",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -178,7 +188,25 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.5",
-            "fontSize": "$fontSize.2"
+            "fontSize": "$fontSize.2",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
+          },
+          "type": "typography",
+          "description": "header type style"
+        },
+        "h6": {
+          "value": {
+            "fontFamily": "{dds.fontFamilies.primary-font-sans}",
+            "fontWeight": "{fontWeights.sans-bold}",
+            "lineHeight": "$lineHeights.6",
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -188,7 +216,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-bold}",
             "lineHeight": "$lineHeights.7",
-            "fontSize": "$fontSize.0"
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "header type style"
@@ -200,7 +232,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.0",
-            "fontSize": "$fontSize.8"
+            "fontSize": "$fontSize.8",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -210,7 +246,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.1",
-            "fontSize": "$fontSize.6"
+            "fontSize": "$fontSize.6",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -220,7 +260,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.2",
-            "fontSize": "$fontSize.5"
+            "fontSize": "$fontSize.5",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -230,7 +274,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.3",
-            "fontSize": "$fontSize.4"
+            "fontSize": "$fontSize.4",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -240,7 +288,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.4",
-            "fontSize": "$fontSize.3"
+            "fontSize": "$fontSize.3",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -250,7 +302,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.5",
-            "fontSize": "$fontSize.2"
+            "fontSize": "$fontSize.2",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -260,7 +316,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.6",
-            "fontSize": "$fontSize.1"
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -270,7 +330,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.7",
-            "fontSize": "$fontSize.0"
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -281,7 +345,11 @@
               "fontFamily": "{dds.fontFamilies.primary-font-sans}",
               "fontWeight": "{fontWeights.sans-regular}",
               "lineHeight": "$lineHeights.6",
-              "fontSize": "$fontSize.1"
+              "fontSize": "$fontSize.1",
+              "letterSpacing": "$letterSpacing.1",
+              "paragraphSpacing": "$paragraphSpacing.0",
+              "textCase": "$textCase.none",
+              "textDecoration": "$textDecoration.underline"
             },
             "type": "typography",
             "description": "body type style"
@@ -294,7 +362,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.8",
-            "fontSize": "$fontSize.0"
+            "fontSize": "$fontSize.0",
+            "letterSpacing": "$letterSpacing.1",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.none"
           },
           "type": "typography",
           "description": "body type style"
@@ -306,7 +378,11 @@
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
             "fontWeight": "{fontWeights.sans-regular}",
             "lineHeight": "$lineHeights.6",
-            "fontSize": "$fontSize.1"
+            "fontSize": "$fontSize.1",
+            "letterSpacing": "$letterSpacing.0",
+            "paragraphSpacing": "$paragraphSpacing.0",
+            "textCase": "$textCase.none",
+            "textDecoration": "$textDecoration.underline"
           },
           "type": "typography"
         }
@@ -426,24 +502,7 @@
         "value": "none",
         "type": "textCase"
       }
-    },
-    "$textDecoration": {
-      "none": {
-        "value": "none",
-        "type": "textDecoration",
-        "description": "text decoration set to 'none'"
-      }
-    },
-    "$paragraphIndent": {
-      "value": "0",
-      "type": "other",
-      "description": "paragraph indent set to 0"
     }
   },
-  "$themes": [],
-  "$metadata": {
-    "tokenSetOrder": [
-      "global"
-    ]
-  }
+  "$themes": []
 }
