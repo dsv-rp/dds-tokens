@@ -123,7 +123,7 @@
             "paragraphSpacing": "{paragraphSpacing.0}",
             "textCase": "{textCase.none}",
             "textDecoration": "$textDecoration.none",
-            "paragraphIndent": ""
+            "paragraphIndent": "$paragraphIndent.0"
           },
           "type": "typography",
           "description": "header type style"
@@ -225,12 +225,6 @@
           },
           "type": "typography",
           "description": "header type style"
-        },
-        "h8": {
-          "value": {
-            "fontFamily": "{dds.fontFamilies.primary-font-sans}"
-          },
-          "type": "typography"
         }
       },
       "body": {
@@ -509,6 +503,18 @@
         "value": "none",
         "type": "textCase"
       }
+    },
+    "$textDecoration": {
+      "none": {
+        "value": "none",
+        "type": "textDecoration",
+        "description": "text decoration set to 'none'"
+      }
+    },
+    "$paragraphIndent": {
+      "value": "0",
+      "type": "other",
+      "description": "paragraph indent set to 0"
     }
   },
   "$themes": [],
