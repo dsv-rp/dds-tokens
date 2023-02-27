@@ -286,7 +286,7 @@
         "b4": {
           "value": {
             "fontFamily": "{dds.fontFamilies.primary-font-sans}",
-            "fontWeight": "{fontWeights.sans-regular}",
+            "fontWeight": "{dds.fontWeights.sans-regular}",
             "lineHeight": "{lineHeights.4}",
             "fontSize": "{fontSize.3}",
             "letterSpacing": "{letterSpacing.0}",
@@ -521,7 +521,7 @@
         }
       }
     },
-    "textDecorationNone": {
+    "textDecoration": {
       "value": "none",
       "type": "textDecoration"
     }
