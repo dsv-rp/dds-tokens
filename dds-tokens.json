@@ -67,15 +67,15 @@
               "type": "color",
               "description": "Color used if a user hovers over a button (Desktop only)"
             },
-            "focus": {
-              "value": "{dds.color.brand.primary}",
-              "type": "color",
-              "description": "Color used when a primary button is in focus"
-            },
             "press": {
               "value": "#007db9",
               "type": "color",
               "description": "Color used when a primary button is pressed"
+            },
+            "focus": {
+              "value": "{dds.color.brand.primary}",
+              "type": "color",
+              "description": "Color used when a primary button is in focus"
             },
             "disabled": {
               "value": "#d5d5d5",
@@ -290,9 +290,10 @@
             "lineHeight": "$lineHeights.4",
             "fontSize": "$fontSize.3",
             "letterSpacing": "$letterSpacing.0",
-            "paragraphSpacing": "$paragraphSpacing.0",
+            "paragraphSpacing": "10",
             "textCase": "$textCase.none",
-            "textDecoration": "$textDecoration.none"
+            "textDecoration": "$textDecoration.none",
+            "paragraphIndent": "none"
           },
           "type": "typography",
           "description": "body type style"
@@ -423,7 +424,7 @@
         "type": "lineHeights"
       },
       "4": {
-        "value": "26",
+        "value": "30",
         "type": "lineHeights"
       },
       "5": {
@@ -504,5 +505,10 @@
       }
     }
   },
-  "$themes": []
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
 }
