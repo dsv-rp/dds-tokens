@@ -403,6 +403,37 @@
           "value": "Regular",
           "type": "fontWeights"
         }
+      },
+      "border": {
+        "input": {
+          "value": {
+            "color": "{dds.color.brand.neutral.medium}",
+            "width": "1",
+            "style": "solid"
+          },
+          "type": "border",
+          "description": "border for text input field"
+        },
+        "button": {
+          "secondary": {
+            "value": {
+              "color": "{dds.color.brand.primary}",
+              "width": "1",
+              "style": "solid"
+            },
+            "type": "border",
+            "description": "border for secondary button"
+          },
+          "secondaryLight": {
+            "value": {
+              "color": "{dds.color.brand.neutral.brightest}",
+              "width": "1",
+              "style": "solid"
+            },
+            "type": "border",
+            "description": "border for secondary button light/white"
+          }
+        }
       }
     },
     "lineHeights": {
