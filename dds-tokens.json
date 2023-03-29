@@ -8,11 +8,6 @@
             "type": "color",
             "description": "Primary brand blue"
           },
-          "secondary": {
-            "value": "#54c3f1",
-            "type": "color",
-            "description": "Primary secondary brand blue"
-          },
           "neutral": {
             "darkest": {
               "value": "#000000",
@@ -34,6 +29,11 @@
               "type": "color",
               "description": "White is a core brand color"
             }
+          },
+          "secondary": {
+            "value": "#54c3f1",
+            "type": "color",
+            "description": "Primary secondary brand blue"
           }
         },
         "feedback": {
