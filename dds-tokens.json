@@ -8,12 +8,22 @@
             "type": "color",
             "description": "Primary brand blue"
           },
+          "secondary": {
+            "value": "#54c3f1",
+            "type": "color",
+            "description": "Primary secondary brand blue"
+          },
+          "black": {
+            "value": "#000000",
+            "type": "color",
+            "description": "Black is a core brand color"
+          },
+          "white": {
+            "value": "#ffffff",
+            "type": "color",
+            "description": "White is a core brand color"
+          },
           "neutral": {
-            "darkest": {
-              "value": "#000000",
-              "type": "color",
-              "description": "Black is a core brand color"
-            },
             "dark": {
               "value": "#4c4c4c",
               "type": "color",
@@ -23,17 +33,7 @@
               "value": "#8c8c8c",
               "type": "color",
               "description": "Medium grey is a core DDS color"
-            },
-            "brightest": {
-              "value": "#ffffff",
-              "type": "color",
-              "description": "White is a core brand color"
             }
-          },
-          "secondary": {
-            "value": "#54c3f1",
-            "type": "color",
-            "description": "Primary secondary brand blue"
           }
         },
         "feedback": {
@@ -426,7 +426,7 @@
           },
           "secondaryLight": {
             "value": {
-              "color": "{dds.color.brand.neutral.brightest}",
+              "color": "{dds.color.brand.white}",
               "width": "1",
               "style": "solid"
             },
