@@ -556,10 +556,12 @@
       "type": "textDecoration"
     }
   },
+  "colors": {},
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global"
+      "global",
+      "colors"
     ]
   }
 }
