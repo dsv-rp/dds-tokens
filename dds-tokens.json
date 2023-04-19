@@ -556,7 +556,7 @@
       "type": "textDecoration"
     }
   },
-  "colors": {
+  "color ramps": {
     "blue": {
       "base-color-blue-010": {
         "value": "#D1F3FF",
@@ -846,7 +846,7 @@
   "$metadata": {
     "tokenSetOrder": [
       "global",
-      "colors"
+      "color ramps"
     ]
   }
 }
