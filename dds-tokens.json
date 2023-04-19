@@ -556,7 +556,292 @@
       "type": "textDecoration"
     }
   },
-  "colors": {},
+  "colors": {
+    "blue": {
+      "base-color-blue-010": {
+        "value": "#D1F3FF",
+        "type": "color"
+      },
+      "base-color-blue-020": {
+        "value": "#A6E4FB",
+        "type": "color"
+      },
+      "base-color-blue-030": {
+        "value": "#7CD5F7",
+        "type": "color"
+      },
+      "base-color-blue-040": {
+        "value": "#54C6F4",
+        "type": "color"
+      },
+      "base-color-blue-050": {
+        "value": "#2DB8F0",
+        "type": "color"
+      },
+      "base-color-blue-060": {
+        "value": "#0097E0",
+        "type": "color"
+      },
+      "base-color-blue-070": {
+        "value": "#0674C1",
+        "type": "color"
+      },
+      "base-color-blue-080": {
+        "value": "#0D59A3",
+        "type": "color"
+      },
+      "base-color-blue-090": {
+        "value": "#114484",
+        "type": "color"
+      },
+      "base-color-blue-100": {
+        "value": "#143466",
+        "type": "color"
+      },
+      "base-color-blue-110": {
+        "value": "#132547",
+        "type": "color"
+      },
+      "base-color-blue-120": {
+        "value": "#0E1629",
+        "type": "color"
+      },
+      "base-color-blue-130": {
+        "value": "#04060A",
+        "type": "color"
+      }
+    },
+    "green": {
+      "base-color-green-010": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-020": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-030": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-040": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-050": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-060": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-070": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-080": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-090": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-100": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-green-110": {
+        "value": "#",
+        "type": "color"
+      }
+    },
+    "yellow": {
+      "base-color-yellow-010": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-020": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-030": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-040": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-050": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-060": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-070": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-080": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-090": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-100": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-yellow-110": {
+        "value": "#",
+        "type": "color"
+      }
+    },
+    "orange": {
+      "base-color-orange-010": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-020": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-030": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-040": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-050": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-060": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-070": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-080": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-090": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-100": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-orange-110": {
+        "value": "#",
+        "type": "color"
+      }
+    },
+    "red": {
+      "base-color-red-010": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-020": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-030": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-040": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-050": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-060": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-070": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-080": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-090": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-100": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-red-110": {
+        "value": "#",
+        "type": "color"
+      }
+    },
+    "magenta": {
+      "base-color-magenta-010": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-020": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-030": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-040": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-050": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-060": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-070": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-080": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-090": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-100": {
+        "value": "#",
+        "type": "color"
+      },
+      "base-color-magenta-110": {
+        "value": "#",
+        "type": "color"
+      }
+    }
+  },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
