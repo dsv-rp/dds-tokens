@@ -4,12 +4,12 @@
       "color": {
         "brand": {
           "primary": {
-            "value": "#0097E0",
+            "value": "{blue.base-color-blue-060}",
             "type": "color",
             "description": "Primary brand blue"
           },
           "secondary": {
-            "value": "#54c3f1",
+            "value": "{blue.base-color-blue-040}",
             "type": "color",
             "description": "Primary secondary brand blue"
           },
@@ -414,6 +414,24 @@
           "type": "border",
           "description": "border for text input field"
         },
+        "card": {
+          "value": {
+            "color": "{coolgrey.base-color-coolgrey-030}",
+            "width": "1",
+            "style": "solid"
+          },
+          "type": "border",
+          "description": "border for text input field"
+        },
+        "row-bottom": {
+          "value": {
+            "color": "{coolgrey.base-color-coolgrey-030}",
+            "width": "1",
+            "style": "solid"
+          },
+          "type": "border",
+          "description": "border for text input field"
+        },
         "button": {
           "secondary": {
             "value": {
@@ -571,7 +589,7 @@
         "type": "color"
       },
       "base-color-blue-040": {
-        "value": "#54C6F4",
+        "value": "#54c3f1",
         "type": "color"
       },
       "base-color-blue-050": {
@@ -751,185 +769,185 @@
     },
     "red": {
       "base-color-red-010": {
-        "value": "#",
+        "value": "#FAF2ED",
         "type": "color"
       },
       "base-color-red-020": {
-        "value": "#",
+        "value": "#FEE0D2",
         "type": "color"
       },
       "base-color-red-030": {
-        "value": "#",
+        "value": "#FFC7B5",
         "type": "color"
       },
       "base-color-red-040": {
-        "value": "#",
+        "value": "#FFAA98",
         "type": "color"
       },
       "base-color-red-050": {
-        "value": "#",
+        "value": "#FF867B",
         "type": "color"
       },
       "base-color-red-060": {
-        "value": "#",
+        "value": "#FF4949",
         "type": "color"
       },
       "base-color-red-070": {
-        "value": "#",
+        "value": "#CE3B2B",
         "type": "color"
       },
       "base-color-red-080": {
-        "value": "#",
+        "value": "#9C3219",
         "type": "color"
       },
       "base-color-red-090": {
-        "value": "#",
+        "value": "#6B290F",
         "type": "color"
       },
       "base-color-red-100": {
-        "value": "#",
+        "value": "#391A08",
         "type": "color"
       },
       "base-color-red-110": {
-        "value": "#",
+        "value": "#080401",
         "type": "color"
       }
     },
     "magenta": {
       "base-color-magenta-010": {
-        "value": "#",
+        "value": "#FAE6FF",
         "type": "color"
       },
       "base-color-magenta-020": {
-        "value": "#",
+        "value": "#EAC1F0",
         "type": "color"
       },
       "base-color-magenta-030": {
-        "value": "#",
+        "value": "#DD9FE1",
         "type": "color"
       },
       "base-color-magenta-040": {
-        "value": "#",
+        "value": "#D181D2",
         "type": "color"
       },
       "base-color-magenta-050": {
-        "value": "#",
+        "value": "#C266BE",
         "type": "color"
       },
       "base-color-magenta-060": {
-        "value": "#",
+        "value": "#A43D95",
         "type": "color"
       },
       "base-color-magenta-070": {
-        "value": "#",
+        "value": "#862371",
         "type": "color"
       },
       "base-color-magenta-080": {
-        "value": "#",
+        "value": "#681251",
         "type": "color"
       },
       "base-color-magenta-090": {
-        "value": "#",
+        "value": "#490936",
         "type": "color"
       },
       "base-color-magenta-100": {
-        "value": "#",
+        "value": "#2B041E",
         "type": "color"
       },
       "base-color-magenta-110": {
-        "value": "#",
+        "value": "#0D0109",
         "type": "color"
       }
     },
     "grey": {
       "base-color-grey-010": {
-        "value": "#",
+        "value": "#FAFAFA",
         "type": "color"
       },
       "base-color-grey-020": {
-        "value": "#",
+        "value": "#EBEBEB",
         "type": "color"
       },
       "base-color-grey-030": {
-        "value": "#",
+        "value": "#DCDCDC",
         "type": "color"
       },
       "base-color-grey-040": {
-        "value": "#",
+        "value": "#CECECE",
         "type": "color"
       },
       "base-color-grey-050": {
-        "value": "#",
+        "value": "#BFBFBF",
         "type": "color"
       },
       "base-color-grey-060": {
-        "value": "#",
+        "value": "#A0A0A0",
         "type": "color"
       },
       "base-color-grey-070": {
-        "value": "#",
+        "value": "#828282",
         "type": "color"
       },
       "base-color-grey-080": {
-        "value": "#",
+        "value": "#616161",
         "type": "color"
       },
       "base-color-grey-090": {
-        "value": "#",
+        "value": "#414141",
         "type": "color"
       },
       "base-color-grey-100": {
-        "value": "#",
+        "value": "#212121",
         "type": "color"
       },
       "base-color-grey-110": {
-        "value": "#",
+        "value": "#000000",
         "type": "color"
       }
     },
     "coolgrey": {
       "base-color-coolgrey-010": {
-        "value": "#",
+        "value": "#EDFFFE",
         "type": "color"
       },
       "base-color-coolgrey-020": {
-        "value": "#",
+        "value": "#DEEFEF",
         "type": "color"
       },
       "base-color-coolgrey-030": {
-        "value": "#",
+        "value": "#CFDFDF",
         "type": "color"
       },
       "base-color-coolgrey-040": {
-        "value": "#",
+        "value": "#C0CED0",
         "type": "color"
       },
       "base-color-coolgrey-050": {
-        "value": "#",
+        "value": "#B1BEC0",
         "type": "color"
       },
       "base-color-coolgrey-060": {
-        "value": "#",
+        "value": "#8D9CA0",
         "type": "color"
       },
       "base-color-coolgrey-070": {
-        "value": "#",
+        "value": "#6C7A81",
         "type": "color"
       },
       "base-color-coolgrey-080": {
-        "value": "#",
+        "value": "#445762",
         "type": "color"
       },
       "base-color-coolgrey-090": {
-        "value": "#",
+        "value": "#253543",
         "type": "color"
       },
       "base-color-coolgrey-100": {
-        "value": "#",
+        "value": "#0F1724",
         "type": "color"
       },
       "base-color-coolgrey-110": {
-        "value": "#",
+        "value": "#010205",
         "type": "color"
       }
     }
