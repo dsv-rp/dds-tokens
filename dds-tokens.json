@@ -54,36 +54,9 @@
           }
         }
       },
-      "button": {
-        "color": {
-          "primary": {
-            "active": {
-              "value": "{dds.color.brand.primary}",
-              "type": "color",
-              "description": "Color used for the active state of a primary button"
-            },
-            "hover": {
-              "value": "{dds.color.brand.secondary}",
-              "type": "color",
-              "description": "Color used if a user hovers over a button (Desktop only)"
-            },
-            "press": {
-              "value": "#007db9",
-              "type": "color",
-              "description": "Color used when a primary button is pressed"
-            },
-            "focus": {
-              "value": "{dds.color.brand.primary}",
-              "type": "color",
-              "description": "Color used when a primary button is in focus"
-            },
-            "disabled": {
-              "value": "#d5d5d5",
-              "type": "color",
-              "description": "Color used if a primary button is disabled"
-            }
-          },
-          "secondary": {
+      "ui": {
+        "button-primary": {
+          "button-background": {
             "active": {
               "value": "#8C8C8C",
               "type": "color",
@@ -94,20 +67,44 @@
               "type": "color",
               "description": "Color used if a user hovers over a button (Desktop only)"
             },
+            "press": {
+              "value": "#007db9",
+              "type": "color",
+              "description": "Color used when a primary button is pressed"
+            },
             "focus": {
               "value": "#8C8C8C",
               "type": "color",
               "description": "Color used when a secondary button is in focus"
             },
+            "disabled": {
+              "value": "#d5d5d5",
+              "type": "color",
+              "description": "Color used if a primary button is disabled"
+            }
+          }
+        },
+        "button-secondary": {
+          "button-background": {
+            "active": {
+              "value": "#8C8C8C",
+              "type": "color"
+            },
+            "hover": {
+              "value": "#D5D5D5",
+              "type": "color"
+            },
+            "focus": {
+              "value": "#8C8C8C",
+              "type": "color"
+            },
             "press": {
               "value": "#4C4C4C",
-              "type": "color",
-              "description": "Color used when a secondary button is pressed"
+              "type": "color"
             },
             "disabled": {
               "value": "#F2F2F2",
-              "type": "color",
-              "description": "Color used if a secondary button is disabled"
+              "type": "color"
             }
           }
         }
