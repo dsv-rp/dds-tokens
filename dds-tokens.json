@@ -58,12 +58,12 @@
         "button-primary": {
           "button-background": {
             "active": {
-              "value": "#8C8C8C",
+              "value": "{blue.base-color-blue-060}",
               "type": "color",
               "description": "Color used for the default state of a secondary button"
             },
             "hover": {
-              "value": "#D5D5D5",
+              "value": "{blue.base-color-blue-040}",
               "type": "color",
               "description": "Color used if a user hovers over a button (Desktop only)"
             },
@@ -73,7 +73,7 @@
               "description": "Color used when a primary button is pressed"
             },
             "focus": {
-              "value": "#8C8C8C",
+              "value": "{blue.base-color-blue-080}",
               "type": "color",
               "description": "Color used when a secondary button is in focus"
             },
