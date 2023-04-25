@@ -87,19 +87,19 @@
         "button-secondary": {
           "button-background": {
             "active": {
-              "value": "#8C8C8C",
+              "value": "{grey.base-color-grey-070}",
               "type": "color"
             },
             "hover": {
-              "value": "#D5D5D5",
+              "value": "{grey.base-color-grey-040}",
               "type": "color"
             },
             "focus": {
-              "value": "#8C8C8C",
+              "value": "{grey.base-color-grey-070}",
               "type": "color"
             },
             "press": {
-              "value": "#4C4C4C",
+              "value": "{grey.base-color-grey-090}",
               "type": "color"
             },
             "disabled": {
