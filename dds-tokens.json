@@ -429,6 +429,15 @@
         "type": "border",
         "description": "border for text input field"
       },
+      "row-bottom": {
+        "value": {
+          "color": "{coolgrey.base-color-coolgrey-030}",
+          "width": "1",
+          "style": "solid"
+        },
+        "type": "border",
+        "description": "border for text input field"
+      },
       "button": {
         "secondary": {
           "value": {
