@@ -1,59 +1,57 @@
 {
   "global": {
-    "dds": {
-      "color": {
-        "brand": {
-          "primary": {
-            "value": "{blue.base-color-blue-060}",
-            "type": "color",
-            "description": "Primary brand blue"
-          },
-          "secondary": {
-            "value": "{blue.base-color-blue-040}",
-            "type": "color",
-            "description": "Primary secondary brand blue"
-          },
-          "black": {
-            "value": "#000000",
-            "type": "color",
-            "description": "Black is a core brand color"
-          },
-          "white": {
-            "value": "#ffffff",
-            "type": "color",
-            "description": "White is a core brand color"
-          },
-          "neutral": {
-            "dark": {
-              "value": "#4c4c4c",
-              "type": "color",
-              "description": "Dark grey is a core DDS color"
-            },
-            "medium": {
-              "value": "#8c8c8c",
-              "type": "color",
-              "description": "Medium grey is a core DDS color"
-            }
-          }
+    "color": {
+      "brand": {
+        "primary": {
+          "value": "{blue.base-color-blue-060}",
+          "type": "color",
+          "description": "Primary brand blue"
         },
-        "feedback": {
-          "positive": {
-            "value": "#13ce66",
-            "type": "color",
-            "description": "System status is positive"
-          },
-          "warning": {
-            "value": "#ffcc3d",
-            "type": "color",
-            "description": "System status has a warning"
-          },
-          "negative": {
-            "value": "#ff4949",
-            "type": "color",
-            "description": "System status is negative"
-          }
+        "secondary": {
+          "value": "{blue.base-color-blue-040}",
+          "type": "color",
+          "description": "Primary secondary brand blue"
+        },
+        "black": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Black is a core brand color"
+        },
+        "white": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "White is a core brand color"
+        },
+        "darkgrey": {
+          "value": "#4c4c4c",
+          "type": "color",
+          "description": "Dark grey is a core DDS color"
+        },
+        "mediumgrey": {
+          "value": "#8c8c8c",
+          "type": "color",
+          "description": "Medium grey is a core DDS color"
         }
       },
+      "feedback": {
+        "positive": {
+          "value": "#13ce66",
+          "type": "color",
+          "description": "System status is positive"
+        },
+        "warning": {
+          "value": "#ffcc3d",
+          "type": "color",
+          "description": "System status has a warning"
+        },
+        "negative": {
+          "value": "#ff4949",
+          "type": "color",
+          "description": "System status is negative"
+        }
+      }
+    },
+    "dds": {
       "ui": {
         "button-primary": {
           "button-background": {
@@ -104,14 +102,6 @@
             },
             "disabled": {
               "value": "#F2F2F2",
-              "type": "color"
-            }
-          }
-        },
-        "table": {
-          "cell": {
-            "background": {
-              "value": "{dds.color.brand.white}",
               "type": "color"
             }
           }
@@ -410,67 +400,6 @@
         }
       }
     },
-    "ui": {
-      "input": {
-        "value": {
-          "color": "{dds.color.brand.neutral.medium}",
-          "width": "1",
-          "style": "solid"
-        },
-        "type": "border",
-        "description": "border for text input field"
-      },
-      "card": {
-        "value": {
-          "color": "{coolgrey.base-color-coolgrey-030}",
-          "width": "1",
-          "style": "solid"
-        },
-        "type": "border",
-        "description": "border for text input field"
-      },
-      "row-bottom": {
-        "value": {
-          "color": "{coolgrey.base-color-coolgrey-030}",
-          "width": "1",
-          "style": "solid"
-        },
-        "type": "border",
-        "description": "border for text input field"
-      },
-      "button": {
-        "secondary": {
-          "value": {
-            "color": "{dds.color.brand.primary}",
-            "width": "1",
-            "style": "solid"
-          },
-          "type": "border",
-          "description": "border for secondary button"
-        },
-        "secondaryLight": {
-          "value": {
-            "color": "{dds.color.brand.white}",
-            "width": "1",
-            "style": "solid"
-          },
-          "type": "border",
-          "description": "border for secondary button light/white"
-        }
-      },
-      "table": {
-        "cell": {
-          "border-bottom": {
-            "value": {
-              "color": "{grey.base-color-grey-020}",
-              "width": "1",
-              "style": "solid"
-            },
-            "type": "border"
-          }
-        }
-      }
-    },
     "lineHeights": {
       "0": {
         "value": "80",
@@ -589,6 +518,74 @@
     "textDecoration": {
       "value": "none",
       "type": "textDecoration"
+    },
+    "checkbox": {
+      "color": {
+        "border": {
+          "unselected": {
+            "value": {
+              "color": "C5C5C5"
+            },
+            "type": "border"
+          }
+        }
+      }
+    },
+    "dropdown": {
+      "color": {
+        "background": {
+          "value": "{color.brand.white}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{color.brand.mediumgrey}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{color.brand.darkgrey}",
+          "type": "color"
+        }
+      }
+    },
+    "dropdown-tray": {
+      "color": {
+        "background": {
+          "selected": {
+            "value": "{grey.base-color-grey-020}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "table": {
+      "color": {
+        "background": {
+          "value": "{color.brand.white}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{color.brand.darkgrey}",
+          "type": "color"
+        }
+      },
+      "header": {
+        "color": {
+          "border": {
+            "value": {
+              "color": "{color.brand.black}"
+            },
+            "type": "border"
+          }
+        }
+      },
+      "cell": {
+        "color": {
+          "border": {
+            "value": "{grey.base-color-grey-020}",
+            "type": "color"
+          }
+        }
+      }
     }
   },
   "color ramps": {
@@ -969,7 +966,130 @@
       }
     }
   },
-  "$themes": [],
+  "$themes": [
+    {
+      "id": "238ade74d474a41f649882b816f0f5b7d3947fbb",
+      "name": "core",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "global": "enabled",
+        "color ramps": "enabled"
+      },
+      "$figmaCollectionId": "VariableCollectionId:7977:17122",
+      "$figmaModeId": "7977:0",
+      "$figmaVariableReferences": {
+        "blue.base-color-blue-010": "1c322cc6ed13ec7c04ec61c4df670cff4845e54c",
+        "blue.base-color-blue-020": "629aa6d496afebfe59f1c275f7916126124d8a63",
+        "blue.base-color-blue-030": "e40dde7420d8c8f296b91a47e651407a410568f3",
+        "blue.base-color-blue-040": "fdc60cad92bc58a91b439bcab82df1badce427d1",
+        "blue.base-color-blue-050": "a802e9a9e2363a38d30b98f544542e550cc73c5a",
+        "blue.base-color-blue-060": "9338b943075cc0d780ad67521b32ac6cd9409bfa",
+        "blue.base-color-blue-070": "87a6fab7b741dfba1c72f5ea5b13399376b7a84d",
+        "blue.base-color-blue-080": "1a3623fa107fb372bd9a30bc271ed3a54fbedf3a",
+        "blue.base-color-blue-090": "0717607391b8309612577058d6592131c46f0fc9",
+        "blue.base-color-blue-100": "ec0f58fab3d612151712976dc12ba5d9e7b56382",
+        "blue.base-color-blue-110": "61f22e4b909805cc2c88ec4cd9f75e4b8a2da173",
+        "blue.base-color-blue-120": "2e05a00164101b938fa64e76ef73a6672b0c1cc3",
+        "green.base-color-green-010": "a04a3402ebc95ce78189c637881fa82472b5bbdc",
+        "blue.base-color-blue-130": "a18283dd5e32ec1505b6d283acc52f8315205e3e",
+        "green.base-color-green-020": "4b415359ec088c7ee43ee4ed463f80130eab3a8a",
+        "green.base-color-green-030": "0de6a438b90c4a467a1138b03549541bfa50e6af",
+        "green.base-color-green-040": "a9ab2385b14ab666094ad2039afbffa0e9beccc4",
+        "green.base-color-green-050": "69cc1c06c34f83f8dc61ee73ebfa214dcb448080",
+        "green.base-color-green-060": "998b43421d88b79873aa8758d9f06d81f31cd309",
+        "green.base-color-green-070": "7cfe29a643d41c7efd14570a0dd9afc5f4eb23bc",
+        "green.base-color-green-080": "4e3afa0172cbdaa5820ec2bb43e1e975adf48e69",
+        "green.base-color-green-090": "9376081e31f94981e88e09663ab5e23ffc5f2889",
+        "green.base-color-green-100": "bf769dbc68e9291f878786452f827e253c3fe325",
+        "green.base-color-green-110": "9065b935017668c372ddbd66af41e381f85b7f18",
+        "yellow.base-color-yellow-010": "227b76e337a9a3ef056767643b9b2c13f1f8944b",
+        "yellow.base-color-yellow-020": "3f98520940274c393061fcbbca9b26a789f7caa0",
+        "yellow.base-color-yellow-030": "3ea940b0234c63b52080ddc718bc32926a874689",
+        "yellow.base-color-yellow-040": "ea66eedd208a928e4cfa97bcccbc3a7cda5064fb",
+        "yellow.base-color-yellow-050": "02dbcee0483482b2ecf9df4b96a037c7b9b46869",
+        "yellow.base-color-yellow-060": "e488af452717f6496012a02096a6e8181a0dacfb",
+        "yellow.base-color-yellow-070": "d2148015f09c4b8aa75a66a0fec0ee0299a2a948",
+        "yellow.base-color-yellow-080": "89a755659b021ba726f4cd081be662695ee94f8e",
+        "yellow.base-color-yellow-090": "f8b2d666c3ed5802c299e36658c1bb250fe343b6",
+        "yellow.base-color-yellow-100": "d3de7b3343ed99b7a771d3c2d87bcc213fd903b5",
+        "yellow.base-color-yellow-110": "87c57b36b0c97f5bddd8846674468d4c81612e4e",
+        "orange.base-color-orange-010": "aab5e7de16612cfd5e371525abb0b4f28044529c",
+        "orange.base-color-orange-020": "95ed6c38c6b88d71863ffc2bf14723a114f29c04",
+        "orange.base-color-orange-030": "64675ea417632cec3d3989efc010145844711b45",
+        "orange.base-color-orange-040": "24e8447ee3f1b7ed1082ef05548329c743fdaeac",
+        "orange.base-color-orange-050": "5a307639b4c9b8166a9b11e6256148ec061ee63f",
+        "orange.base-color-orange-060": "0152999d9252f5cdf9f50fa3b8fb559e77b0663d",
+        "orange.base-color-orange-070": "a5236a6581987ed76184763589d8ed523d556ae5",
+        "orange.base-color-orange-080": "5fa4bae7b7234efd6a74b1c69a05ed40bce6ae76",
+        "orange.base-color-orange-090": "dbbfada8e88eb97776f2722776e3e5afab4a7e98",
+        "orange.base-color-orange-100": "4c42eb76af299e41487cd6f50978b9ae2d541d5b",
+        "orange.base-color-orange-110": "fd55a25f1e81d57b4d7f2c014b15d490cce83dee",
+        "red.base-color-red-010": "3c9a954f32b936874adf51183c582be78da83423",
+        "red.base-color-red-020": "2a3781fe33f03a961e1e101bbc6cb2ca7b038fbb",
+        "red.base-color-red-030": "87acb8290b50182b193dd95d88ea72a88cf65f10",
+        "red.base-color-red-040": "a861516fdb6663c174797cf45f2287b42453a03d",
+        "red.base-color-red-050": "59818326ce48ed730a15623506e2375538ab8757",
+        "red.base-color-red-060": "9bbc9b62f510d239039aacda664c0ddb4b144438",
+        "red.base-color-red-070": "2cb87e675f3126d160827e52cabf444ad0642cfb",
+        "red.base-color-red-080": "eacb8b71ed99e4b62e78b053ea429517518e5d9c",
+        "red.base-color-red-090": "6dc122d7409996d3c81226dd1cec0b0b9713bfa3",
+        "red.base-color-red-100": "ed43571da25ae8e1551fe7123a55cbd5f671eae1",
+        "red.base-color-red-110": "f6ca7d5cf20ece1116175071b5476d85f1191f41",
+        "magenta.base-color-magenta-010": "73f49926467ad3727df99135b9fd79c57cc72407",
+        "magenta.base-color-magenta-020": "390411f595a7086c92388690a7c5919db3fecab6",
+        "magenta.base-color-magenta-030": "98ccd275ee63553f78e25f5f45f1e8898824a4b7",
+        "magenta.base-color-magenta-040": "d57d1ab17ff6d7d5e909c8f72ea60a05ececfaea",
+        "magenta.base-color-magenta-050": "221356a406e2613bb1dc7df35d3fe9e802c9414a",
+        "magenta.base-color-magenta-060": "6f9966719610428051d05eed4ee3aed10326f28d",
+        "magenta.base-color-magenta-070": "79af03af728155dbc4a53e20b1860e9679e09f87",
+        "magenta.base-color-magenta-080": "e6d3c449be7927928396ce19d026da6256637f3f",
+        "magenta.base-color-magenta-090": "6170be8b1272558145185b5a7022297a312ed329",
+        "magenta.base-color-magenta-100": "1fb4ba71701f95bdcfc8ed2a7f75d1681aad9c99",
+        "grey.base-color-grey-010": "68de49ee0298080958d989fa64ef9fab6d57adb5",
+        "magenta.base-color-magenta-110": "d90c22a0ae18bc8e9d5fa4a68bb0ac2a4dd9c3de",
+        "grey.base-color-grey-020": "47f08358d4b1f5a01d349134d17026fdcf766dbe",
+        "grey.base-color-grey-030": "154f493b8f73d50558bbb4464f88845d7b7c0fb8",
+        "grey.base-color-grey-040": "9385966bc863f747b40fda8e8e5afef6c8cd61e1",
+        "grey.base-color-grey-050": "71ffe0f81c696d147ef8ce591915e1005c534111",
+        "grey.base-color-grey-060": "3b5c78e0e3da86a86931b6775848c8e566f98d22",
+        "grey.base-color-grey-070": "8f64e395a9d12d3fefc49ed9272f3c459a99ad11",
+        "grey.base-color-grey-080": "1464cf49c6a765f8e0eafa45467e5ca4901f5c19",
+        "grey.base-color-grey-090": "ffbda8fbdf0abfa5605963907630a7c49887e75c",
+        "grey.base-color-grey-100": "08e9671a7ec91efbfdce845ca8ef7a32904b7819",
+        "grey.base-color-grey-110": "a07add1c5910e5ed79062ba668bb4ba9be16437c",
+        "coolgrey.base-color-coolgrey-010": "2f05b4df265dee75ae3c3030330d92b46e39196f",
+        "coolgrey.base-color-coolgrey-020": "0f5575a8656f09a4dc659b87140e272f0cd41f2e",
+        "coolgrey.base-color-coolgrey-030": "09fe363ce062f8bd658b4bd23fa763763cb990da",
+        "coolgrey.base-color-coolgrey-040": "42e1bdfc1800dc2bfd4e91cdb5edea5a8b10bd67",
+        "coolgrey.base-color-coolgrey-050": "91c296a89bbb796dd9f633b2b9f875c7374a8d7b",
+        "coolgrey.base-color-coolgrey-060": "81b2c2fd3e451f481a08af1d82017d5f16d0ab08",
+        "coolgrey.base-color-coolgrey-070": "ef8a4503761fa607192f48ca8b310e085ba7e4bb",
+        "coolgrey.base-color-coolgrey-080": "01ed6f20a23065dfac5cc698c252bb4d27a301ad",
+        "coolgrey.base-color-coolgrey-090": "eee7fafdc88456d57b425f128696badca52c1397",
+        "coolgrey.base-color-coolgrey-100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
+        "coolgrey.base-color-coolgrey-110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc",
+        "dds.ui.button-primary.button-background.active": "9383fb959f4a0b4f6ff4dff9a2eb4eb29f63e640",
+        "dds.ui.button-primary.button-background.hover": "3a2f85b0c5e316772065c44cf49bfb683c86fced",
+        "dds.ui.button-primary.button-background.press": "b31a830cb35b022e6263d13f45de448cefb16539",
+        "dds.ui.button-primary.button-background.focus": "c8a584c83753f43993d3bd1b002addebb12ddcb1",
+        "dds.ui.button-primary.button-background.disabled": "e5283f44a285c74e5fb06b1e8bb2cb4a166f6861",
+        "dds.ui.button-secondary.button-background.active": "ebc27910e84f174d1f887552993cda573debefc6",
+        "dds.ui.button-secondary.button-background.hover": "3ed051dc19892d1f2af52b940f8b6aa41d6c7024",
+        "dds.ui.button-secondary.button-background.focus": "4b8d266392c3bec7b99818d4cf9a91b4761d9157",
+        "dds.ui.button-secondary.button-background.press": "737d62f6ca0f0b4af5f1af3ea6387053ea961fd3",
+        "dds.ui.button-secondary.button-background.disabled": "493323ba19e00bc1a4240831d4fa83d1c6fa5028",
+        "color.brand.primary": "598718291ea681aa007f09bbe536305c99daa35e",
+        "color.brand.secondary": "91a3beac15eb1fccc739e0971b2540650235b9a9",
+        "color.brand.black": "25825e392cc0978864f1a8c300102f8fe36d58bd",
+        "color.brand.white": "eb62cd402c530d4f1703a7b42e7ccc9444e2c963",
+        "color.brand.darkgrey": "5d3a4eb80b11918ddca9a28bf8c5ac88847ebf07",
+        "color.brand.mediumgrey": "3a8ebc3107241ae6a4c3c13e85b4e46432df35aa",
+        "color.feedback.positive": "30791083be26a2c0e0a9e10d675633c93b963954",
+        "color.feedback.warning": "9eb604dcc74c1ff07ffe5efea7be5d8fcc5abc55",
+        "color.feedback.negative": "42d144d66d36a5f8f0d7695133bf5972c7302a37"
+      }
+    }
+  ],
   "$metadata": {
     "tokenSetOrder": [
       "global",
