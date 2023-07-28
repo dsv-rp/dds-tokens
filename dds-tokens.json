@@ -910,6 +910,10 @@
             },
             "type": "border"
           }
+        },
+        "background": {
+          "value": "{blue.base-color-blue-060}",
+          "type": "color"
         }
       }
     },
