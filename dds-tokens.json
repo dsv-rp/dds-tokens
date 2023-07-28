@@ -968,8 +968,33 @@
       "cell": {
         "color": {
           "border": {
-            "value": "{grey.base-color-grey-020}",
+            "value": {
+              "color": "{grey.base-color-grey-020}",
+              "width": "1"
+            },
+            "type": "border"
+          }
+        }
+      },
+      "page-number": {
+        "color": {
+          "background": {
+            "selected": {
+              "value": "{color.brand.mediumgrey}",
+              "type": "color"
+            }
+          },
+          "text": {
+            "value": "{color.brand.black}",
             "type": "color"
+          },
+          "border": {
+            "hover": {
+              "value": {
+                "color": "{color.brand.mediumgrey}"
+              },
+              "type": "border"
+            }
           }
         }
       }
