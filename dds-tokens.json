@@ -927,13 +927,16 @@
           "value": "{color.brand.white}",
           "type": "color"
         },
-        "border": {
-          "value": "{color.brand.mediumgrey}",
-          "type": "color"
-        },
         "text": {
           "value": "{color.brand.darkgrey}",
           "type": "color"
+        },
+        "border": {
+          "value": {
+            "color": "{color.brand.mediumgrey}",
+            "width": "1"
+          },
+          "type": "border"
         }
       }
     },
@@ -995,7 +998,8 @@
           "border": {
             "hover": {
               "value": {
-                "color": "{color.brand.mediumgrey}"
+                "color": "{color.brand.mediumgrey}",
+                "width": "1"
               },
               "type": "border"
             }
