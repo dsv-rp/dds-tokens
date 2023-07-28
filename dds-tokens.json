@@ -427,6 +427,12 @@
           "type": "color",
           "description": "System status is negative"
         }
+      },
+      "text": {
+        "primary": {
+          "value": "{grey.base-color-grey-100}",
+          "type": "color"
+        }
       }
     },
     "dds": {
@@ -899,7 +905,7 @@
           "unselected": {
             "value": {
               "color": "{grey.base-color-grey-050}",
-              "width": "1",
+              "width": "2",
               "style": "solid"
             },
             "type": "border"
