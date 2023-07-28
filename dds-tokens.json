@@ -390,6 +390,16 @@
           "type": "color",
           "description": "Primary secondary brand blue"
         },
+        "mediumgrey": {
+          "value": "#8c8c8c",
+          "type": "color",
+          "description": "Medium grey is a core DDS color"
+        },
+        "darkgrey": {
+          "value": "#4c4c4c",
+          "type": "color",
+          "description": "Dark grey is a core DDS color"
+        },
         "black": {
           "value": "#000000",
           "type": "color",
@@ -399,16 +409,6 @@
           "value": "#ffffff",
           "type": "color",
           "description": "White is a core brand color"
-        },
-        "darkgrey": {
-          "value": "#4c4c4c",
-          "type": "color",
-          "description": "Dark grey is a core DDS color"
-        },
-        "mediumgrey": {
-          "value": "#8c8c8c",
-          "type": "color",
-          "description": "Medium grey is a core DDS color"
         }
       },
       "feedback": {
