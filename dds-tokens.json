@@ -375,6 +375,16 @@
         "value": "#010205",
         "type": "color"
       }
+    },
+    "color": {
+      "black": {
+        "value": "#000",
+        "type": "color"
+      },
+      "white": {
+        "value": "#fff",
+        "type": "color"
+      }
     }
   },
   "semantic": {
