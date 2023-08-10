@@ -384,6 +384,10 @@
       "white": {
         "value": "#fff",
         "type": "color"
+      },
+      "test": {
+        "value": "#000",
+        "type": "color"
       }
     }
   },
