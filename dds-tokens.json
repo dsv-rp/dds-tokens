@@ -1005,7 +1005,7 @@
             "value": "{color.brand.black}",
             "type": "color",
             "selected": {
-              "value": "{color.brand.white}",
+              "value": "#",
               "type": "color"
             }
           },
