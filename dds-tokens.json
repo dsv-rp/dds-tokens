@@ -1003,7 +1003,11 @@
           },
           "text": {
             "value": "{color.brand.black}",
-            "type": "color"
+            "type": "color",
+            "selected": {
+              "value": "{color.brand.white}",
+              "type": "color"
+            }
           },
           "border": {
             "hover": {
