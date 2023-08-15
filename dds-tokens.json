@@ -1002,8 +1002,14 @@
             }
           },
           "text": {
-            "value": "{color.brand.black}",
-            "type": "color"
+            "default": {
+              "value": "{color.brand.black}",
+              "type": "color"
+            },
+            "selected": {
+              "value": "{color.brand.white}",
+              "type": "color"
+            }
           },
           "border": {
             "hover": {
@@ -1085,7 +1091,6 @@
         "table.color.background": "S:1df8faafa4b4d6c05c7631586706f2d9e6fa839c,",
         "table.color.text": "S:765ea40f4c7ffc90cf31f1c6c1df74bbba264ddd,",
         "table.page-number.color.background.selected": "S:6cee1f0baff00492892a0a40cdc4a03fdf05cebd,",
-        "table.page-number.color.text": "S:6fdfa5fa6aebedcfa14824d5bccffc245e1ba3a2,",
         "blue.base-color-blue-010": "S:eaf64d1c8559dec8e43aa0c4e0e322eb2194170a,",
         "blue.base-color-blue-020": "S:2a66e7f5fb506a08fa4927b56b32a67d8030a8d5,",
         "blue.base-color-blue-030": "S:b410732e58b8a81e37927a5104717dc89fb65b7b,",
@@ -1204,7 +1209,8 @@
         "button.color.background.secondary.hover": "S:464ee92d5b83c2536e77be7bd84fe62c4ccfd7d6,",
         "button.color.background.secondary.focus": "S:a29fb36e4c2a4a51f19e544e9cfd35015ed2e9be,",
         "button.color.background.secondary.press": "S:f248197920684615667832b3a72e4c3608e4a3f4,",
-        "button.color.background.secondary.disabled": "S:61c0d8af92c39a52caea7dcafdc9a82a595e8f47,"
+        "button.color.background.secondary.disabled": "S:61c0d8af92c39a52caea7dcafdc9a82a595e8f47,",
+        "table.page-number.color.text.default": "S:6fdfa5fa6aebedcfa14824d5bccffc245e1ba3a2,"
       },
       "selectedTokenSets": {
         "primitives": "enabled",
