@@ -1033,7 +1033,7 @@
     "input-field": {
       "color": {
         "background": {
-          "value": "{color.brand.white}",
+          "value": "{color.white}",
           "type": "color"
         },
         "text": {
