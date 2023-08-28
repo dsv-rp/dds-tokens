@@ -409,16 +409,6 @@
           "value": "#4c4c4c",
           "type": "color",
           "description": "Dark grey is a core DDS color"
-        },
-        "black": {
-          "value": "#000000",
-          "type": "color",
-          "description": "Black is a core brand color"
-        },
-        "white": {
-          "value": "#ffffff",
-          "type": "color",
-          "description": "White is a core brand color"
         }
       },
       "feedback": {
@@ -934,7 +924,7 @@
     "dropdown": {
       "color": {
         "background": {
-          "value": "{color.brand.white}",
+          "value": "{color.white}",
           "type": "color"
         },
         "text": {
@@ -963,7 +953,7 @@
     "table": {
       "color": {
         "background": {
-          "value": "{color.brand.white}",
+          "value": "{color.white}",
           "type": "color"
         },
         "text": {
@@ -975,7 +965,7 @@
         "color": {
           "border": {
             "value": {
-              "color": "{color.brand.black}",
+              "color": "{color.black}",
               "width": "1"
             },
             "type": "border"
@@ -997,17 +987,17 @@
         "color": {
           "background": {
             "selected": {
-              "value": "{color.brand.mediumgrey}",
+              "value": "{coolgrey.base-color-coolgrey-070}",
               "type": "color"
             }
           },
           "text": {
             "default": {
-              "value": "{color.brand.black}",
+              "value": "{grey.base-color-grey-090}",
               "type": "color"
             },
             "selected": {
-              "value": "{color.brand.white}",
+              "value": "{color.white}",
               "type": "color"
             }
           },
@@ -1063,7 +1053,7 @@
     "container": {
       "color": {
         "background": {
-          "value": "{color.brand.white}",
+          "value": "{color.white}",
           "type": "color"
         }
       }
@@ -1072,14 +1062,12 @@
   "$themes": [
     {
       "id": "238ade74d474a41f649882b816f0f5b7d3947fbb",
-      "name": "core",
+      "name": "Daikin",
       "$figmaStyleReferences": {
         "color.brand.primary": "S:5fc2e6140eb8147c10a71c325a9535438fdc925b,",
         "color.brand.secondary": "S:24b8ad74628e0de0fd6999cf0d5721674ea4d0c4,",
         "color.brand.mediumgrey": "S:d64dd54eadafe081ff1fff00b8b22d2a1bc083eb,",
         "color.brand.darkgrey": "S:e2bab12938a76c7b98faf21de2f76330597fda5e,",
-        "color.brand.black": "S:517daf8b17f48870d1c85034e259e7796d14dddd,",
-        "color.brand.white": "S:5ad7f5128dc08de69cc22d149d7afeec52a6e21b,",
         "color.feedback.positive": "S:761adc45dee4e6ef1670d6a6e4af77614b20a78d,",
         "color.feedback.warning": "S:622f44201c4e373409c7c313b0b105c979693997,",
         "color.feedback.negative": "S:348943a41282ebd074eeb068af9a07174b599014,",
@@ -1311,8 +1299,6 @@
         "coolgrey.base-color-coolgrey-110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc",
         "color.brand.primary": "598718291ea681aa007f09bbe536305c99daa35e",
         "color.brand.secondary": "91a3beac15eb1fccc739e0971b2540650235b9a9",
-        "color.brand.black": "25825e392cc0978864f1a8c300102f8fe36d58bd",
-        "color.brand.white": "eb62cd402c530d4f1703a7b42e7ccc9444e2c963",
         "color.brand.darkgrey": "5d3a4eb80b11918ddca9a28bf8c5ac88847ebf07",
         "color.brand.mediumgrey": "3a8ebc3107241ae6a4c3c13e85b4e46432df35aa",
         "color.feedback.positive": "30791083be26a2c0e0a9e10d675633c93b963954",
@@ -1328,6 +1314,15 @@
         "button.color.background.secondary.focus": "4b8d266392c3bec7b99818d4cf9a91b4761d9157",
         "button.color.background.secondary.press": "737d62f6ca0f0b4af5f1af3ea6387053ea961fd3",
         "button.color.background.secondary.disabled": "493323ba19e00bc1a4240831d4fa83d1c6fa5028"
+      }
+    },
+    {
+      "id": "a64e4850dd16615ac2cd0e84815c49bf224d123d",
+      "name": "AAF",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "primitives": "enabled",
+        "semantic": "enabled"
       }
     }
   ],
