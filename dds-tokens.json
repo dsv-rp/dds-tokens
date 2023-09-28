@@ -1166,6 +1166,50 @@
         "value": "{space.80}",
         "type": "spacing"
       }
+    },
+    "border-radius": {
+      "2XS": {
+        "value": "{border-radius.2}",
+        "type": "borderRadius"
+      },
+      "XS": {
+        "value": "{border-radius.4}",
+        "type": "borderRadius"
+      },
+      "S": {
+        "value": "{border-radius.6}",
+        "type": "borderRadius"
+      },
+      "M": {
+        "value": "{border-radius.8}",
+        "type": "borderRadius"
+      },
+      "L": {
+        "value": "{border-radius.10}",
+        "type": "borderRadius"
+      },
+      "XL": {
+        "value": "{border-radius.12}",
+        "type": "borderRadius"
+      },
+      "2XL": {
+        "value": "{border-radius.16}",
+        "type": "borderRadius"
+      }
+    },
+    "border-width": {
+      "S": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      },
+      "M": {
+        "value": "{border-width.2}",
+        "type": "borderWidth"
+      },
+      "L": {
+        "value": "{border-width.4}",
+        "type": "borderWidth"
+      }
     }
   },
   "$themes": [
