@@ -458,6 +458,108 @@
         "type": "fontFamilies",
         "description": "The primary font used in the DDS Design Kit is Roboto"
       }
+    },
+    "border-radius": {
+      "2": {
+        "value": "2",
+        "type": "borderRadius"
+      },
+      "4": {
+        "value": "4",
+        "type": "borderRadius"
+      },
+      "6": {
+        "value": "6",
+        "type": "borderRadius"
+      },
+      "8": {
+        "value": "8",
+        "type": "borderRadius"
+      },
+      "10": {
+        "value": "10",
+        "type": "borderRadius"
+      },
+      "12": {
+        "value": "12",
+        "type": "borderRadius"
+      },
+      "16": {
+        "value": "16",
+        "type": "borderRadius"
+      }
+    },
+    "border-width": {
+      "1": {
+        "value": "1",
+        "type": "borderWidth"
+      },
+      "2": {
+        "value": "2",
+        "type": "borderWidth"
+      },
+      "4": {
+        "value": "4",
+        "type": "borderWidth"
+      }
+    },
+    "space": {
+      "0": {
+        "value": "0",
+        "type": "spacing"
+      },
+      "2": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "4": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "6": {
+        "value": "6",
+        "type": "spacing"
+      },
+      "8": {
+        "value": "8",
+        "type": "spacing"
+      },
+      "10": {
+        "value": "10",
+        "type": "spacing"
+      },
+      "12": {
+        "value": "12",
+        "type": "spacing"
+      },
+      "16": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "20": {
+        "value": "20",
+        "type": "spacing"
+      },
+      "24": {
+        "value": "24",
+        "type": "spacing"
+      },
+      "32": {
+        "value": "32",
+        "type": "spacing"
+      },
+      "40": {
+        "value": "40",
+        "type": "spacing"
+      },
+      "64": {
+        "value": "64",
+        "type": "spacing"
+      },
+      "80": {
+        "value": "80",
+        "type": "spacing"
+      }
     }
   },
   "semantic": {
@@ -1005,6 +1107,108 @@
         },
         "type": "typography",
         "description": "Header is used to create various levels of typographic hierarchies."
+      }
+    },
+    "space": {
+      "6XS": {
+        "value": "{space.0}",
+        "type": "spacing"
+      },
+      "5XS": {
+        "value": "{space.2}",
+        "type": "spacing"
+      },
+      "4XS": {
+        "value": "{space.4}",
+        "type": "spacing"
+      },
+      "3XS": {
+        "value": "{space.6}",
+        "type": "spacing"
+      },
+      "2XS": {
+        "value": "{space.8}",
+        "type": "spacing"
+      },
+      "XS": {
+        "value": "{space.10}",
+        "type": "spacing"
+      },
+      "S": {
+        "value": "{space.12}",
+        "type": "spacing"
+      },
+      "M": {
+        "value": "{space.16}",
+        "type": "spacing"
+      },
+      "L": {
+        "value": "{space.20}",
+        "type": "spacing"
+      },
+      "XL": {
+        "value": "{space.24}",
+        "type": "spacing"
+      },
+      "2XL": {
+        "value": "{space.32}",
+        "type": "spacing"
+      },
+      "3XL": {
+        "value": "{space.40}",
+        "type": "spacing"
+      },
+      "4XL": {
+        "value": "{space.64}",
+        "type": "spacing"
+      },
+      "5XL": {
+        "value": "{space.80}",
+        "type": "spacing"
+      }
+    },
+    "border-radius": {
+      "2XS": {
+        "value": "{border-radius.2}",
+        "type": "borderRadius"
+      },
+      "XS": {
+        "value": "{border-radius.4}",
+        "type": "borderRadius"
+      },
+      "S": {
+        "value": "{border-radius.6}",
+        "type": "borderRadius"
+      },
+      "M": {
+        "value": "{border-radius.8}",
+        "type": "borderRadius"
+      },
+      "L": {
+        "value": "{border-radius.10}",
+        "type": "borderRadius"
+      },
+      "XL": {
+        "value": "{border-radius.12}",
+        "type": "borderRadius"
+      },
+      "2XL": {
+        "value": "{border-radius.16}",
+        "type": "borderRadius"
+      }
+    },
+    "border-width": {
+      "S": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      },
+      "M": {
+        "value": "{border-width.2}",
+        "type": "borderWidth"
+      },
+      "L": {
+        "value": "{border-width.4}",
+        "type": "borderWidth"
       }
     }
   },
