@@ -1,388 +1,384 @@
 {
   "primitives": {
-    "blue": {
-      "base-color-blue-010": {
-        "value": "#D1F3FF",
-        "type": "color"
-      },
-      "base-color-blue-020": {
-        "value": "#A6E4FB",
-        "type": "color"
-      },
-      "base-color-blue-030": {
-        "value": "#7CD5F7",
-        "type": "color"
-      },
-      "base-color-blue-040": {
-        "value": "#54c3f1",
-        "type": "color"
-      },
-      "base-color-blue-050": {
-        "value": "#2DB8F0",
-        "type": "color"
-      },
-      "base-color-blue-060": {
-        "value": "#0097E0",
-        "type": "color"
-      },
-      "base-color-blue-070": {
-        "value": "#0674C1",
-        "type": "color"
-      },
-      "base-color-blue-080": {
-        "value": "#0D59A3",
-        "type": "color"
-      },
-      "base-color-blue-090": {
-        "value": "#114484",
-        "type": "color"
-      },
-      "base-color-blue-100": {
-        "value": "#143466",
-        "type": "color"
-      },
-      "base-color-blue-110": {
-        "value": "#132547",
-        "type": "color"
-      },
-      "base-color-blue-120": {
-        "value": "#0E1629",
-        "type": "color"
-      },
-      "base-color-blue-130": {
-        "value": "#04060A",
-        "type": "color"
-      }
-    },
-    "green": {
-      "base-color-green-010": {
-        "value": "#F4FFE6",
-        "type": "color"
-      },
-      "base-color-green-020": {
-        "value": "#D0F8B9",
-        "type": "color"
-      },
-      "base-color-green-030": {
-        "value": "#9FF28F",
-        "type": "color"
-      },
-      "base-color-green-040": {
-        "value": "#69EB6E",
-        "type": "color"
-      },
-      "base-color-green-050": {
-        "value": "#45E46A",
-        "type": "color"
-      },
-      "base-color-green-060": {
-        "value": "#13CE66",
-        "type": "color"
-      },
-      "base-color-green-070": {
-        "value": "#04A632",
-        "type": "color"
-      },
-      "base-color-green-080": {
-        "value": "#007F0E",
-        "type": "color"
-      },
-      "base-color-green-090": {
-        "value": "#055700",
-        "type": "color"
-      },
-      "base-color-green-100": {
-        "value": "#0B2F00",
-        "type": "color"
-      },
-      "base-color-green-110": {
-        "value": "#030800",
-        "type": "color"
-      }
-    },
-    "yellow": {
-      "base-color-yellow-010": {
-        "value": "#FCFFE6",
-        "type": "color"
-      },
-      "base-color-yellow-020": {
-        "value": "#FDFFBB",
-        "type": "color"
-      },
-      "base-color-yellow-030": {
-        "value": "#FFF890",
-        "type": "color"
-      },
-      "base-color-yellow-040": {
-        "value": "#FFE667",
-        "type": "color"
-      },
-      "base-color-yellow-050": {
-        "value": "#FFCC3D",
-        "type": "color"
-      },
-      "base-color-yellow-060": {
-        "value": "#D7B834",
-        "type": "color"
-      },
-      "base-color-yellow-070": {
-        "value": "#AFA02E",
-        "type": "color"
-      },
-      "base-color-yellow-080": {
-        "value": "#878429",
-        "type": "color"
-      },
-      "base-color-yellow-090": {
-        "value": "#5C5F21",
-        "type": "color"
-      },
-      "base-color-yellow-100": {
-        "value": "#333717",
-        "type": "color"
-      },
-      "base-color-yellow-110": {
-        "value": "#0E0F07",
-        "type": "color"
-      }
-    },
-    "orange": {
-      "base-color-orange-010": {
-        "value": "#FFF4E6",
-        "type": "color"
-      },
-      "base-color-orange-020": {
-        "value": "#FFE7CD",
-        "type": "color"
-      },
-      "base-color-orange-030": {
-        "value": "#FFD8B5",
-        "type": "color"
-      },
-      "base-color-orange-040": {
-        "value": "#FFC69A",
-        "type": "color"
-      },
-      "base-color-orange-050": {
-        "value": "#FFB27F",
-        "type": "color"
-      },
-      "base-color-orange-060": {
-        "value": "#F68C54",
-        "type": "color"
-      },
-      "base-color-orange-070": {
-        "value": "#E86427",
-        "type": "color"
-      },
-      "base-color-orange-080": {
-        "value": "#B15C20",
-        "type": "color"
-      },
-      "base-color-orange-090": {
-        "value": "#7A4D14",
-        "type": "color"
-      },
-      "base-color-orange-100": {
-        "value": "#443809",
-        "type": "color"
-      },
-      "base-color-orange-110": {
-        "value": "#0C0D01",
-        "type": "color"
-      }
-    },
-    "red": {
-      "base-color-red-010": {
-        "value": "#FAF2ED",
-        "type": "color"
-      },
-      "base-color-red-020": {
-        "value": "#FEE0D2",
-        "type": "color"
-      },
-      "base-color-red-030": {
-        "value": "#FFC7B5",
-        "type": "color"
-      },
-      "base-color-red-040": {
-        "value": "#FFAA98",
-        "type": "color"
-      },
-      "base-color-red-050": {
-        "value": "#FF867B",
-        "type": "color"
-      },
-      "base-color-red-060": {
-        "value": "#FF4949",
-        "type": "color"
-      },
-      "base-color-red-070": {
-        "value": "#CE3B2B",
-        "type": "color"
-      },
-      "base-color-red-080": {
-        "value": "#9C3219",
-        "type": "color"
-      },
-      "base-color-red-090": {
-        "value": "#6B290F",
-        "type": "color"
-      },
-      "base-color-red-100": {
-        "value": "#391A08",
-        "type": "color"
-      },
-      "base-color-red-110": {
-        "value": "#080401",
-        "type": "color"
-      }
-    },
-    "magenta": {
-      "base-color-magenta-010": {
-        "value": "#F5F5FF",
-        "type": "color"
-      },
-      "base-color-magenta-020": {
-        "value": "#E4E0F8",
-        "type": "color"
-      },
-      "base-color-magenta-030": {
-        "value": "#D7CCF2",
-        "type": "color"
-      },
-      "base-color-magenta-040": {
-        "value": "#CDB8EB",
-        "type": "color"
-      },
-      "base-color-magenta-050": {
-        "value": "#C7A4E5",
-        "type": "color"
-      },
-      "base-color-magenta-060": {
-        "value": "#B981CF",
-        "type": "color"
-      },
-      "base-color-magenta-070": {
-        "value": "#B15FBA",
-        "type": "color"
-      },
-      "base-color-magenta-080": {
-        "value": "#A43D95",
-        "type": "color"
-      },
-      "base-color-magenta-090": {
-        "value": "#722B6D",
-        "type": "color"
-      },
-      "base-color-magenta-100": {
-        "value": "#3F183F",
-        "type": "color"
-      },
-      "base-color-magenta-110": {
-        "value": "#0C050D",
-        "type": "color"
-      }
-    },
-    "grey": {
-      "base-color-grey-010": {
-        "value": "#FAFAFA",
-        "type": "color"
-      },
-      "base-color-grey-020": {
-        "value": "#EBEBEB",
-        "type": "color"
-      },
-      "base-color-grey-030": {
-        "value": "#DCDCDC",
-        "type": "color"
-      },
-      "base-color-grey-040": {
-        "value": "#CECECE",
-        "type": "color"
-      },
-      "base-color-grey-050": {
-        "value": "#BFBFBF",
-        "type": "color"
-      },
-      "base-color-grey-060": {
-        "value": "#A0A0A0",
-        "type": "color"
-      },
-      "base-color-grey-070": {
-        "value": "#828282",
-        "type": "color"
-      },
-      "base-color-grey-080": {
-        "value": "#616161",
-        "type": "color"
-      },
-      "base-color-grey-090": {
-        "value": "#414141",
-        "type": "color"
-      },
-      "base-color-grey-100": {
-        "value": "#212121",
-        "type": "color"
-      },
-      "base-color-grey-110": {
-        "value": "#000000",
-        "type": "color"
-      }
-    },
-    "coolgrey": {
-      "base-color-coolgrey-010": {
-        "value": "#EDFFFE",
-        "type": "color"
-      },
-      "base-color-coolgrey-020": {
-        "value": "#DEEFEF",
-        "type": "color"
-      },
-      "base-color-coolgrey-030": {
-        "value": "#CFDFDF",
-        "type": "color"
-      },
-      "base-color-coolgrey-040": {
-        "value": "#C0CED0",
-        "type": "color"
-      },
-      "base-color-coolgrey-050": {
-        "value": "#B1BEC0",
-        "type": "color"
-      },
-      "base-color-coolgrey-060": {
-        "value": "#8D9CA0",
-        "type": "color"
-      },
-      "base-color-coolgrey-070": {
-        "value": "#6C7A81",
-        "type": "color"
-      },
-      "base-color-coolgrey-080": {
-        "value": "#445762",
-        "type": "color"
-      },
-      "base-color-coolgrey-090": {
-        "value": "#253543",
-        "type": "color"
-      },
-      "base-color-coolgrey-100": {
-        "value": "#0F1724",
-        "type": "color"
-      },
-      "base-color-coolgrey-110": {
-        "value": "#010205",
-        "type": "color"
-      }
-    },
     "color": {
+      "blue": {
+        "10": {
+          "value": "#D1F3FF",
+          "type": "color"
+        },
+        "20": {
+          "value": "#A6E4FB",
+          "type": "color"
+        },
+        "30": {
+          "value": "#7CD5F7",
+          "type": "color"
+        },
+        "40": {
+          "value": "#54c3f1",
+          "type": "color"
+        },
+        "50": {
+          "value": "#2DB8F0",
+          "type": "color"
+        },
+        "60": {
+          "value": "#0097E0",
+          "type": "color"
+        },
+        "70": {
+          "value": "#0674C1",
+          "type": "color"
+        },
+        "80": {
+          "value": "#0D59A3",
+          "type": "color"
+        },
+        "90": {
+          "value": "#114484",
+          "type": "color"
+        },
+        "100": {
+          "value": "#143466",
+          "type": "color"
+        },
+        "110": {
+          "value": "#132547",
+          "type": "color"
+        },
+        "120": {
+          "value": "#0E1629",
+          "type": "color"
+        },
+        "130": {
+          "value": "#04060A",
+          "type": "color"
+        }
+      },
+      "green": {
+        "10": {
+          "value": "#F4FFE6",
+          "type": "color"
+        },
+        "20": {
+          "value": "#D0F8B9",
+          "type": "color"
+        },
+        "30": {
+          "value": "#9FF28F",
+          "type": "color"
+        },
+        "40": {
+          "value": "#69EB6E",
+          "type": "color"
+        },
+        "50": {
+          "value": "#45E46A",
+          "type": "color"
+        },
+        "60": {
+          "value": "#13CE66",
+          "type": "color"
+        },
+        "70": {
+          "value": "#04A632",
+          "type": "color"
+        },
+        "80": {
+          "value": "#007F0E",
+          "type": "color"
+        },
+        "90": {
+          "value": "#055700",
+          "type": "color"
+        },
+        "100": {
+          "value": "#0B2F00",
+          "type": "color"
+        },
+        "110": {
+          "value": "#030800",
+          "type": "color"
+        }
+      },
+      "yellow": {
+        "10": {
+          "value": "#FCFFE6",
+          "type": "color"
+        },
+        "20": {
+          "value": "#FDFFBB",
+          "type": "color"
+        },
+        "30": {
+          "value": "#FFF890",
+          "type": "color"
+        },
+        "40": {
+          "value": "#FFE667",
+          "type": "color"
+        },
+        "50": {
+          "value": "#FFCC3D",
+          "type": "color"
+        },
+        "60": {
+          "value": "#D7B834",
+          "type": "color"
+        },
+        "70": {
+          "value": "#AFA02E",
+          "type": "color"
+        },
+        "80": {
+          "value": "#878429",
+          "type": "color"
+        },
+        "90": {
+          "value": "#5C5F21",
+          "type": "color"
+        },
+        "100": {
+          "value": "#333717",
+          "type": "color"
+        },
+        "110": {
+          "value": "#0E0F07",
+          "type": "color"
+        }
+      },
+      "orange": {
+        "10": {
+          "value": "#FFF4E6",
+          "type": "color"
+        },
+        "20": {
+          "value": "#FFE7CD",
+          "type": "color"
+        },
+        "30": {
+          "value": "#FFD8B5",
+          "type": "color"
+        },
+        "40": {
+          "value": "#FFC69A",
+          "type": "color"
+        },
+        "50": {
+          "value": "#FFB27F",
+          "type": "color"
+        },
+        "60": {
+          "value": "#F68C54",
+          "type": "color"
+        },
+        "70": {
+          "value": "#E86427",
+          "type": "color"
+        },
+        "80": {
+          "value": "#B15C20",
+          "type": "color"
+        },
+        "90": {
+          "value": "#7A4D14",
+          "type": "color"
+        },
+        "100": {
+          "value": "#443809",
+          "type": "color"
+        },
+        "110": {
+          "value": "#0C0D01",
+          "type": "color"
+        }
+      },
+      "red": {
+        "10": {
+          "value": "#FAF2ED",
+          "type": "color"
+        },
+        "20": {
+          "value": "#FEE0D2",
+          "type": "color"
+        },
+        "30": {
+          "value": "#FFC7B5",
+          "type": "color"
+        },
+        "40": {
+          "value": "#FFAA98",
+          "type": "color"
+        },
+        "50": {
+          "value": "#FF867B",
+          "type": "color"
+        },
+        "60": {
+          "value": "#FF4949",
+          "type": "color"
+        },
+        "70": {
+          "value": "#CE3B2B",
+          "type": "color"
+        },
+        "80": {
+          "value": "#9C3219",
+          "type": "color"
+        },
+        "90": {
+          "value": "#6B290F",
+          "type": "color"
+        },
+        "100": {
+          "value": "#391A08",
+          "type": "color"
+        },
+        "110": {
+          "value": "#080401",
+          "type": "color"
+        }
+      },
+      "magenta": {
+        "10": {
+          "value": "#F5F5FF",
+          "type": "color"
+        },
+        "20": {
+          "value": "#E4E0F8",
+          "type": "color"
+        },
+        "30": {
+          "value": "#D7CCF2",
+          "type": "color"
+        },
+        "40": {
+          "value": "#CDB8EB",
+          "type": "color"
+        },
+        "50": {
+          "value": "#C7A4E5",
+          "type": "color"
+        },
+        "60": {
+          "value": "#B981CF",
+          "type": "color"
+        },
+        "70": {
+          "value": "#B15FBA",
+          "type": "color"
+        },
+        "80": {
+          "value": "#A43D95",
+          "type": "color"
+        },
+        "90": {
+          "value": "#722B6D",
+          "type": "color"
+        },
+        "100": {
+          "value": "#3F183F",
+          "type": "color"
+        },
+        "110": {
+          "value": "#0C050D",
+          "type": "color"
+        }
+      },
+      "grey": {
+        "10": {
+          "value": "#FAFAFA",
+          "type": "color"
+        },
+        "20": {
+          "value": "#EBEBEB",
+          "type": "color"
+        },
+        "30": {
+          "value": "#DCDCDC",
+          "type": "color"
+        },
+        "40": {
+          "value": "#CECECE",
+          "type": "color"
+        },
+        "50": {
+          "value": "#BFBFBF",
+          "type": "color"
+        },
+        "60": {
+          "value": "#A0A0A0",
+          "type": "color"
+        },
+        "70": {
+          "value": "#828282",
+          "type": "color"
+        },
+        "80": {
+          "value": "#616161",
+          "type": "color"
+        },
+        "90": {
+          "value": "#414141",
+          "type": "color"
+        },
+        "100": {
+          "value": "#212121",
+          "type": "color"
+        }
+      },
+      "coolgrey": {
+        "10": {
+          "value": "#EDFFFE",
+          "type": "color"
+        },
+        "20": {
+          "value": "#DEEFEF",
+          "type": "color"
+        },
+        "30": {
+          "value": "#CFDFDF",
+          "type": "color"
+        },
+        "40": {
+          "value": "#C0CED0",
+          "type": "color"
+        },
+        "50": {
+          "value": "#B1BEC0",
+          "type": "color"
+        },
+        "60": {
+          "value": "#8D9CA0",
+          "type": "color"
+        },
+        "70": {
+          "value": "#6C7A81",
+          "type": "color"
+        },
+        "80": {
+          "value": "#445762",
+          "type": "color"
+        },
+        "90": {
+          "value": "#253543",
+          "type": "color"
+        },
+        "100": {
+          "value": "#0F1724",
+          "type": "color"
+        },
+        "110": {
+          "value": "#010205",
+          "type": "color"
+        }
+      },
       "black": {
-        "value": "#000",
+        "value": "#000000",
         "type": "color"
       },
       "white": {
-        "value": "#fff",
+        "value": "#ffffff",
         "type": "color"
       }
     },
@@ -566,12 +562,12 @@
     "color": {
       "brand": {
         "primary": {
-          "value": "{blue.base-color-blue-060}",
+          "value": "{color.blue.60}",
           "type": "color",
           "description": "Primary brand blue"
         },
         "secondary": {
-          "value": "{blue.base-color-blue-040}",
+          "value": "{color.blue.40}",
           "type": "color",
           "description": "Primary secondary brand blue"
         },
@@ -605,7 +601,7 @@
       },
       "text": {
         "primary": {
-          "value": "{grey.base-color-grey-100}",
+          "value": "{color.grey.100}",
           "type": "color"
         }
       }
@@ -615,12 +611,12 @@
         "background": {
           "primary": {
             "active": {
-              "value": "{blue.base-color-blue-060}",
+              "value": "{color.blue.60}",
               "type": "color",
               "description": "Color used for the default state of a secondary button"
             },
             "hover": {
-              "value": "{blue.base-color-blue-040}",
+              "value": "{color.blue.40}",
               "type": "color",
               "description": "Color used if a user hovers over a button (Desktop only)"
             },
@@ -630,7 +626,7 @@
               "description": "Color used when a primary button is pressed"
             },
             "focus": {
-              "value": "{blue.base-color-blue-080}",
+              "value": "{color.blue.80}",
               "type": "color",
               "description": "Color used when a secondary button is in focus"
             },
@@ -642,19 +638,19 @@
           },
           "secondary": {
             "active": {
-              "value": "{grey.base-color-grey-070}",
+              "value": "{color.grey.70}",
               "type": "color"
             },
             "hover": {
-              "value": "{grey.base-color-grey-040}",
+              "value": "{color.grey.40}",
               "type": "color"
             },
             "focus": {
-              "value": "{grey.base-color-grey-070}",
+              "value": "{color.grey.70}",
               "type": "color"
             },
             "press": {
-              "value": "{grey.base-color-grey-090}",
+              "value": "{color.grey.90}",
               "type": "color"
             },
             "disabled": {
@@ -677,7 +673,7 @@
         "border": {
           "unselected": {
             "value": {
-              "color": "{grey.base-color-grey-050}",
+              "color": "{color.grey.50}",
               "width": "2",
               "style": "solid"
             },
@@ -685,7 +681,7 @@
           }
         },
         "background": {
-          "value": "{blue.base-color-blue-060}",
+          "value": "{color.blue.60}",
           "type": "color"
         }
       }
@@ -713,7 +709,7 @@
       "color": {
         "background": {
           "selected": {
-            "value": "{grey.base-color-grey-020}",
+            "value": "{color.grey.20}",
             "type": "color"
           }
         }
@@ -745,7 +741,7 @@
         "color": {
           "border": {
             "value": {
-              "color": "{grey.base-color-grey-020}",
+              "color": "{color.grey.20}",
               "width": "1"
             },
             "type": "border"
@@ -756,13 +752,13 @@
         "color": {
           "background": {
             "selected": {
-              "value": "{coolgrey.base-color-coolgrey-070}",
+              "value": "{color.coolgrey.70}",
               "type": "color"
             }
           },
           "text": {
             "default": {
-              "value": "{grey.base-color-grey-090}",
+              "value": "{color.grey.90}",
               "type": "color"
             },
             "selected": {
@@ -787,13 +783,13 @@
         "color": {
           "border": {
             "value": {
-              "color": "{grey.base-color-grey-080}",
+              "color": "{color.grey.80}",
               "width": "1"
             },
             "type": "border"
           },
           "text": {
-            "value": "{grey.base-color-grey-080}",
+            "value": "{color.grey.80}",
             "type": "color"
           }
         }
@@ -806,7 +802,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{grey.base-color-grey-100}",
+          "value": "{color.grey.100}",
           "type": "color"
         }
       }
@@ -814,7 +810,7 @@
     "input-field-label": {
       "color": {
         "text": {
-          "value": "{grey.base-color-grey-100}",
+          "value": "{color.grey.100}",
           "type": "color"
         }
       }
@@ -1232,96 +1228,6 @@
         "table.color.background": "S:1df8faafa4b4d6c05c7631586706f2d9e6fa839c,",
         "table.color.text": "S:765ea40f4c7ffc90cf31f1c6c1df74bbba264ddd,",
         "table.page-number.color.background.selected": "S:6cee1f0baff00492892a0a40cdc4a03fdf05cebd,",
-        "blue.base-color-blue-010": "S:eaf64d1c8559dec8e43aa0c4e0e322eb2194170a,",
-        "blue.base-color-blue-020": "S:2a66e7f5fb506a08fa4927b56b32a67d8030a8d5,",
-        "blue.base-color-blue-030": "S:b410732e58b8a81e37927a5104717dc89fb65b7b,",
-        "blue.base-color-blue-040": "S:cc9bb607c0cee3879d84a9bd8e70f7aa6511ba5e,",
-        "blue.base-color-blue-050": "S:f170ca6b3a3cec02efacb8070b4925814725ea93,",
-        "blue.base-color-blue-060": "S:d2ff43fa19554783a53dc7059d31c01cc9dc37a7,",
-        "blue.base-color-blue-070": "S:35224d4c5111579e5842de10a5332e2aa4aec92f,",
-        "blue.base-color-blue-080": "S:22211ab600093750ca838226e8bfbc5e42545914,",
-        "blue.base-color-blue-090": "S:02da9a14a4b18e4ef923c2e1ab154e383349a12a,",
-        "blue.base-color-blue-100": "S:90020041a29b53fa2596ce1d6c9314584629c257,",
-        "blue.base-color-blue-110": "S:d0c04d52b59ff18298c61be3ff60eef43cc98a9d,",
-        "blue.base-color-blue-120": "S:dcf0e73fdf43312663e79702787210440c144246,",
-        "blue.base-color-blue-130": "S:3a3779fae02a8c78deaa1a1b659662ce2e132502,",
-        "green.base-color-green-010": "S:21be6e4e8b10b4ca462670f0e7e039a932463842,",
-        "green.base-color-green-020": "S:971c3b0557934a03a3d00657b768e8de1ceb1a09,",
-        "green.base-color-green-030": "S:42200c7b07d1c59eae7626549ff18fb41cc184d4,",
-        "green.base-color-green-040": "S:ce5868e19817cba7e70af601fd38a29f3ee6d8ed,",
-        "green.base-color-green-050": "S:3fa011cc725c98948fe0b91978a344b57a4362f0,",
-        "green.base-color-green-060": "S:9558d982a98341b37b22f9219a3928b6e11819be,",
-        "green.base-color-green-070": "S:48f209bc6ed34a1434a555232d13d91dfea9fd28,",
-        "green.base-color-green-080": "S:3ccc6a94ed286ad237e19d4e11984ab987d9bc59,",
-        "green.base-color-green-090": "S:64d6ad4632c32c0b5927d2f8a05ef066b1442a6d,",
-        "green.base-color-green-100": "S:901ed1e29a5d0fd695b71b7d9b16181356b7c5f2,",
-        "green.base-color-green-110": "S:7c02e8cb52cccfbeaa1bd823747f5f46afb64469,",
-        "yellow.base-color-yellow-010": "S:8d662b2154562f483a23cbe0720cb14f76e6e7d0,",
-        "yellow.base-color-yellow-020": "S:29ccd46edbdf3e9937f89c76f20eafe4791ab59f,",
-        "yellow.base-color-yellow-030": "S:a82bcfe81ea1d05b48394e3a2d546ce8e3599830,",
-        "yellow.base-color-yellow-040": "S:3095e9ff184af97a95ec20c08f992eabe065b2ec,",
-        "yellow.base-color-yellow-050": "S:65fba8c74e0875b7231d6719739b6ec209efc4a7,",
-        "yellow.base-color-yellow-060": "S:0dbf6253df0b3d4aff3043df53180b8e67d32bc1,",
-        "yellow.base-color-yellow-070": "S:e677ae2f2169192a812e795b87cded013b4524c3,",
-        "yellow.base-color-yellow-080": "S:a76023ffd214c55929e1112cdfcec1caac0fbf69,",
-        "yellow.base-color-yellow-090": "S:aeffe37969c294c5fb191c6e0a77f499ee203e7a,",
-        "yellow.base-color-yellow-100": "S:d4cef1d09b09f244f3cad2758a0d3b058446f034,",
-        "yellow.base-color-yellow-110": "S:0d7447a3d763dba2ce52ccfd61dd2882d13f35dc,",
-        "orange.base-color-orange-010": "S:143f875871deeb9100f72172b3195a7f3145de93,",
-        "orange.base-color-orange-020": "S:bcd3ca547e5ff21b6bec0574aaabbe3cffd0eca4,",
-        "orange.base-color-orange-030": "S:91a02eeffb508364b51f64bb37631ade4d2e7038,",
-        "orange.base-color-orange-040": "S:7d5dfadeb909cab2087a7684597274c080c6666f,",
-        "orange.base-color-orange-050": "S:b7325d8fac855a563391cc3cac8896d096dfed08,",
-        "orange.base-color-orange-060": "S:302288ae05abff5999cb857b1d7531d3b246120b,",
-        "orange.base-color-orange-070": "S:4884ca745080780800193e8f8eb96ba1271f8d8a,",
-        "orange.base-color-orange-080": "S:b4c07b0602ff04e0c5674613c6379b34877c2fa7,",
-        "orange.base-color-orange-090": "S:4af3d88679db41cc9c3553a111df2b04230a0bf5,",
-        "orange.base-color-orange-100": "S:b0176b777df5efeab93a664e47d6175520e54348,",
-        "orange.base-color-orange-110": "S:3ac468ef91114bd6554f0364c10c785a55eb41f9,",
-        "red.base-color-red-010": "S:ee21b81d0cd907b21e27394a0ac8612697332b70,",
-        "red.base-color-red-020": "S:6ae946bf2e8d594daea4c9a7d45f21c64369b4fa,",
-        "red.base-color-red-030": "S:601db73a0e109cac4ed36be3ee75f41be265b0c6,",
-        "red.base-color-red-040": "S:f434253f15771ef6f4b54a579d0787eea7a11ab3,",
-        "red.base-color-red-050": "S:2e7a82e1edfb03991c0cf519a2b53643ee4bbebf,",
-        "red.base-color-red-060": "S:44548ce7c2dd446be157d06a962cab4837bd0790,",
-        "red.base-color-red-070": "S:8529c1f4c673165a35da4fe66c77cef5d6b035a3,",
-        "red.base-color-red-080": "S:4cfa2bd702edaa0f574002dbdf996c2b72aad208,",
-        "red.base-color-red-090": "S:fc4ac10565ee1b535a8164adcd5b07a4ec7c2035,",
-        "red.base-color-red-100": "S:9c2b3cc18c01df0b334b8b0c1522c0b50022a85c,",
-        "red.base-color-red-110": "S:59b1127113ddab9de16ab24ec57fe87239f376ca,",
-        "magenta.base-color-magenta-010": "S:510d49f9449595b47179ae16791a4b9d77da1226,",
-        "magenta.base-color-magenta-020": "S:91c3017cf1444d7ccaf4f9d335289ff4c8300551,",
-        "magenta.base-color-magenta-030": "S:62b39d073e9e7f5e35281130f877b5b922742e60,",
-        "magenta.base-color-magenta-040": "S:0ebe2ece9bbd1e21d073ce6b7f62c5dc00554aea,",
-        "magenta.base-color-magenta-050": "S:e2c94c9dcc2126dc86fe4f812f2027fbd6ea9617,",
-        "magenta.base-color-magenta-060": "S:f9d0c924741977cd406a3e8dfa8b6d9e0550fe32,",
-        "magenta.base-color-magenta-070": "S:4056262d3a870699b2bb456f44c65318e079c919,",
-        "magenta.base-color-magenta-080": "S:50e3f56240331fa9517b5e0ad2402ad8e0192b9d,",
-        "magenta.base-color-magenta-090": "S:b7ee0d5941dc0e36a6b72d8a5a3a9170c61508bf,",
-        "magenta.base-color-magenta-100": "S:dadd75340ab5954d0a6597bc76a3d98907ab40b7,",
-        "magenta.base-color-magenta-110": "S:a1219b6fc494a6afb5dc4449bca0cbe6941132c1,",
-        "grey.base-color-grey-010": "S:521ac3dd2149a0788781492b8cc2564c92ed8c49,",
-        "grey.base-color-grey-020": "S:3023232cd1acc39c96842f40715b76553b8f2a65,",
-        "grey.base-color-grey-030": "S:13388da5de128dcd244aef55e42ab1c0c2fdbd27,",
-        "grey.base-color-grey-040": "S:805733bc4213877e6aabbaa94ddc1f63d0837bfc,",
-        "grey.base-color-grey-050": "S:54c35fe5412b184d442fee6da616f93262928332,",
-        "grey.base-color-grey-060": "S:f394f96b982a460a5b4851afab59e1da500d757a,",
-        "grey.base-color-grey-070": "S:658856dd80b8e7795994e60c2de11a4be89e561c,",
-        "grey.base-color-grey-080": "S:8de7fb433fc6b20abf7ba483d8029ced46f94e2f,",
-        "grey.base-color-grey-090": "S:49ffb9c9476fca92567331928e609b01353c2cec,",
-        "grey.base-color-grey-100": "S:f29d9e9d9f36a9bbb576415895d50b8c5a84639f,",
-        "grey.base-color-grey-110": "S:287906d992fa6e7a77c6e925688d413a35e35ec7,",
-        "coolgrey.base-color-coolgrey-010": "S:93c91628e18ce3a9671a564a3c99717320f659bf,",
-        "coolgrey.base-color-coolgrey-020": "S:66e04e1e98929e20619a0c7beda0429798f5c032,",
-        "coolgrey.base-color-coolgrey-030": "S:e5e59db945e44811e75e345eb48431387b28b6ab,",
-        "coolgrey.base-color-coolgrey-040": "S:b5e5fb910fbb5c85a71d9544a3ec7eb93928cd82,",
-        "coolgrey.base-color-coolgrey-050": "S:5f51a0d40f35ce931867606d2759d9fbad92f70b,",
-        "coolgrey.base-color-coolgrey-060": "S:c43ae9f0675806b97fb264793624f10e3d197c7c,",
-        "coolgrey.base-color-coolgrey-070": "S:19407eb21906e596f2fb18eeb3c45b84291f5787,",
-        "coolgrey.base-color-coolgrey-080": "S:bf4bce23722108d0ecc4e66c820bac31a8984046,",
-        "coolgrey.base-color-coolgrey-090": "S:4d71bd307c143593751be5cf8e0364186d27f2d9,",
-        "coolgrey.base-color-coolgrey-100": "S:d2512a1f440cd611c659610cd91aa0947b03e364,",
-        "coolgrey.base-color-coolgrey-110": "S:7b8aafb0a66724b3ccccd856ea093a5c75e69e73,",
         "dds.header.h0": "S:625e974bbac5a8c9f72bb38a6aeba5c8f332a43e,",
         "dds.header.h1": "S:15312b518964bb912e12cc786d81fe64b0829ce6,",
         "dds.header.h2": "S:f2e7795fc83ed717845c2a0bba25b3f2fb627d71,",
@@ -1351,7 +1257,96 @@
         "button.color.background.secondary.focus": "S:a29fb36e4c2a4a51f19e544e9cfd35015ed2e9be,",
         "button.color.background.secondary.press": "S:f248197920684615667832b3a72e4c3608e4a3f4,",
         "button.color.background.secondary.disabled": "S:61c0d8af92c39a52caea7dcafdc9a82a595e8f47,",
-        "table.page-number.color.text.default": "S:6fdfa5fa6aebedcfa14824d5bccffc245e1ba3a2,"
+        "table.page-number.color.text.default": "S:6fdfa5fa6aebedcfa14824d5bccffc245e1ba3a2,",
+        "color.blue.100": "S:90020041a29b53fa2596ce1d6c9314584629c257,",
+        "color.blue.110": "S:d0c04d52b59ff18298c61be3ff60eef43cc98a9d,",
+        "color.blue.120": "S:dcf0e73fdf43312663e79702787210440c144246,",
+        "color.blue.130": "S:3a3779fae02a8c78deaa1a1b659662ce2e132502,",
+        "color.green.100": "S:901ed1e29a5d0fd695b71b7d9b16181356b7c5f2,",
+        "color.green.110": "S:7c02e8cb52cccfbeaa1bd823747f5f46afb64469,",
+        "color.yellow.100": "S:d4cef1d09b09f244f3cad2758a0d3b058446f034,",
+        "color.yellow.110": "S:0d7447a3d763dba2ce52ccfd61dd2882d13f35dc,",
+        "color.orange.100": "S:b0176b777df5efeab93a664e47d6175520e54348,",
+        "color.orange.110": "S:3ac468ef91114bd6554f0364c10c785a55eb41f9,",
+        "color.blue.10": "S:eaf64d1c8559dec8e43aa0c4e0e322eb2194170a,",
+        "color.blue.20": "S:2a66e7f5fb506a08fa4927b56b32a67d8030a8d5,",
+        "color.blue.30": "S:b410732e58b8a81e37927a5104717dc89fb65b7b,",
+        "color.blue.40": "S:cc9bb607c0cee3879d84a9bd8e70f7aa6511ba5e,",
+        "color.blue.50": "S:f170ca6b3a3cec02efacb8070b4925814725ea93,",
+        "color.blue.60": "S:d2ff43fa19554783a53dc7059d31c01cc9dc37a7,",
+        "color.blue.70": "S:35224d4c5111579e5842de10a5332e2aa4aec92f,",
+        "color.blue.80": "S:22211ab600093750ca838226e8bfbc5e42545914,",
+        "color.blue.90": "S:02da9a14a4b18e4ef923c2e1ab154e383349a12a,",
+        "color.green.10": "S:21be6e4e8b10b4ca462670f0e7e039a932463842,",
+        "color.green.20": "S:971c3b0557934a03a3d00657b768e8de1ceb1a09,",
+        "color.green.30": "S:42200c7b07d1c59eae7626549ff18fb41cc184d4,",
+        "color.green.40": "S:ce5868e19817cba7e70af601fd38a29f3ee6d8ed,",
+        "color.green.50": "S:3fa011cc725c98948fe0b91978a344b57a4362f0,",
+        "color.green.60": "S:9558d982a98341b37b22f9219a3928b6e11819be,",
+        "color.green.70": "S:48f209bc6ed34a1434a555232d13d91dfea9fd28,",
+        "color.green.80": "S:3ccc6a94ed286ad237e19d4e11984ab987d9bc59,",
+        "color.green.90": "S:64d6ad4632c32c0b5927d2f8a05ef066b1442a6d,",
+        "color.yellow.10": "S:8d662b2154562f483a23cbe0720cb14f76e6e7d0,",
+        "color.yellow.20": "S:29ccd46edbdf3e9937f89c76f20eafe4791ab59f,",
+        "color.yellow.30": "S:a82bcfe81ea1d05b48394e3a2d546ce8e3599830,",
+        "color.yellow.40": "S:3095e9ff184af97a95ec20c08f992eabe065b2ec,",
+        "color.yellow.50": "S:65fba8c74e0875b7231d6719739b6ec209efc4a7,",
+        "color.yellow.60": "S:0dbf6253df0b3d4aff3043df53180b8e67d32bc1,",
+        "color.yellow.70": "S:e677ae2f2169192a812e795b87cded013b4524c3,",
+        "color.yellow.80": "S:a76023ffd214c55929e1112cdfcec1caac0fbf69,",
+        "color.yellow.90": "S:aeffe37969c294c5fb191c6e0a77f499ee203e7a,",
+        "color.orange.10": "S:143f875871deeb9100f72172b3195a7f3145de93,",
+        "color.orange.20": "S:bcd3ca547e5ff21b6bec0574aaabbe3cffd0eca4,",
+        "color.orange.30": "S:91a02eeffb508364b51f64bb37631ade4d2e7038,",
+        "color.orange.40": "S:7d5dfadeb909cab2087a7684597274c080c6666f,",
+        "color.orange.50": "S:b7325d8fac855a563391cc3cac8896d096dfed08,",
+        "color.orange.60": "S:302288ae05abff5999cb857b1d7531d3b246120b,",
+        "color.orange.70": "S:4884ca745080780800193e8f8eb96ba1271f8d8a,",
+        "color.orange.80": "S:b4c07b0602ff04e0c5674613c6379b34877c2fa7,",
+        "color.orange.90": "S:4af3d88679db41cc9c3553a111df2b04230a0bf5,",
+        "color.red.10": "S:ee21b81d0cd907b21e27394a0ac8612697332b70,",
+        "color.red.20": "S:6ae946bf2e8d594daea4c9a7d45f21c64369b4fa,",
+        "color.red.30": "S:601db73a0e109cac4ed36be3ee75f41be265b0c6,",
+        "color.red.40": "S:f434253f15771ef6f4b54a579d0787eea7a11ab3,",
+        "color.red.50": "S:2e7a82e1edfb03991c0cf519a2b53643ee4bbebf,",
+        "color.red.60": "S:44548ce7c2dd446be157d06a962cab4837bd0790,",
+        "color.red.70": "S:8529c1f4c673165a35da4fe66c77cef5d6b035a3,",
+        "color.red.80": "S:4cfa2bd702edaa0f574002dbdf996c2b72aad208,",
+        "color.red.90": "S:fc4ac10565ee1b535a8164adcd5b07a4ec7c2035,",
+        "color.red.100": "S:9c2b3cc18c01df0b334b8b0c1522c0b50022a85c,",
+        "color.red.110": "S:59b1127113ddab9de16ab24ec57fe87239f376ca,",
+        "color.magenta.10": "S:510d49f9449595b47179ae16791a4b9d77da1226,",
+        "color.magenta.20": "S:91c3017cf1444d7ccaf4f9d335289ff4c8300551,",
+        "color.magenta.30": "S:62b39d073e9e7f5e35281130f877b5b922742e60,",
+        "color.magenta.40": "S:0ebe2ece9bbd1e21d073ce6b7f62c5dc00554aea,",
+        "color.magenta.50": "S:e2c94c9dcc2126dc86fe4f812f2027fbd6ea9617,",
+        "color.magenta.60": "S:f9d0c924741977cd406a3e8dfa8b6d9e0550fe32,",
+        "color.magenta.70": "S:4056262d3a870699b2bb456f44c65318e079c919,",
+        "color.magenta.80": "S:50e3f56240331fa9517b5e0ad2402ad8e0192b9d,",
+        "color.magenta.90": "S:b7ee0d5941dc0e36a6b72d8a5a3a9170c61508bf,",
+        "color.magenta.100": "S:dadd75340ab5954d0a6597bc76a3d98907ab40b7,",
+        "color.magenta.110": "S:a1219b6fc494a6afb5dc4449bca0cbe6941132c1,",
+        "color.grey.10": "S:521ac3dd2149a0788781492b8cc2564c92ed8c49,",
+        "color.grey.20": "S:3023232cd1acc39c96842f40715b76553b8f2a65,",
+        "color.grey.30": "S:13388da5de128dcd244aef55e42ab1c0c2fdbd27,",
+        "color.grey.40": "S:805733bc4213877e6aabbaa94ddc1f63d0837bfc,",
+        "color.grey.50": "S:54c35fe5412b184d442fee6da616f93262928332,",
+        "color.grey.60": "S:f394f96b982a460a5b4851afab59e1da500d757a,",
+        "color.grey.70": "S:658856dd80b8e7795994e60c2de11a4be89e561c,",
+        "color.grey.80": "S:8de7fb433fc6b20abf7ba483d8029ced46f94e2f,",
+        "color.grey.90": "S:49ffb9c9476fca92567331928e609b01353c2cec,",
+        "color.grey.100": "S:f29d9e9d9f36a9bbb576415895d50b8c5a84639f,",
+        "color.coolgrey.10": "S:93c91628e18ce3a9671a564a3c99717320f659bf,",
+        "color.coolgrey.20": "S:66e04e1e98929e20619a0c7beda0429798f5c032,",
+        "color.coolgrey.30": "S:e5e59db945e44811e75e345eb48431387b28b6ab,",
+        "color.coolgrey.40": "S:b5e5fb910fbb5c85a71d9544a3ec7eb93928cd82,",
+        "color.coolgrey.50": "S:5f51a0d40f35ce931867606d2759d9fbad92f70b,",
+        "color.coolgrey.60": "S:c43ae9f0675806b97fb264793624f10e3d197c7c,",
+        "color.coolgrey.70": "S:19407eb21906e596f2fb18eeb3c45b84291f5787,",
+        "color.coolgrey.80": "S:bf4bce23722108d0ecc4e66c820bac31a8984046,",
+        "color.coolgrey.90": "S:4d71bd307c143593751be5cf8e0364186d27f2d9,",
+        "color.coolgrey.100": "S:d2512a1f440cd611c659610cd91aa0947b03e364,",
+        "color.coolgrey.110": "S:7b8aafb0a66724b3ccccd856ea093a5c75e69e73,"
       },
       "selectedTokenSets": {
         "primitives": "enabled",
@@ -1360,96 +1355,6 @@
       "$figmaCollectionId": "VariableCollectionId:7977:17122",
       "$figmaModeId": "7977:0",
       "$figmaVariableReferences": {
-        "blue.base-color-blue-010": "1c322cc6ed13ec7c04ec61c4df670cff4845e54c",
-        "blue.base-color-blue-020": "629aa6d496afebfe59f1c275f7916126124d8a63",
-        "blue.base-color-blue-030": "e40dde7420d8c8f296b91a47e651407a410568f3",
-        "blue.base-color-blue-040": "fdc60cad92bc58a91b439bcab82df1badce427d1",
-        "blue.base-color-blue-050": "a802e9a9e2363a38d30b98f544542e550cc73c5a",
-        "blue.base-color-blue-060": "9338b943075cc0d780ad67521b32ac6cd9409bfa",
-        "blue.base-color-blue-070": "87a6fab7b741dfba1c72f5ea5b13399376b7a84d",
-        "blue.base-color-blue-080": "1a3623fa107fb372bd9a30bc271ed3a54fbedf3a",
-        "blue.base-color-blue-090": "0717607391b8309612577058d6592131c46f0fc9",
-        "blue.base-color-blue-100": "ec0f58fab3d612151712976dc12ba5d9e7b56382",
-        "blue.base-color-blue-110": "61f22e4b909805cc2c88ec4cd9f75e4b8a2da173",
-        "blue.base-color-blue-120": "2e05a00164101b938fa64e76ef73a6672b0c1cc3",
-        "green.base-color-green-010": "a04a3402ebc95ce78189c637881fa82472b5bbdc",
-        "blue.base-color-blue-130": "a18283dd5e32ec1505b6d283acc52f8315205e3e",
-        "green.base-color-green-020": "4b415359ec088c7ee43ee4ed463f80130eab3a8a",
-        "green.base-color-green-030": "0de6a438b90c4a467a1138b03549541bfa50e6af",
-        "green.base-color-green-040": "a9ab2385b14ab666094ad2039afbffa0e9beccc4",
-        "green.base-color-green-050": "69cc1c06c34f83f8dc61ee73ebfa214dcb448080",
-        "green.base-color-green-060": "998b43421d88b79873aa8758d9f06d81f31cd309",
-        "green.base-color-green-070": "7cfe29a643d41c7efd14570a0dd9afc5f4eb23bc",
-        "green.base-color-green-080": "4e3afa0172cbdaa5820ec2bb43e1e975adf48e69",
-        "green.base-color-green-090": "9376081e31f94981e88e09663ab5e23ffc5f2889",
-        "green.base-color-green-100": "bf769dbc68e9291f878786452f827e253c3fe325",
-        "green.base-color-green-110": "9065b935017668c372ddbd66af41e381f85b7f18",
-        "yellow.base-color-yellow-010": "227b76e337a9a3ef056767643b9b2c13f1f8944b",
-        "yellow.base-color-yellow-020": "3f98520940274c393061fcbbca9b26a789f7caa0",
-        "yellow.base-color-yellow-030": "3ea940b0234c63b52080ddc718bc32926a874689",
-        "yellow.base-color-yellow-040": "ea66eedd208a928e4cfa97bcccbc3a7cda5064fb",
-        "yellow.base-color-yellow-050": "02dbcee0483482b2ecf9df4b96a037c7b9b46869",
-        "yellow.base-color-yellow-060": "e488af452717f6496012a02096a6e8181a0dacfb",
-        "yellow.base-color-yellow-070": "d2148015f09c4b8aa75a66a0fec0ee0299a2a948",
-        "yellow.base-color-yellow-080": "89a755659b021ba726f4cd081be662695ee94f8e",
-        "yellow.base-color-yellow-090": "f8b2d666c3ed5802c299e36658c1bb250fe343b6",
-        "yellow.base-color-yellow-100": "d3de7b3343ed99b7a771d3c2d87bcc213fd903b5",
-        "yellow.base-color-yellow-110": "87c57b36b0c97f5bddd8846674468d4c81612e4e",
-        "orange.base-color-orange-010": "aab5e7de16612cfd5e371525abb0b4f28044529c",
-        "orange.base-color-orange-020": "95ed6c38c6b88d71863ffc2bf14723a114f29c04",
-        "orange.base-color-orange-030": "64675ea417632cec3d3989efc010145844711b45",
-        "orange.base-color-orange-040": "24e8447ee3f1b7ed1082ef05548329c743fdaeac",
-        "orange.base-color-orange-050": "5a307639b4c9b8166a9b11e6256148ec061ee63f",
-        "orange.base-color-orange-060": "0152999d9252f5cdf9f50fa3b8fb559e77b0663d",
-        "orange.base-color-orange-070": "a5236a6581987ed76184763589d8ed523d556ae5",
-        "orange.base-color-orange-080": "5fa4bae7b7234efd6a74b1c69a05ed40bce6ae76",
-        "orange.base-color-orange-090": "dbbfada8e88eb97776f2722776e3e5afab4a7e98",
-        "orange.base-color-orange-100": "4c42eb76af299e41487cd6f50978b9ae2d541d5b",
-        "orange.base-color-orange-110": "fd55a25f1e81d57b4d7f2c014b15d490cce83dee",
-        "red.base-color-red-010": "3c9a954f32b936874adf51183c582be78da83423",
-        "red.base-color-red-020": "2a3781fe33f03a961e1e101bbc6cb2ca7b038fbb",
-        "red.base-color-red-030": "87acb8290b50182b193dd95d88ea72a88cf65f10",
-        "red.base-color-red-040": "a861516fdb6663c174797cf45f2287b42453a03d",
-        "red.base-color-red-050": "59818326ce48ed730a15623506e2375538ab8757",
-        "red.base-color-red-060": "9bbc9b62f510d239039aacda664c0ddb4b144438",
-        "red.base-color-red-070": "2cb87e675f3126d160827e52cabf444ad0642cfb",
-        "red.base-color-red-080": "eacb8b71ed99e4b62e78b053ea429517518e5d9c",
-        "red.base-color-red-090": "6dc122d7409996d3c81226dd1cec0b0b9713bfa3",
-        "red.base-color-red-100": "ed43571da25ae8e1551fe7123a55cbd5f671eae1",
-        "red.base-color-red-110": "f6ca7d5cf20ece1116175071b5476d85f1191f41",
-        "magenta.base-color-magenta-010": "73f49926467ad3727df99135b9fd79c57cc72407",
-        "magenta.base-color-magenta-020": "390411f595a7086c92388690a7c5919db3fecab6",
-        "magenta.base-color-magenta-030": "98ccd275ee63553f78e25f5f45f1e8898824a4b7",
-        "magenta.base-color-magenta-040": "d57d1ab17ff6d7d5e909c8f72ea60a05ececfaea",
-        "magenta.base-color-magenta-050": "221356a406e2613bb1dc7df35d3fe9e802c9414a",
-        "magenta.base-color-magenta-060": "6f9966719610428051d05eed4ee3aed10326f28d",
-        "magenta.base-color-magenta-070": "79af03af728155dbc4a53e20b1860e9679e09f87",
-        "magenta.base-color-magenta-080": "e6d3c449be7927928396ce19d026da6256637f3f",
-        "magenta.base-color-magenta-090": "6170be8b1272558145185b5a7022297a312ed329",
-        "magenta.base-color-magenta-100": "1fb4ba71701f95bdcfc8ed2a7f75d1681aad9c99",
-        "grey.base-color-grey-010": "68de49ee0298080958d989fa64ef9fab6d57adb5",
-        "magenta.base-color-magenta-110": "d90c22a0ae18bc8e9d5fa4a68bb0ac2a4dd9c3de",
-        "grey.base-color-grey-020": "47f08358d4b1f5a01d349134d17026fdcf766dbe",
-        "grey.base-color-grey-030": "154f493b8f73d50558bbb4464f88845d7b7c0fb8",
-        "grey.base-color-grey-040": "9385966bc863f747b40fda8e8e5afef6c8cd61e1",
-        "grey.base-color-grey-050": "71ffe0f81c696d147ef8ce591915e1005c534111",
-        "grey.base-color-grey-060": "3b5c78e0e3da86a86931b6775848c8e566f98d22",
-        "grey.base-color-grey-070": "8f64e395a9d12d3fefc49ed9272f3c459a99ad11",
-        "grey.base-color-grey-080": "1464cf49c6a765f8e0eafa45467e5ca4901f5c19",
-        "grey.base-color-grey-090": "ffbda8fbdf0abfa5605963907630a7c49887e75c",
-        "grey.base-color-grey-100": "08e9671a7ec91efbfdce845ca8ef7a32904b7819",
-        "grey.base-color-grey-110": "a07add1c5910e5ed79062ba668bb4ba9be16437c",
-        "coolgrey.base-color-coolgrey-010": "2f05b4df265dee75ae3c3030330d92b46e39196f",
-        "coolgrey.base-color-coolgrey-020": "0f5575a8656f09a4dc659b87140e272f0cd41f2e",
-        "coolgrey.base-color-coolgrey-030": "09fe363ce062f8bd658b4bd23fa763763cb990da",
-        "coolgrey.base-color-coolgrey-040": "42e1bdfc1800dc2bfd4e91cdb5edea5a8b10bd67",
-        "coolgrey.base-color-coolgrey-050": "91c296a89bbb796dd9f633b2b9f875c7374a8d7b",
-        "coolgrey.base-color-coolgrey-060": "81b2c2fd3e451f481a08af1d82017d5f16d0ab08",
-        "coolgrey.base-color-coolgrey-070": "ef8a4503761fa607192f48ca8b310e085ba7e4bb",
-        "coolgrey.base-color-coolgrey-080": "01ed6f20a23065dfac5cc698c252bb4d27a301ad",
-        "coolgrey.base-color-coolgrey-090": "eee7fafdc88456d57b425f128696badca52c1397",
-        "coolgrey.base-color-coolgrey-100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
-        "coolgrey.base-color-coolgrey-110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc",
         "color.brand.primary": "598718291ea681aa007f09bbe536305c99daa35e",
         "color.brand.secondary": "91a3beac15eb1fccc739e0971b2540650235b9a9",
         "color.brand.darkgrey": "5d3a4eb80b11918ddca9a28bf8c5ac88847ebf07",
@@ -1466,7 +1371,96 @@
         "button.color.background.secondary.hover": "3ed051dc19892d1f2af52b940f8b6aa41d6c7024",
         "button.color.background.secondary.focus": "4b8d266392c3bec7b99818d4cf9a91b4761d9157",
         "button.color.background.secondary.press": "737d62f6ca0f0b4af5f1af3ea6387053ea961fd3",
-        "button.color.background.secondary.disabled": "493323ba19e00bc1a4240831d4fa83d1c6fa5028"
+        "button.color.background.secondary.disabled": "493323ba19e00bc1a4240831d4fa83d1c6fa5028",
+        "color.blue.100": "ec0f58fab3d612151712976dc12ba5d9e7b56382",
+        "color.blue.110": "61f22e4b909805cc2c88ec4cd9f75e4b8a2da173",
+        "color.blue.120": "2e05a00164101b938fa64e76ef73a6672b0c1cc3",
+        "color.blue.130": "a18283dd5e32ec1505b6d283acc52f8315205e3e",
+        "color.green.100": "bf769dbc68e9291f878786452f827e253c3fe325",
+        "color.green.110": "9065b935017668c372ddbd66af41e381f85b7f18",
+        "color.yellow.100": "d3de7b3343ed99b7a771d3c2d87bcc213fd903b5",
+        "color.yellow.110": "87c57b36b0c97f5bddd8846674468d4c81612e4e",
+        "color.orange.100": "4c42eb76af299e41487cd6f50978b9ae2d541d5b",
+        "color.orange.110": "fd55a25f1e81d57b4d7f2c014b15d490cce83dee",
+        "color.blue.10": "1c322cc6ed13ec7c04ec61c4df670cff4845e54c",
+        "color.blue.20": "629aa6d496afebfe59f1c275f7916126124d8a63",
+        "color.blue.30": "e40dde7420d8c8f296b91a47e651407a410568f3",
+        "color.blue.40": "fdc60cad92bc58a91b439bcab82df1badce427d1",
+        "color.blue.50": "a802e9a9e2363a38d30b98f544542e550cc73c5a",
+        "color.blue.60": "9338b943075cc0d780ad67521b32ac6cd9409bfa",
+        "color.blue.70": "87a6fab7b741dfba1c72f5ea5b13399376b7a84d",
+        "color.blue.80": "1a3623fa107fb372bd9a30bc271ed3a54fbedf3a",
+        "color.blue.90": "0717607391b8309612577058d6592131c46f0fc9",
+        "color.green.10": "a04a3402ebc95ce78189c637881fa82472b5bbdc",
+        "color.green.20": "4b415359ec088c7ee43ee4ed463f80130eab3a8a",
+        "color.green.30": "0de6a438b90c4a467a1138b03549541bfa50e6af",
+        "color.green.40": "a9ab2385b14ab666094ad2039afbffa0e9beccc4",
+        "color.green.50": "69cc1c06c34f83f8dc61ee73ebfa214dcb448080",
+        "color.green.60": "998b43421d88b79873aa8758d9f06d81f31cd309",
+        "color.green.70": "7cfe29a643d41c7efd14570a0dd9afc5f4eb23bc",
+        "color.green.80": "4e3afa0172cbdaa5820ec2bb43e1e975adf48e69",
+        "color.green.90": "9376081e31f94981e88e09663ab5e23ffc5f2889",
+        "color.yellow.10": "227b76e337a9a3ef056767643b9b2c13f1f8944b",
+        "color.yellow.20": "3f98520940274c393061fcbbca9b26a789f7caa0",
+        "color.yellow.30": "3ea940b0234c63b52080ddc718bc32926a874689",
+        "color.yellow.40": "ea66eedd208a928e4cfa97bcccbc3a7cda5064fb",
+        "color.yellow.50": "02dbcee0483482b2ecf9df4b96a037c7b9b46869",
+        "color.yellow.60": "e488af452717f6496012a02096a6e8181a0dacfb",
+        "color.yellow.70": "d2148015f09c4b8aa75a66a0fec0ee0299a2a948",
+        "color.yellow.80": "89a755659b021ba726f4cd081be662695ee94f8e",
+        "color.yellow.90": "f8b2d666c3ed5802c299e36658c1bb250fe343b6",
+        "color.orange.10": "aab5e7de16612cfd5e371525abb0b4f28044529c",
+        "color.orange.20": "95ed6c38c6b88d71863ffc2bf14723a114f29c04",
+        "color.orange.30": "64675ea417632cec3d3989efc010145844711b45",
+        "color.orange.40": "24e8447ee3f1b7ed1082ef05548329c743fdaeac",
+        "color.orange.50": "5a307639b4c9b8166a9b11e6256148ec061ee63f",
+        "color.orange.60": "0152999d9252f5cdf9f50fa3b8fb559e77b0663d",
+        "color.orange.70": "a5236a6581987ed76184763589d8ed523d556ae5",
+        "color.orange.80": "5fa4bae7b7234efd6a74b1c69a05ed40bce6ae76",
+        "color.orange.90": "dbbfada8e88eb97776f2722776e3e5afab4a7e98",
+        "color.red.10": "3c9a954f32b936874adf51183c582be78da83423",
+        "color.red.20": "2a3781fe33f03a961e1e101bbc6cb2ca7b038fbb",
+        "color.red.30": "87acb8290b50182b193dd95d88ea72a88cf65f10",
+        "color.red.40": "a861516fdb6663c174797cf45f2287b42453a03d",
+        "color.red.50": "59818326ce48ed730a15623506e2375538ab8757",
+        "color.red.60": "9bbc9b62f510d239039aacda664c0ddb4b144438",
+        "color.red.70": "2cb87e675f3126d160827e52cabf444ad0642cfb",
+        "color.red.80": "eacb8b71ed99e4b62e78b053ea429517518e5d9c",
+        "color.red.90": "6dc122d7409996d3c81226dd1cec0b0b9713bfa3",
+        "color.red.100": "ed43571da25ae8e1551fe7123a55cbd5f671eae1",
+        "color.red.110": "f6ca7d5cf20ece1116175071b5476d85f1191f41",
+        "color.magenta.10": "73f49926467ad3727df99135b9fd79c57cc72407",
+        "color.magenta.20": "390411f595a7086c92388690a7c5919db3fecab6",
+        "color.magenta.30": "98ccd275ee63553f78e25f5f45f1e8898824a4b7",
+        "color.magenta.40": "d57d1ab17ff6d7d5e909c8f72ea60a05ececfaea",
+        "color.magenta.50": "221356a406e2613bb1dc7df35d3fe9e802c9414a",
+        "color.magenta.60": "6f9966719610428051d05eed4ee3aed10326f28d",
+        "color.magenta.70": "79af03af728155dbc4a53e20b1860e9679e09f87",
+        "color.magenta.80": "e6d3c449be7927928396ce19d026da6256637f3f",
+        "color.magenta.90": "6170be8b1272558145185b5a7022297a312ed329",
+        "color.magenta.100": "1fb4ba71701f95bdcfc8ed2a7f75d1681aad9c99",
+        "color.magenta.110": "d90c22a0ae18bc8e9d5fa4a68bb0ac2a4dd9c3de",
+        "color.grey.10": "68de49ee0298080958d989fa64ef9fab6d57adb5",
+        "color.grey.20": "47f08358d4b1f5a01d349134d17026fdcf766dbe",
+        "color.grey.30": "154f493b8f73d50558bbb4464f88845d7b7c0fb8",
+        "color.grey.40": "9385966bc863f747b40fda8e8e5afef6c8cd61e1",
+        "color.grey.50": "71ffe0f81c696d147ef8ce591915e1005c534111",
+        "color.grey.60": "3b5c78e0e3da86a86931b6775848c8e566f98d22",
+        "color.grey.70": "8f64e395a9d12d3fefc49ed9272f3c459a99ad11",
+        "color.grey.80": "1464cf49c6a765f8e0eafa45467e5ca4901f5c19",
+        "color.grey.90": "ffbda8fbdf0abfa5605963907630a7c49887e75c",
+        "color.grey.100": "08e9671a7ec91efbfdce845ca8ef7a32904b7819",
+        "color.coolgrey.10": "2f05b4df265dee75ae3c3030330d92b46e39196f",
+        "color.coolgrey.20": "0f5575a8656f09a4dc659b87140e272f0cd41f2e",
+        "color.coolgrey.30": "09fe363ce062f8bd658b4bd23fa763763cb990da",
+        "color.coolgrey.40": "42e1bdfc1800dc2bfd4e91cdb5edea5a8b10bd67",
+        "color.coolgrey.50": "91c296a89bbb796dd9f633b2b9f875c7374a8d7b",
+        "color.coolgrey.60": "81b2c2fd3e451f481a08af1d82017d5f16d0ab08",
+        "color.coolgrey.70": "ef8a4503761fa607192f48ca8b310e085ba7e4bb",
+        "color.coolgrey.80": "01ed6f20a23065dfac5cc698c252bb4d27a301ad",
+        "color.coolgrey.90": "eee7fafdc88456d57b425f128696badca52c1397",
+        "color.coolgrey.100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
+        "color.coolgrey.110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc"
       }
     },
     {
