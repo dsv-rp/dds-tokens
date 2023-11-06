@@ -572,29 +572,29 @@
           "description": "Primary secondary brand blue"
         },
         "mediumgrey": {
-          "value": "#8c8c8c",
+          "value": "{color.grey.70}",
           "type": "color",
           "description": "Medium grey is a core DDS color"
         },
         "darkgrey": {
-          "value": "#4c4c4c",
+          "value": "{color.grey.90}",
           "type": "color",
           "description": "Dark grey is a core DDS color"
         }
       },
       "feedback": {
         "positive": {
-          "value": "#13ce66",
+          "value": "{color.green.60}",
           "type": "color",
           "description": "System status is positive"
         },
         "warning": {
-          "value": "#ffcc3d",
+          "value": "{color.yellow.50}",
           "type": "color",
           "description": "System status has a warning"
         },
         "negative": {
-          "value": "#ff4949",
+          "value": "{color.red.60}",
           "type": "color",
           "description": "System status is negative"
         }
@@ -621,7 +621,7 @@
               "description": "Color used if a user hovers over a button (Desktop only)"
             },
             "press": {
-              "value": "#007db9",
+              "value": "{color.blue.70}",
               "type": "color",
               "description": "Color used when a primary button is pressed"
             },
@@ -631,7 +631,7 @@
               "description": "Color used when a secondary button is in focus"
             },
             "disabled": {
-              "value": "#d5d5d5",
+              "value": "{color.grey.30}",
               "type": "color",
               "description": "Color used if a primary button is disabled"
             }
@@ -654,7 +654,7 @@
               "type": "color"
             },
             "disabled": {
-              "value": "#F2F2F2",
+              "value": "{color.grey.10}",
               "type": "color"
             }
           }
@@ -693,7 +693,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{color.brand.darkgrey}",
+          "value": "{color.grey.90}",
           "type": "color"
         },
         "border": {
@@ -722,7 +722,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{color.brand.darkgrey}",
+          "value": "{color.grey.90}",
           "type": "color"
         }
       },
