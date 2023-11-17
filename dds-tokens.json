@@ -383,16 +383,8 @@
       }
     },
     "font-size": {
-      "10": {
-        "value": "10px",
-        "type": "fontSizes"
-      },
       "12": {
         "value": "12px",
-        "type": "fontSizes"
-      },
-      "13": {
-        "value": "13px",
         "type": "fontSizes"
       },
       "14": {
@@ -423,8 +415,16 @@
         "value": "32px",
         "type": "fontSizes"
       },
-      "42": {
-        "value": "42px",
+      "36": {
+        "value": "36px",
+        "type": "fontSizes"
+      },
+      "40": {
+        "value": "40px",
+        "type": "fontSizes"
+      },
+      "48": {
+        "value": "48px",
         "type": "fontSizes"
       }
     },
@@ -832,48 +832,48 @@
       }
     },
     "font-size": {
-      "2XS": {
-        "value": "{font-size.10}",
-        "type": "fontSizes"
-      },
       "XS": {
         "value": "{font-size.12}",
         "type": "fontSizes"
       },
       "S": {
-        "value": "{font-size.13}",
-        "type": "fontSizes"
-      },
-      "M": {
         "value": "{font-size.14}",
         "type": "fontSizes"
       },
-      "L": {
+      "M": {
         "value": "{font-size.16}",
         "type": "fontSizes"
       },
-      "XL": {
+      "L": {
         "value": "{font-size.18}",
         "type": "fontSizes"
       },
-      "2XL": {
+      "XL": {
         "value": "{font-size.20}",
         "type": "fontSizes"
       },
-      "3XL": {
+      "2XL": {
         "value": "{font-size.24}",
         "type": "fontSizes"
       },
-      "4XL": {
+      "3XL": {
         "value": "{font-size.28}",
         "type": "fontSizes"
       },
-      "5XL": {
+      "4XL": {
         "value": "{font-size.32}",
         "type": "fontSizes"
       },
+      "5XL": {
+        "value": "{font-size.36}",
+        "type": "fontSizes"
+      },
       "6XL": {
-        "value": "{font-size.42}",
+        "value": "{font-size.40}",
+        "type": "fontSizes"
+      },
+      "7XL": {
+        "value": "{font-size.48}",
         "type": "fontSizes"
       }
     },
@@ -890,16 +890,6 @@
       }
     },
     "body": {
-      "2XS": {
-        "value": {
-          "fontFamily": "{font-family.roboto}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.L}",
-          "fontSize": "{font-size.2XS}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
       "XS": {
         "value": {
           "fontFamily": "{font-family.roboto}",
@@ -996,22 +986,22 @@
           "fontWeight": "{font-weight.regular}",
           "lineHeight": "{line-height.L}",
           "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.roboto}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.L}",
+          "fontSize": "{font-size.7XL}"
         },
         "type": "typography",
         "description": "Body is primarily used for components and for blocks of text."
       }
     },
     "header": {
-      "2XS": {
-        "value": {
-          "fontFamily": "{font-family.roboto}",
-          "fontWeight": "{font-weight.bold}",
-          "lineHeight": "{line-height.M}",
-          "fontSize": "{font-size.2XS}"
-        },
-        "type": "typography",
-        "description": "Header is used to create various levels of typographic hierarchies."
-      },
       "XS": {
         "value": {
           "fontFamily": "{font-family.roboto}",
@@ -1108,6 +1098,16 @@
           "fontWeight": "{font-weight.bold}",
           "lineHeight": "{line-height.M}",
           "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.roboto}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.M}",
+          "fontSize": "{font-size.7XL}"
         },
         "type": "typography",
         "description": "Header is used to create various levels of typographic hierarchies."
