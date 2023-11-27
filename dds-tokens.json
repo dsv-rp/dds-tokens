@@ -1114,20 +1114,16 @@
       }
     },
     "space": {
-      "5XS": {
+      "4XS": {
         "value": "{space.0}",
         "type": "spacing"
       },
-      "4XS": {
+      "3XS": {
         "value": "{space.2}",
         "type": "spacing"
       },
-      "3XS": {
-        "value": "{space.4}",
-        "type": "spacing"
-      },
       "2XS": {
-        "value": "{space.8}",
+        "value": "{space.4}",
         "type": "spacing"
       },
       "XS": {
