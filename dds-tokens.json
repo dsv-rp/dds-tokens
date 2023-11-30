@@ -674,6 +674,14 @@
               "type": "color"
             }
           }
+        },
+        "text": {
+          "primary": {
+            "active": {
+              "value": "{color.white}",
+              "type": "color"
+            }
+          }
         }
       },
       "border": {
