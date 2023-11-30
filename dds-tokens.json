@@ -681,6 +681,12 @@
               "value": "{color.white}",
               "type": "color"
             }
+          },
+          "secondary": {
+            "active": {
+              "value": "{color.blue.60}",
+              "type": "color"
+            }
           }
         }
       },
@@ -1249,6 +1255,24 @@
       "L": {
         "value": "{border-width.4}",
         "type": "borderWidth"
+      }
+    },
+    "modal": {
+      "header": {
+        "color": {
+          "text": {
+            "value": "{color.grey.100}",
+            "type": "color"
+          }
+        }
+      },
+      "body": {
+        "color": {
+          "text": {
+            "value": "{color.grey.100}",
+            "type": "color"
+          }
+        }
       }
     }
   },
