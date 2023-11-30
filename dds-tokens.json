@@ -863,6 +863,18 @@
           "value": "{color.white}",
           "type": "color"
         }
+      },
+      "header": {
+        "color": {
+          "value": "{color.grey.100}",
+          "type": "color"
+        }
+      },
+      "body": {
+        "color": {
+          "value": "{color.grey.100}",
+          "type": "color"
+        }
       }
     },
     "font-size": {
@@ -1255,24 +1267,6 @@
       "L": {
         "value": "{border-width.4}",
         "type": "borderWidth"
-      }
-    },
-    "modal": {
-      "header": {
-        "color": {
-          "text": {
-            "value": "{color.grey.100}",
-            "type": "color"
-          }
-        }
-      },
-      "body": {
-        "color": {
-          "text": {
-            "value": "{color.grey.100}",
-            "type": "color"
-          }
-        }
       }
     }
   },
