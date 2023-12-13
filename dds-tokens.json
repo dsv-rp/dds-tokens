@@ -687,6 +687,12 @@
               "value": "{color.blue.60}",
               "type": "color"
             }
+          },
+          "sign-in": {
+            "active": {
+              "value": "{color.grey.80}",
+              "type": "color"
+            }
           }
         }
       },
@@ -697,6 +703,16 @@
               "color": "{button.color.border.primary.active}",
               "width": "{border-width.S}",
               "style": "Solid"
+            },
+            "type": "border"
+          }
+        },
+        "sign-in": {
+          "active": {
+            "value": {
+              "color": "{color.grey.80}",
+              "width": "{border-width.1}",
+              "style": "Inside"
             },
             "type": "border"
           }
@@ -711,19 +727,23 @@
       }
     },
     "checkbox": {
+      "border": {
+        "unselected": {
+          "value": {
+            "color": "{color.grey.50}",
+            "width": "2",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      },
       "color": {
-        "border": {
-          "unselected": {
-            "value": {
-              "color": "{color.grey.50}",
-              "width": "2",
-              "style": "solid"
-            },
-            "type": "border"
-          }
-        },
         "background": {
           "value": "{color.blue.60}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{color.white}",
           "type": "color"
         }
       }
@@ -737,13 +757,6 @@
         "text": {
           "value": "{color.grey.90}",
           "type": "color"
-        },
-        "border": {
-          "value": {
-            "color": "{color.brand.mediumgrey}",
-            "width": "1"
-          },
-          "type": "border"
         }
       }
     },
@@ -837,23 +850,35 @@
         }
       }
     },
-    "input-field": {
+    "form": {
       "color": {
         "background": {
           "value": "{color.white}",
           "type": "color"
         },
         "text": {
-          "value": "{color.grey.100}",
-          "type": "color"
+          "default": {
+            "value": "{color.grey.100}",
+            "type": "color"
+          },
+          "placeholder": {
+            "value": "{color.grey.70}",
+            "type": "color"
+          },
+          "positive": {
+            "value": "{color.feedback.positive}",
+            "type": "color"
+          }
         }
-      }
-    },
-    "input-field-label": {
-      "color": {
-        "text": {
-          "value": "{color.grey.100}",
-          "type": "color"
+      },
+      "border": {
+        "active": {
+          "value": {
+            "color": "{color.grey.70}",
+            "width": "{border-width.1}",
+            "style": "Solid"
+          },
+          "type": "border"
         }
       }
     },
