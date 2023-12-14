@@ -608,8 +608,16 @@
         }
       },
       "text": {
-        "primary": {
+        "default": {
           "value": "{color.grey.100}",
+          "type": "color"
+        },
+        "primary": {
+          "value": "{color.blue.60}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.blue.40}",
           "type": "color"
         }
       }
@@ -868,6 +876,10 @@
           "positive": {
             "value": "{color.feedback.positive}",
             "type": "color"
+          },
+          "negative": {
+            "value": "{color.feedback.negative}",
+            "type": "color"
           }
         }
       },
@@ -877,6 +889,14 @@
             "color": "{color.grey.70}",
             "width": "{border-width.1}",
             "style": "Solid"
+          },
+          "type": "border"
+        },
+        "negative": {
+          "value": {
+            "color": "{color.feedback.negative}",
+            "width": "{border-width.1}",
+            "style": "solid"
           },
           "type": "border"
         }
@@ -1307,7 +1327,6 @@
         "color.feedback.positive": "S:761adc45dee4e6ef1670d6a6e4af77614b20a78d,",
         "color.feedback.warning": "S:622f44201c4e373409c7c313b0b105c979693997,",
         "color.feedback.negative": "S:348943a41282ebd074eeb068af9a07174b599014,",
-        "color.text.primary": "S:d517800bb99eb6e6eeee2ff217b2d2ae63e01dcb,",
         "checkbox.color.background": "S:b1c315b7b5086db36522f7353ce8fe2cc11c2c25,",
         "dropdown.color.background": "S:faa1644e41695a40ad53e0c3082e4c4635199c7c,",
         "dropdown.color.text": "S:6c4a0eb8ad99fedb18ba2cd0e7c3409fb7d1a00f,",
@@ -1433,7 +1452,8 @@
         "color.coolgrey.80": "S:bf4bce23722108d0ecc4e66c820bac31a8984046,",
         "color.coolgrey.90": "S:4d71bd307c143593751be5cf8e0364186d27f2d9,",
         "color.coolgrey.100": "S:d2512a1f440cd611c659610cd91aa0947b03e364,",
-        "color.coolgrey.110": "S:7b8aafb0a66724b3ccccd856ea093a5c75e69e73,"
+        "color.coolgrey.110": "S:7b8aafb0a66724b3ccccd856ea093a5c75e69e73,",
+        "color.text.default": "S:d517800bb99eb6e6eeee2ff217b2d2ae63e01dcb,"
       },
       "selectedTokenSets": {
         "primitives": "enabled",
