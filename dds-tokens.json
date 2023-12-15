@@ -790,25 +790,21 @@
         }
       },
       "header": {
-        "color": {
-          "border": {
-            "value": {
-              "color": "{color.black}",
-              "width": "1"
-            },
-            "type": "border"
-          }
+        "border": {
+          "value": {
+            "color": "{color.black}",
+            "width": "1"
+          },
+          "type": "border"
         }
       },
       "cell": {
-        "color": {
-          "border": {
-            "value": {
-              "color": "{color.grey.20}",
-              "width": "1"
-            },
-            "type": "border"
-          }
+        "border": {
+          "value": {
+            "color": "{color.grey.20}",
+            "width": "1"
+          },
+          "type": "border"
         }
       },
       "page-number": {
