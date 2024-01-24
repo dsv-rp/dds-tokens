@@ -1498,8 +1498,7 @@
       },
       "selectedTokenSets": {
         "reference": "enabled",
-        "system": "enabled",
-        "component": "disabled"
+        "system": "enabled"
       },
       "$figmaCollectionId": "VariableCollectionId:7977:17122",
       "$figmaModeId": "7977:0",
@@ -1618,8 +1617,7 @@
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
         "reference": "enabled",
-        "system": "enabled",
-        "component": "disabled"
+        "system": "enabled"
       }
     }
   ],
