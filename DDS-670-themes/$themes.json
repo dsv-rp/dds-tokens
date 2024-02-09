@@ -1,7 +1,7 @@
 [
   {
     "id": "238ade74d474a41f649882b816f0f5b7d3947fbb",
-    "name": "Daikin",
+    "name": "Light",
     "$figmaStyleReferences": {
       "color.brand.primary": "S:5fc2e6140eb8147c10a71c325a9535438fdc925b,",
       "color.brand.secondary": "S:24b8ad74628e0de0fd6999cf0d5721674ea4d0c4,",
@@ -140,8 +140,10 @@
     },
     "selectedTokenSets": {
       "reference": "enabled",
-      "system": "enabled",
-      "component": "disabled"
+      "light/system": "enabled",
+      "dark/system": "disabled",
+      "light/component": "enabled",
+      "dark/component": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",
@@ -252,16 +254,18 @@
       "color.coolgrey.90": "eee7fafdc88456d57b425f128696badca52c1397",
       "color.coolgrey.100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
       "color.coolgrey.110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc"
-    }
+    },
+    "group": "Theme"
   },
   {
-    "id": "a64e4850dd16615ac2cd0e84815c49bf224d123d",
-    "name": "AAF",
+    "id": "44645605e9943e58277f77f2b8d723c0b968b90f",
+    "name": "Dark",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "system": "enabled",
-      "component": "disabled"
-    }
+      "dark/system": "enabled",
+      "dark/component": "enabled"
+    },
+    "group": "Theme"
   }
 ]
