@@ -283,7 +283,7 @@
     },
     "body": {
       "color": {
-        "value": "{color.grey.20}",
+        "value": "{color.text.default-sub}",
         "type": "color"
       }
     },
@@ -293,7 +293,7 @@
     },
     "icon": {
       "color": {
-        "value": "{color.white}",
+        "value": "{color.icon}",
         "type": "color"
       }
     }
