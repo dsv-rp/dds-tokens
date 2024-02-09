@@ -64,6 +64,10 @@
     "icon": {
       "value": "{color.grey.100}",
       "type": "color"
+    },
+    "icon-copy": {
+      "value": "{color.grey.100}",
+      "type": "color"
     }
   },
   "font-family": {

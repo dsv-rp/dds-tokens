@@ -291,6 +291,10 @@
       "color": {
         "value": "{color.text.default-sub}",
         "type": "color"
+      },
+      "color-copy": {
+        "value": "{color.text.default-sub}",
+        "type": "color"
       }
     },
     "shadow": {

@@ -64,6 +64,10 @@
     "background": {
       "value": "{color.grey.90}",
       "type": "color"
+    },
+    "background-copy": {
+      "value": "{color.grey.90}",
+      "type": "color"
     }
   },
   "font-family": {
