@@ -44,6 +44,10 @@
         "value": "{color.grey.100}",
         "type": "color"
       },
+      "default-sub": {
+        "value": "{color.grey.80}",
+        "type": "color"
+      },
       "primary": {
         "value": "{color.blue.60}",
         "type": "color"
@@ -52,6 +56,14 @@
         "value": "{color.blue.40}",
         "type": "color"
       }
+    },
+    "background": {
+      "value": "{color.white}",
+      "type": "color"
+    },
+    "icon": {
+      "value": "{color.grey.100}",
+      "type": "color"
     }
   },
   "font-family": {

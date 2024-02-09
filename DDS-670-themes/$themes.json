@@ -141,9 +141,7 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "light/system": "enabled",
-      "dark/system": "disabled",
-      "light/component": "enabled",
-      "dark/component": "disabled"
+      "light/component": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",

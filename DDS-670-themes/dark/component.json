@@ -269,27 +269,33 @@
     }
   },
   "container": {
-    "color": {
-      "background": {
-        "value": "{color.white}",
+    "background": {
+      "color": {
+        "value": "{color.grey.90}",
         "type": "color"
       }
     },
     "header": {
       "color": {
-        "value": "{color.grey.100}",
+        "value": "{color.white}",
         "type": "color"
       }
     },
     "body": {
       "color": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.20}",
         "type": "color"
       }
     },
     "shadow": {
       "value": "{shadow.1}",
       "type": "boxShadow"
+    },
+    "icon": {
+      "color": {
+        "value": "{color.white}",
+        "type": "color"
+      }
     }
   },
   "tab": {

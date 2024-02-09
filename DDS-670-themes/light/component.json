@@ -269,21 +269,27 @@
     }
   },
   "container": {
-    "color": {
-      "background": {
-        "value": "{color.white}",
+    "background": {
+      "color": {
+        "value": "{color.background}",
         "type": "color"
       }
     },
     "header": {
       "color": {
-        "value": "{color.grey.100}",
+        "value": "{color.text.default}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.icon}",
         "type": "color"
       }
     },
     "body": {
       "color": {
-        "value": "{color.grey.100}",
+        "value": "{color.text.default-sub}",
         "type": "color"
       }
     },
