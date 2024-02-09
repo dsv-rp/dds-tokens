@@ -1,0 +1,22 @@
+{
+  "color": {
+    "text": {
+      "default": {
+        "value": "{color.grey.100}",
+        "type": "color"
+      },
+      "default-sub": {
+        "value": "{color.grey.80}",
+        "type": "color"
+      }
+    },
+    "background": {
+      "value": "{color.white}",
+      "type": "color"
+    },
+    "icon": {
+      "value": "{color.grey.100}",
+      "type": "color"
+    }
+  }
+}

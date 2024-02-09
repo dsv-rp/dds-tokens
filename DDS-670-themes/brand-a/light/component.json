@@ -1,0 +1,181 @@
+{
+  "button": {
+    "color": {
+      "background": {
+        "primary": {
+          "active": {
+            "value": "{color.blue.60}",
+            "type": "color",
+            "description": "Color used for the default state of a secondary button"
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "active": {
+            "value": "{color.blue.60}",
+            "type": "color"
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "active": {
+            "value": "{color.white}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "active": {
+            "value": "{color.blue.60}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "active": {
+          "value": {
+            "color": "{button.color.border.primary.active}",
+            "width": "{border-width.S}",
+            "style": "Solid"
+          },
+          "type": "border"
+        }
+      },
+      "sign-in": {
+        "active": {
+          "value": {
+            "color": "{color.grey.80}",
+            "width": "{border-width.1}",
+            "style": "Inside"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "checkbox": {
+    "border": {
+      "unselected": {
+        "value": {
+          "color": "{color.grey.50}",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "table": {
+    "header": {
+      "border": {
+        "value": {
+          "color": "{color.black}",
+          "width": "1"
+        },
+        "type": "border"
+      }
+    },
+    "cell": {
+      "border": {
+        "value": {
+          "color": "{color.grey.20}",
+          "width": "1"
+        },
+        "type": "border"
+      }
+    },
+    "page-number": {
+      "border": {
+        "hover": {
+          "value": {
+            "color": "{color.grey.70}",
+            "width": "1"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
+  "login": {
+    "sso-button": {
+      "border": {
+        "value": {
+          "color": "{color.grey.80}",
+          "width": "1"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "form": {
+    "border": {
+      "active": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "Solid"
+        },
+        "type": "border"
+      },
+      "negative": {
+        "value": {
+          "color": "{color.feedback.negative}",
+          "width": "{border-width.1}",
+          "style": "solid"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "container": {
+    "background": {
+      "color": {
+        "value": "{color.background}",
+        "type": "color"
+      }
+    },
+    "header": {
+      "color": {
+        "value": "{color.text.default}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.icon}",
+        "type": "color"
+      }
+    },
+    "body": {
+      "color": {
+        "value": "{color.text.default-sub}",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "value": "{shadow.1}",
+      "type": "boxShadow"
+    }
+  },
+  "tab": {
+    "border": {
+      "underline": {
+        "value": {
+          "color": "{color.coolgrey.30}",
+          "width": "{border-width.1}"
+        },
+        "type": "border"
+      },
+      "selected": {
+        "value": {
+          "color": "{color.blue.60}",
+          "width": "{border-width.1}"
+        },
+        "type": "border"
+      }
+    }
+  }
+}

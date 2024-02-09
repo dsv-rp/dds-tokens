@@ -37,11 +37,6 @@
       "dds.label.h7": "S:7b8de9e2fd269dae6c092ed5487c79fe2e85d9fd,",
       "dds.link.h6": "S:7360e38b22edac8bbb19ebc0ea286bc4a92198d0,",
       "button.color.background.primary.active": "S:ef1768b0a898f7ba0380fdd692a2542208a58961,",
-      "button.color.background.primary.hover": "S:6f1b0657394e177aa1b225277603c7101c3898a6,",
-      "button.color.background.primary.press": "S:e15ec0824608dc4585849987690feee8fafd1ceb,",
-      "button.color.background.primary.focus": "S:f6b7b9a8a1fdb3fa251c7b9ca166ba0b274dde1d,",
-      "button.color.background.primary.disabled": "S:e088364c17b30132ff46d8a2535061876dff5a8a,",
-      "button.color.background.secondary.active": "S:b08127fdf33d97840e6badcaaada05c609e2504c,",
       "button.color.background.secondary.hover": "S:464ee92d5b83c2536e77be7bd84fe62c4ccfd7d6,",
       "button.color.background.secondary.focus": "S:a29fb36e4c2a4a51f19e544e9cfd35015ed2e9be,",
       "button.color.background.secondary.press": "S:f248197920684615667832b3a72e4c3608e4a3f4,",
@@ -140,8 +135,12 @@
     },
     "selectedTokenSets": {
       "reference": "enabled",
-      "light/system": "enabled",
-      "light/component": "enabled"
+      "system": "enabled",
+      "component": "enabled",
+      "brand-a/light/system": "enabled",
+      "brand-a/light/component": "enabled",
+      "brand-a/dark/system": "disabled",
+      "brand-a/dark/component": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",
@@ -154,11 +153,6 @@
       "color.feedback.warning": "9eb604dcc74c1ff07ffe5efea7be5d8fcc5abc55",
       "color.feedback.negative": "42d144d66d36a5f8f0d7695133bf5972c7302a37",
       "button.color.background.primary.active": "9383fb959f4a0b4f6ff4dff9a2eb4eb29f63e640",
-      "button.color.background.primary.hover": "3a2f85b0c5e316772065c44cf49bfb683c86fced",
-      "button.color.background.primary.press": "b31a830cb35b022e6263d13f45de448cefb16539",
-      "button.color.background.primary.focus": "c8a584c83753f43993d3bd1b002addebb12ddcb1",
-      "button.color.background.primary.disabled": "e5283f44a285c74e5fb06b1e8bb2cb4a166f6861",
-      "button.color.background.secondary.active": "ebc27910e84f174d1f887552993cda573debefc6",
       "button.color.background.secondary.hover": "3ed051dc19892d1f2af52b940f8b6aa41d6c7024",
       "button.color.background.secondary.focus": "4b8d266392c3bec7b99818d4cf9a91b4761d9157",
       "button.color.background.secondary.press": "737d62f6ca0f0b4af5f1af3ea6387053ea961fd3",
@@ -261,8 +255,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "dark/system": "enabled",
-      "dark/component": "enabled"
+      "system": "disabled",
+      "component": "disabled",
+      "brand-a/light/system": "disabled",
+      "brand-a/light/component": "disabled",
+      "brand-a/dark/system": "enabled",
+      "brand-a/dark/component": "enabled"
     },
     "group": "Theme"
   }

@@ -72,12 +72,6 @@
             "value": "{color.blue.60}",
             "type": "color"
           }
-        },
-        "sign-in": {
-          "active": {
-            "value": "{color.grey.80}",
-            "type": "color"
-          }
         }
       }
     },
@@ -114,51 +108,9 @@
         },
         "type": "border"
       }
-    },
-    "color": {
-      "background": {
-        "value": "{color.blue.60}",
-        "type": "color"
-      },
-      "icon": {
-        "value": "{color.white}",
-        "type": "color"
-      }
-    }
-  },
-  "dropdown": {
-    "color": {
-      "background": {
-        "value": "{color.white}",
-        "type": "color"
-      },
-      "text": {
-        "value": "{color.grey.90}",
-        "type": "color"
-      }
-    }
-  },
-  "dropdown-tray": {
-    "color": {
-      "background": {
-        "selected": {
-          "value": "{color.grey.20}",
-          "type": "color"
-        }
-      }
     }
   },
   "table": {
-    "color": {
-      "background": {
-        "value": "{color.white}",
-        "type": "color"
-      },
-      "text": {
-        "value": "{color.grey.90}",
-        "type": "color"
-      }
-    },
     "header": {
       "border": {
         "value": {
@@ -178,24 +130,6 @@
       }
     },
     "page-number": {
-      "color": {
-        "background": {
-          "selected": {
-            "value": "{color.grey.70}",
-            "type": "color"
-          }
-        },
-        "text": {
-          "default": {
-            "value": "{color.grey.90}",
-            "type": "color"
-          },
-          "selected": {
-            "value": "{color.white}",
-            "type": "color"
-          }
-        }
-      },
       "border": {
         "hover": {
           "value": {
@@ -215,40 +149,10 @@
           "width": "1"
         },
         "type": "border"
-      },
-      "color": {
-        "text": {
-          "value": "{color.grey.80}",
-          "type": "color"
-        }
       }
     }
   },
   "form": {
-    "color": {
-      "background": {
-        "value": "{color.white}",
-        "type": "color"
-      },
-      "text": {
-        "default": {
-          "value": "{color.grey.100}",
-          "type": "color"
-        },
-        "placeholder": {
-          "value": "{color.grey.70}",
-          "type": "color"
-        },
-        "positive": {
-          "value": "{color.feedback.positive}",
-          "type": "color"
-        },
-        "negative": {
-          "value": "{color.feedback.negative}",
-          "type": "color"
-        }
-      }
-    },
     "border": {
       "active": {
         "value": {
@@ -283,10 +187,6 @@
     },
     "body": {
       "color": {
-        "value": "{color.text.default-sub}",
-        "type": "color"
-      },
-      "color-copy": {
         "value": "{color.text.default-sub}",
         "type": "color"
       }

@@ -1,9 +1,11 @@
 {
   "tokenSetOrder": [
     "reference",
-    "light/system",
-    "light/component",
-    "dark/system",
-    "dark/component"
+    "system",
+    "component",
+    "brand-a/light/system",
+    "brand-a/light/component",
+    "brand-a/dark/system",
+    "brand-a/dark/component"
   ]
 }

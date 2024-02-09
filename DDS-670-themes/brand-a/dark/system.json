@@ -1,72 +1,29 @@
 {
   "color": {
-    "brand": {
-      "primary": {
-        "value": "{color.blue.60}",
-        "type": "color",
-        "description": "Primary brand blue"
-      },
-      "secondary": {
-        "value": "{color.blue.40}",
-        "type": "color",
-        "description": "Primary secondary brand blue"
-      },
-      "mediumgrey": {
-        "value": "{color.grey.70}",
-        "type": "color",
-        "description": "Medium grey is a core DDS color"
-      },
-      "darkgrey": {
-        "value": "{color.grey.90}",
-        "type": "color",
-        "description": "Dark grey is a core DDS color"
-      }
-    },
-    "feedback": {
-      "positive": {
-        "value": "{color.green.60}",
-        "type": "color",
-        "description": "System status is positive"
-      },
-      "warning": {
-        "value": "{color.yellow.50}",
-        "type": "color",
-        "description": "System status has a warning"
-      },
-      "negative": {
-        "value": "{color.red.60}",
-        "type": "color",
-        "description": "System status is negative"
-      }
-    },
     "text": {
       "default": {
         "value": "{color.grey.100}",
         "type": "color"
       },
       "default-sub": {
-        "value": "{color.grey.80}",
-        "type": "color"
-      },
-      "primary": {
-        "value": "{color.blue.60}",
+        "value": "{color.grey.20}",
         "type": "color"
       },
       "secondary": {
         "value": "{color.blue.40}",
         "type": "color"
+      },
+      "primary": {
+        "value": "{color.blue.60}",
+        "type": "color"
       }
     },
-    "background": {
+    "icon": {
       "value": "{color.white}",
       "type": "color"
     },
-    "icon": {
-      "value": "{color.grey.100}",
-      "type": "color"
-    },
-    "icon-copy": {
-      "value": "{color.grey.100}",
+    "background": {
+      "value": "{color.grey.90}",
       "type": "color"
     }
   },
