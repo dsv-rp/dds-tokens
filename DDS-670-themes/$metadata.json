@@ -3,9 +3,11 @@
     "reference",
     "system",
     "component",
-    "brand-a/light/system",
-    "brand-a/light/component",
-    "brand-a/dark/system",
-    "brand-a/dark/component"
+    "light/system",
+    "light/component",
+    "dark/system",
+    "dark/component",
+    "brand-a/system",
+    "brand-a/component"
   ]
 }

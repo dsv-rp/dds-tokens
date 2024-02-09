@@ -8,14 +8,6 @@
       "default-sub": {
         "value": "{color.grey.20}",
         "type": "color"
-      },
-      "secondary": {
-        "value": "{color.blue.40}",
-        "type": "color"
-      },
-      "primary": {
-        "value": "{color.blue.60}",
-        "type": "color"
       }
     },
     "icon": {

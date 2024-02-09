@@ -1,17 +1,5 @@
 {
   "color": {
-    "brand": {
-      "primary": {
-        "value": "{color.blue.60}",
-        "type": "color",
-        "description": "Primary brand blue"
-      },
-      "secondary": {
-        "value": "{color.blue.40}",
-        "type": "color",
-        "description": "Primary secondary brand blue"
-      }
-    },
     "feedback": {
       "positive": {
         "value": "{color.green.60}",
@@ -27,16 +15,6 @@
         "value": "{color.red.60}",
         "type": "color",
         "description": "System status is negative"
-      }
-    },
-    "text": {
-      "primary": {
-        "value": "{color.blue.60}",
-        "type": "color"
-      },
-      "secondary": {
-        "value": "{color.blue.40}",
-        "type": "color"
       }
     }
   },

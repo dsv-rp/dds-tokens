@@ -1,80 +1,5 @@
 {
   "button": {
-    "color": {
-      "background": {
-        "primary": {
-          "active": {
-            "value": "{color.blue.60}",
-            "type": "color",
-            "description": "Color used for the default state of a secondary button"
-          },
-          "hover": {
-            "value": "{color.blue.40}",
-            "type": "color",
-            "description": "Color used if a user hovers over a button (Desktop only)"
-          },
-          "press": {
-            "value": "{color.blue.70}",
-            "type": "color",
-            "description": "Color used when a primary button is pressed"
-          },
-          "focus": {
-            "value": "{color.blue.80}",
-            "type": "color",
-            "description": "Color used when a secondary button is in focus"
-          },
-          "disabled": {
-            "value": "{color.grey.30}",
-            "type": "color",
-            "description": "Color used if a primary button is disabled"
-          }
-        },
-        "secondary": {
-          "active": {
-            "value": "{color.grey.70}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{color.grey.40}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{color.grey.70}",
-            "type": "color"
-          },
-          "press": {
-            "value": "{color.grey.90}",
-            "type": "color"
-          },
-          "disabled": {
-            "value": "{color.grey.10}",
-            "type": "color"
-          }
-        }
-      },
-      "border": {
-        "primary": {
-          "active": {
-            "value": "{color.blue.60}",
-            "type": "color"
-          }
-        }
-      },
-      "text": {
-        "primary": {
-          "active": {
-            "value": "{color.white}",
-            "type": "color"
-          }
-        },
-        "secondary": {
-          "active": {
-            "value": "{color.blue.60}",
-            "type": "color"
-          }
-        }
-      }
-    },
     "border": {
       "primary": {
         "active": {
@@ -175,13 +100,19 @@
   "container": {
     "background": {
       "color": {
-        "value": "{color.grey.90}",
+        "value": "{color.background}",
         "type": "color"
       }
     },
     "header": {
       "color": {
-        "value": "{color.white}",
+        "value": "{color.text.default}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.icon}",
         "type": "color"
       }
     },
@@ -194,12 +125,6 @@
     "shadow": {
       "value": "{shadow.1}",
       "type": "boxShadow"
-    },
-    "icon": {
-      "color": {
-        "value": "{color.icon}",
-        "type": "color"
-      }
     }
   },
   "tab": {
