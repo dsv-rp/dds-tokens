@@ -138,9 +138,7 @@
       "system": "enabled",
       "component": "enabled",
       "light/system": "enabled",
-      "light/component": "enabled",
-      "brand-b/system": "disabled",
-      "brand-b/component": "disabled"
+      "light/component": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",
@@ -256,9 +254,7 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "dark/system": "enabled",
-      "dark/component": "enabled",
-      "brand-b/system": "disabled",
-      "brand-b/component": "disabled"
+      "dark/component": "enabled"
     },
     "group": "Mode"
   },
@@ -271,9 +267,7 @@
       "system": "enabled",
       "component": "enabled",
       "brand-a/system": "enabled",
-      "brand-a/component": "enabled",
-      "brand-b/system": "disabled",
-      "brand-b/component": "disabled"
+      "brand-a/component": "enabled"
     },
     "group": "Brand"
   },
