@@ -1,15 +1,6 @@
 {
   "button": {
     "color": {
-      "background": {
-        "primary": {
-          "active": {
-            "value": "{button.color.border.primary.active}",
-            "type": "color",
-            "description": "Color used for the default state of a secondary button"
-          }
-        }
-      },
       "border": {
         "primary": {
           "active": {
@@ -24,6 +15,12 @@
             "value": "{color.brand.primary}",
             "type": "color"
           }
+        }
+      },
+      "background": {
+        "primary": {
+          "value": "{color.brand.primary}",
+          "type": "color"
         }
       }
     },

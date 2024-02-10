@@ -36,7 +36,6 @@
       "dds.body.link.h6": "S:fa8d4f5cc596088517ad049be19cd023d5fc8370,",
       "dds.label.h7": "S:7b8de9e2fd269dae6c092ed5487c79fe2e85d9fd,",
       "dds.link.h6": "S:7360e38b22edac8bbb19ebc0ea286bc4a92198d0,",
-      "button.color.background.primary.active": "S:ef1768b0a898f7ba0380fdd692a2542208a58961,",
       "button.color.background.secondary.hover": "S:464ee92d5b83c2536e77be7bd84fe62c4ccfd7d6,",
       "button.color.background.secondary.focus": "S:a29fb36e4c2a4a51f19e544e9cfd35015ed2e9be,",
       "button.color.background.secondary.press": "S:f248197920684615667832b3a72e4c3608e4a3f4,",
@@ -131,7 +130,8 @@
       "color.coolgrey.90": "S:4d71bd307c143593751be5cf8e0364186d27f2d9,",
       "color.coolgrey.100": "S:d2512a1f440cd611c659610cd91aa0947b03e364,",
       "color.coolgrey.110": "S:7b8aafb0a66724b3ccccd856ea093a5c75e69e73,",
-      "color.text.default": "S:d517800bb99eb6e6eeee2ff217b2d2ae63e01dcb,"
+      "color.text.default": "S:d517800bb99eb6e6eeee2ff217b2d2ae63e01dcb,",
+      "button.color.background.primary": "S:ef1768b0a898f7ba0380fdd692a2542208a58961,"
     },
     "selectedTokenSets": {
       "reference": "enabled",
@@ -150,7 +150,6 @@
       "color.feedback.positive": "30791083be26a2c0e0a9e10d675633c93b963954",
       "color.feedback.warning": "9eb604dcc74c1ff07ffe5efea7be5d8fcc5abc55",
       "color.feedback.negative": "42d144d66d36a5f8f0d7695133bf5972c7302a37",
-      "button.color.background.primary.active": "9383fb959f4a0b4f6ff4dff9a2eb4eb29f63e640",
       "button.color.background.secondary.hover": "3ed051dc19892d1f2af52b940f8b6aa41d6c7024",
       "button.color.background.secondary.focus": "4b8d266392c3bec7b99818d4cf9a91b4761d9157",
       "button.color.background.secondary.press": "737d62f6ca0f0b4af5f1af3ea6387053ea961fd3",
@@ -243,7 +242,8 @@
       "color.coolgrey.80": "01ed6f20a23065dfac5cc698c252bb4d27a301ad",
       "color.coolgrey.90": "eee7fafdc88456d57b425f128696badca52c1397",
       "color.coolgrey.100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
-      "color.coolgrey.110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc"
+      "color.coolgrey.110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc",
+      "button.color.background.primary": "9383fb959f4a0b4f6ff4dff9a2eb4eb29f63e640"
     },
     "group": "Mode"
   },

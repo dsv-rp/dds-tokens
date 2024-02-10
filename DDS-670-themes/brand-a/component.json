@@ -3,11 +3,9 @@
     "color": {
       "background": {
         "primary": {
-          "active": {
-            "value": "{color.blue.60}",
-            "type": "color",
-            "description": "Color used for the default state of a secondary button"
-          }
+          "value": "{color.blue.60}",
+          "type": "color",
+          "description": "Color used for the default state of a secondary button"
         }
       },
       "border": {
