@@ -4,7 +4,7 @@
       "background": {
         "primary": {
           "active": {
-            "value": "{color.brand.primary}",
+            "value": "{button.color.border.primary.active}",
             "type": "color",
             "description": "Color used for the default state of a secondary button"
           }

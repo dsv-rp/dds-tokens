@@ -18,5 +18,15 @@
         "type": "border"
       }
     }
+  },
+  "button": {
+    "color": {
+      "text": {
+        "primary": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      }
+    }
   }
 }
