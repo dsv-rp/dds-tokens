@@ -85,23 +85,7 @@
           },
           "type": "border"
         }
-      },
-      "sign-in": {
-        "active": {
-          "value": {
-            "color": "{color.grey.80}",
-            "width": "{border-width.1}",
-            "style": "Inside"
-          },
-          "type": "border"
-        }
       }
-    }
-  },
-  "container": {
-    "shadow": {
-      "value": "{shadow.1}",
-      "type": "boxShadow"
     }
   }
 }

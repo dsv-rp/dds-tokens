@@ -137,12 +137,10 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "brand-a/system": "disabled",
-      "brand-a/component": "disabled",
       "light/system": "enabled",
       "light/component": "enabled",
-      "dark/system": "disabled",
-      "dark/component": "disabled"
+      "brand-b/system": "disabled",
+      "brand-b/component": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",
@@ -249,7 +247,7 @@
       "color.coolgrey.100": "54a304bc096f994f9c90e9041ac867dc8e297c3f",
       "color.coolgrey.110": "707b39bc8d547bab0dfdf41287f55b99af8dcffc"
     },
-    "group": "Theme"
+    "group": "Mode"
   },
   {
     "id": "44645605e9943e58277f77f2b8d723c0b968b90f",
@@ -257,13 +255,39 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "brand-a/system": "disabled",
-      "brand-a/component": "disabled",
-      "light/system": "disabled",
-      "light/component": "disabled",
       "dark/system": "enabled",
-      "dark/component": "enabled"
+      "dark/component": "enabled",
+      "brand-b/system": "disabled",
+      "brand-b/component": "disabled"
     },
-    "group": "Theme"
+    "group": "Mode"
+  },
+  {
+    "id": "98f21c477e48e1ae2119ec810f1fc545de615b93",
+    "name": "A",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "brand-a/system": "enabled",
+      "brand-a/component": "enabled",
+      "brand-b/system": "disabled",
+      "brand-b/component": "disabled"
+    },
+    "group": "Brand"
+  },
+  {
+    "id": "4322fe851f628a20546ec8c586f59c18bb11d621",
+    "name": "B",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "brand-b/system": "enabled",
+      "brand-b/component": "enabled"
+    },
+    "group": "Brand"
   }
 ]

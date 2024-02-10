@@ -1,22 +1,22 @@
 {
   "form": {
-    "color": {
-      "text": {
-        "positive": {
-          "value": "{color.feedback.positive}",
-          "type": "color"
+    "border": {
+      "active": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "Solid"
         },
-        "negative": {
-          "value": "{color.feedback.negative}",
-          "type": "color"
-        }
+        "type": "border"
+      },
+      "negative": {
+        "value": {
+          "color": "{color.feedback.negative}",
+          "width": "{border-width.1}",
+          "style": "solid"
+        },
+        "type": "border"
       }
-    }
-  },
-  "container": {
-    "shadow": {
-      "value": "{shadow.1}",
-      "type": "boxShadow"
     }
   }
 }
