@@ -137,8 +137,14 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "light/system": "enabled",
-      "light/component": "enabled"
+      "brand-a/light/system": "enabled",
+      "brand-a/light/component": "enabled",
+      "brand-a/dark/system": "disabled",
+      "brand-a/dark/component": "disabled",
+      "brand-b/light/system": "disabled",
+      "brand-b/dark/system": "disabled",
+      "brand-b/light/component": "disabled",
+      "brand-b/dark/component": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7977:17122",
     "$figmaModeId": "7977:0",
@@ -253,8 +259,14 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "dark/system": "enabled",
-      "dark/component": "enabled"
+      "brand-a/light/system": "disabled",
+      "brand-a/light/component": "disabled",
+      "brand-a/dark/system": "enabled",
+      "brand-a/dark/component": "enabled",
+      "brand-b/light/system": "disabled",
+      "brand-b/dark/system": "disabled",
+      "brand-b/light/component": "disabled",
+      "brand-b/dark/component": "disabled"
     },
     "group": "Mode"
   },
@@ -267,7 +279,15 @@
       "system": "enabled",
       "component": "enabled",
       "brand-a/system": "enabled",
-      "brand-a/component": "enabled"
+      "brand-a/component": "enabled",
+      "brand-a/light/system": "disabled",
+      "brand-a/light/component": "disabled",
+      "brand-a/dark/system": "disabled",
+      "brand-a/dark/component": "disabled",
+      "brand-b/light/system": "disabled",
+      "brand-b/dark/system": "disabled",
+      "brand-b/light/component": "disabled",
+      "brand-b/dark/component": "disabled"
     },
     "group": "Brand"
   },
@@ -280,7 +300,15 @@
       "system": "enabled",
       "component": "enabled",
       "brand-b/system": "enabled",
-      "brand-b/component": "enabled"
+      "brand-b/component": "enabled",
+      "brand-a/light/system": "disabled",
+      "brand-a/light/component": "disabled",
+      "brand-a/dark/system": "disabled",
+      "brand-a/dark/component": "disabled",
+      "brand-b/light/system": "disabled",
+      "brand-b/dark/system": "disabled",
+      "brand-b/light/component": "disabled",
+      "brand-b/dark/component": "disabled"
     },
     "group": "Brand"
   }

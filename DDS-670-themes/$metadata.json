@@ -5,11 +5,15 @@
     "component",
     "brand-a/system",
     "brand-a/component",
+    "brand-a/light/system",
+    "brand-a/light/component",
+    "brand-a/dark/system",
+    "brand-a/dark/component",
     "brand-b/system",
     "brand-b/component",
-    "light/system",
-    "light/component",
-    "dark/system",
-    "dark/component"
+    "brand-b/light/system",
+    "brand-b/light/component",
+    "brand-b/dark/system",
+    "brand-b/dark/component"
   ]
 }
