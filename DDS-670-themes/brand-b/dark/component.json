@@ -1,1 +1,28 @@
-{}
+{
+  "container": {
+    "background": {
+      "color": {
+        "value": "{color.grey.90}",
+        "type": "color"
+      }
+    },
+    "header": {
+      "color": {
+        "value": "{color.white}",
+        "type": "color"
+      }
+    },
+    "body": {
+      "color": {
+        "value": "{color.text.default-sub}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "color": {
+        "value": "{color.icon}",
+        "type": "color"
+      }
+    }
+  }
+}
