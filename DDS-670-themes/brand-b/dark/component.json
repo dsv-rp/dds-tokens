@@ -1,4 +1,42 @@
 {
+  "button": {
+    "color": {
+      "border": {
+        "primary": {
+          "active": {
+            "value": "{color.brand.primary}",
+            "type": "color"
+          }
+        }
+      },
+      "text": {
+        "secondary": {
+          "active": {
+            "value": "{color.brand.primary}",
+            "type": "color"
+          }
+        }
+      },
+      "background": {
+        "primary": {
+          "value": "{color.brand.primary}",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "active": {
+          "value": {
+            "color": "{button.color.border.primary.active}",
+            "width": "{border-width.S}",
+            "style": "Solid"
+          },
+          "type": "border"
+        }
+      }
+    }
+  },
   "container": {
     "background": {
       "color": {
