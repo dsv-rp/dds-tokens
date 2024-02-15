@@ -1,23 +1,4 @@
 {
-  "color": {
-    "feedback": {
-      "positive": {
-        "value": "{color.green.60}",
-        "type": "color",
-        "description": "System status is positive"
-      },
-      "warning": {
-        "value": "{color.yellow.50}",
-        "type": "color",
-        "description": "System status has a warning"
-      },
-      "negative": {
-        "value": "{color.red.60}",
-        "type": "color",
-        "description": "System status is negative"
-      }
-    }
-  },
   "font-family": {
     "base": {
       "value": "{font-family.roboto}",
