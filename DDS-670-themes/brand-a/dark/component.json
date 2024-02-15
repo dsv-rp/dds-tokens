@@ -1,25 +1,25 @@
 {
   "container": {
-    "background": {
-      "color": {
-        "value": "{color.grey.90}",
+    "color": {
+      "background": {
+        "value": "{component.color.background}",
         "type": "color"
+      },
+      "text": {
+        "header": {
+          "value": "{color.text.default}",
+          "type": "color"
+        },
+        "body": {
+          "value": "{color.text.default-sub}",
+          "type": "color"
+        }
       }
-    },
-    "header": {
-      "color": {
-        "value": "{color.white}",
-        "type": "color"
-      }
-    },
-    "body": {
-      "color": {
-        "value": "{color.text.default-sub}",
-        "type": "color"
-      }
-    },
-    "icon": {
-      "color": {
+    }
+  },
+  "icon": {
+    "color": {
+      "background": {
         "value": "{object.color.background}",
         "type": "color"
       }
@@ -29,7 +29,7 @@
     "color": {
       "background": {
         "primary": {
-          "value": "{color.blue.40}",
+          "value": "{color.blue.60}",
           "type": "color",
           "description": "Color used for the default state of a secondary button"
         }
@@ -37,7 +37,7 @@
       "border": {
         "primary": {
           "active": {
-            "value": "{color.blue.40}",
+            "value": "{color.blue.60}",
             "type": "color"
           }
         }
@@ -45,7 +45,13 @@
       "text": {
         "secondary": {
           "active": {
-            "value": "{color.blue.40}",
+            "value": "{color.blue.60}",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "active": {
+            "value": "{color.text.secondary}",
             "type": "color"
           }
         }

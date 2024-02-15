@@ -24,18 +24,20 @@
         "value": "{color.grey.80}",
         "type": "color"
       }
-    },
-    "icon": {
-      "active": {
-        "value": "{color.grey.100}",
-        "type": "color"
-      }
     }
   },
   "component": {
     "color": {
       "background": {
         "value": "{color.white}",
+        "type": "color"
+      }
+    }
+  },
+  "object": {
+    "color": {
+      "background": {
+        "value": "{color.grey.100}",
         "type": "color"
       }
     }
