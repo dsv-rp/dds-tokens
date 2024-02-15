@@ -14,9 +14,13 @@
           "value": "{color.text.default-sub}",
           "type": "color"
         }
-      },
-      "icon": {
-        "value": "{color.icon.active}",
+      }
+    }
+  },
+  "icon": {
+    "color": {
+      "background": {
+        "value": "{object.color.background}",
         "type": "color"
       }
     }
