@@ -40,7 +40,7 @@
   "container": {
     "background": {
       "color": {
-        "value": "{color.background}",
+        "value": "{component.color.background}",
         "type": "color"
       }
     },
@@ -52,7 +52,7 @@
     },
     "icon": {
       "color": {
-        "value": "{color.icon}",
+        "value": "{color.icon.active}",
         "type": "color"
       }
     },

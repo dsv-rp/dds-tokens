@@ -20,7 +20,7 @@
     },
     "icon": {
       "color": {
-        "value": "{color.icon}",
+        "value": "{color.icon.active}",
         "type": "color"
       }
     }

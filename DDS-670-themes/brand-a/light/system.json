@@ -9,7 +9,11 @@
     },
     "text": {
       "primary": {
-        "value": "{color.blue.60}",
+        "value": "{color.brand.primary}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.white}",
         "type": "color"
       },
       "default": {
@@ -21,13 +25,27 @@
         "type": "color"
       }
     },
-    "background": {
-      "value": "{color.white}",
-      "type": "color"
-    },
     "icon": {
-      "value": "{color.grey.100}",
-      "type": "color"
+      "active": {
+        "value": "{color.grey.100}",
+        "type": "color"
+      }
+    }
+  },
+  "component": {
+    "color": {
+      "background": {
+        "value": "{color.white}",
+        "type": "color"
+      }
+    }
+  },
+  "mode": {
+    "color": {
+      "background": {
+        "value": "{color.white}",
+        "type": "color"
+      }
     }
   }
 }

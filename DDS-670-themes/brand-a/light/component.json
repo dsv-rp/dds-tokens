@@ -1,26 +1,22 @@
 {
   "container": {
-    "background": {
-      "color": {
-        "value": "{color.background}",
+    "color": {
+      "background": {
+        "value": "{component.color.background}",
         "type": "color"
-      }
-    },
-    "header": {
-      "color": {
-        "value": "{color.text.default}",
-        "type": "color"
-      }
-    },
-    "icon": {
-      "color": {
-        "value": "{color.icon}",
-        "type": "color"
-      }
-    },
-    "body": {
-      "color": {
-        "value": "{color.text.default-sub}",
+      },
+      "text": {
+        "header": {
+          "value": "{color.text.default}",
+          "type": "color"
+        },
+        "body": {
+          "value": "{color.text.default-sub}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "value": "{color.icon.active}",
         "type": "color"
       }
     }
@@ -46,6 +42,12 @@
         "secondary": {
           "active": {
             "value": "{color.blue.60}",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "active": {
+            "value": "{color.text.secondary}",
             "type": "color"
           }
         }
