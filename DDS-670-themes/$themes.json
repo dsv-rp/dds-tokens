@@ -7,8 +7,6 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "brand-a/system": "enabled",
-      "brand-a/component": "enabled",
       "brand-a/light/system": "enabled",
       "brand-a/light/component": "enabled"
     },
