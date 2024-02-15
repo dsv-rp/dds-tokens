@@ -1,6 +1,16 @@
 {
   "color": {
+    "brand": {
+      "primary": {
+        "value": "#C8102E",
+        "type": "color"
+      }
+    },
     "text": {
+      "primary": {
+        "value": "#C8102E",
+        "type": "color"
+      },
       "default": {
         "value": "{color.grey.100}",
         "type": "color"

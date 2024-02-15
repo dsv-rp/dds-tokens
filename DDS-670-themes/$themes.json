@@ -33,8 +33,6 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "brand-b/system": "enabled",
-      "brand-b/component": "enabled",
       "brand-b/light/system": "enabled",
       "brand-b/light/component": "enabled"
     },
@@ -48,8 +46,6 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "brand-b/system": "enabled",
-      "brand-b/component": "enabled",
       "brand-b/dark/system": "enabled",
       "brand-b/dark/component": "enabled"
     },
