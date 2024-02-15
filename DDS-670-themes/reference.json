@@ -236,6 +236,20 @@
       "110": {
         "value": "#080401",
         "type": "color"
+      },
+      "aaf": {
+        "100": {
+          "value": "#FCECEA",
+          "type": "color"
+        },
+        "200": {
+          "value": "#F5C0B8",
+          "type": "color"
+        },
+        "600": {
+          "value": "#C8102E",
+          "type": "color"
+        }
       }
     },
     "magenta": {

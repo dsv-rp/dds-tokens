@@ -2,13 +2,13 @@
   "color": {
     "brand": {
       "primary": {
-        "value": "#C8102E",
+        "value": "{color.red.aaf.600}",
         "type": "color"
       }
     },
     "text": {
       "primary": {
-        "value": "#C8102E",
+        "value": "{color.red.aaf.600}",
         "type": "color"
       },
       "default": {
