@@ -29,7 +29,7 @@
     "color": {
       "background": {
         "primary": {
-          "value": "{color.blue.60}",
+          "value": "{color.brand.primary}",
           "type": "color",
           "description": "Color used for the default state of a secondary button"
         }
@@ -37,7 +37,7 @@
       "border": {
         "primary": {
           "active": {
-            "value": "{color.blue.60}",
+            "value": "{color.brand.primary}",
             "type": "color"
           }
         }
@@ -45,7 +45,7 @@
       "text": {
         "secondary": {
           "active": {
-            "value": "{color.blue.60}",
+            "value": "{color.brand.primary}",
             "type": "color"
           }
         },

@@ -2,7 +2,7 @@
   "color": {
     "brand": {
       "primary": {
-        "value": "{color.blue.60}",
+        "value": "{color.blue.40}",
         "type": "color",
         "description": "Primary brand blue"
       }
@@ -13,15 +13,15 @@
         "type": "color"
       },
       "secondary": {
-        "value": "{color.white}",
-        "type": "color"
-      },
-      "default": {
         "value": "{color.grey.100}",
         "type": "color"
       },
+      "default": {
+        "value": "{color.grey.10}",
+        "type": "color"
+      },
       "default-sub": {
-        "value": "{color.grey.80}",
+        "value": "{color.grey.20}",
         "type": "color"
       }
     }
@@ -29,7 +29,7 @@
   "component": {
     "color": {
       "background": {
-        "value": "{color.white}",
+        "value": "{color.coolgrey.100}",
         "type": "color"
       }
     }
@@ -37,7 +37,7 @@
   "object": {
     "color": {
       "background": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.10}",
         "type": "color"
       }
     }
@@ -45,7 +45,7 @@
   "mode": {
     "color": {
       "background": {
-        "value": "{color.white}",
+        "value": "{color.coolgrey.110}",
         "type": "color"
       }
     }
