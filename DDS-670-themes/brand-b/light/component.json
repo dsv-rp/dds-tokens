@@ -1,6 +1,45 @@
 {
+  "container": {
+    "color": {
+      "background": {
+        "value": "{component.color.background}",
+        "type": "color"
+      },
+      "text": {
+        "header": {
+          "value": "{color.text.default}",
+          "type": "color"
+        },
+        "body": {
+          "value": "{color.text.default-sub}",
+          "type": "color"
+        }
+      }
+    },
+    "shadow": {
+      "value": "{shadow.black}",
+      "type": "boxShadow"
+    }
+  },
+  "icon": {
+    "color": {
+      "background": {
+        "value": "{object.color.background}",
+        "type": "color"
+      }
+    }
+  },
   "button": {
     "color": {
+      "background": {
+        "primary": {
+          "active": {
+            "value": "{color.brand.primary}",
+            "type": "color",
+            "description": "Color used for the default state of a secondary button"
+          }
+        }
+      },
       "border": {
         "primary": {
           "active": {
@@ -15,12 +54,12 @@
             "value": "{color.brand.primary}",
             "type": "color"
           }
-        }
-      },
-      "background": {
+        },
         "primary": {
-          "value": "{color.brand.primary}",
-          "type": "color"
+          "active": {
+            "value": "{color.text.secondary}",
+            "type": "color"
+          }
         }
       }
     },
@@ -34,32 +73,6 @@
           },
           "type": "border"
         }
-      }
-    }
-  },
-  "container": {
-    "background": {
-      "color": {
-        "value": "{component.color.background}",
-        "type": "color"
-      }
-    },
-    "header": {
-      "color": {
-        "value": "{color.text.default}",
-        "type": "color"
-      }
-    },
-    "icon": {
-      "color": {
-        "value": "{object.color.background}",
-        "type": "color"
-      }
-    },
-    "body": {
-      "color": {
-        "value": "{color.text.default-sub}",
-        "type": "color"
       }
     }
   }

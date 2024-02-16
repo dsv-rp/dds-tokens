@@ -3,30 +3,51 @@
     "brand": {
       "primary": {
         "value": "{color.red.aaf.200}",
-        "type": "color"
+        "type": "color",
+        "description": "Primary brand blue"
       }
     },
     "text": {
       "primary": {
-        "value": "{color.red.aaf.200}",
+        "value": "{color.brand.primary}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.grey.100}",
         "type": "color"
       },
       "default": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.10}",
         "type": "color"
       },
       "default-sub": {
         "value": "{color.grey.20}",
         "type": "color"
       }
-    },
-    "icon": {
-      "value": "{color.white}",
-      "type": "color"
-    },
-    "background": {
-      "value": "{color.grey.90}",
-      "type": "color"
+    }
+  },
+  "component": {
+    "color": {
+      "background": {
+        "value": "{color.grey.100}",
+        "type": "color"
+      }
+    }
+  },
+  "object": {
+    "color": {
+      "background": {
+        "value": "{color.grey.10}",
+        "type": "color"
+      }
+    }
+  },
+  "mode": {
+    "color": {
+      "background": {
+        "value": "{color.black}",
+        "type": "color"
+      }
     }
   }
 }
