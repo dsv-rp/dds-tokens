@@ -29,7 +29,7 @@
   "component": {
     "color": {
       "background": {
-        "value": "{color.coolgrey.100}",
+        "value": "{color.grey.100}",
         "type": "color"
       }
     }
@@ -45,7 +45,7 @@
   "mode": {
     "color": {
       "background": {
-        "value": "{color.coolgrey.110}",
+        "value": "{color.black}",
         "type": "color"
       }
     }
