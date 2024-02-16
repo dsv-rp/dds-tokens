@@ -13,15 +13,15 @@
         "type": "color"
       },
       "secondary": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.90}",
         "type": "color"
       },
       "default": {
-        "value": "{color.grey.10}",
+        "value": "{color.white}",
         "type": "color"
       },
       "default-sub": {
-        "value": "{color.grey.20}",
+        "value": "{color.grey.10}",
         "type": "color"
       }
     }
@@ -29,7 +29,7 @@
   "component": {
     "color": {
       "background": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.90}",
         "type": "color"
       }
     }
@@ -37,7 +37,7 @@
   "object": {
     "color": {
       "background": {
-        "value": "{color.grey.10}",
+        "value": "{color.white}",
         "type": "color"
       }
     }

@@ -17,11 +17,11 @@
         "type": "color"
       },
       "default": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.90}",
         "type": "color"
       },
       "default-sub": {
-        "value": "{color.grey.80}",
+        "value": "{color.grey.70}",
         "type": "color"
       }
     }
@@ -37,7 +37,7 @@
   "object": {
     "color": {
       "background": {
-        "value": "{color.grey.100}",
+        "value": "{color.grey.90}",
         "type": "color"
       }
     }
