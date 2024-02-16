@@ -15,6 +15,10 @@
           "type": "color"
         }
       }
+    },
+    "shadow": {
+      "value": "{shadow.black}",
+      "type": "boxShadow"
     }
   },
   "icon": {
@@ -29,9 +33,11 @@
     "color": {
       "background": {
         "primary": {
-          "value": "{color.brand.primary}",
-          "type": "color",
-          "description": "Color used for the default state of a secondary button"
+          "active": {
+            "value": "{color.brand.primary}",
+            "type": "color",
+            "description": "Color used for the default state of a secondary button"
+          }
         }
       },
       "border": {

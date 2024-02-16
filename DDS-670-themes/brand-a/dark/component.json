@@ -15,6 +15,10 @@
           "type": "color"
         }
       }
+    },
+    "shadow": {
+      "value": "{shadow.white}",
+      "type": "boxShadow"
     }
   },
   "icon": {

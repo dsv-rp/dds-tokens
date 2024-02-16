@@ -401,6 +401,10 @@
     "black-shadow": {
       "value": "#0000001A",
       "type": "color"
+    },
+    "white-shadow": {
+      "value": "#ffffff1A",
+      "type": "color"
     }
   },
   "font-size": {
@@ -587,13 +591,24 @@
     }
   },
   "shadow": {
-    "1": {
+    "black": {
       "value": {
         "x": "0",
         "y": "-2",
         "blur": "19",
         "spread": "0",
         "color": "{color.black-shadow}",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    },
+    "white": {
+      "value": {
+        "x": "0",
+        "y": "-2",
+        "blur": "19",
+        "spread": "0",
+        "color": "{color.white-shadow}",
         "type": "dropShadow"
       },
       "type": "boxShadow"
