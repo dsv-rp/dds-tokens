@@ -1072,6 +1072,10 @@
               "value": "{color.grey.30}",
               "type": "color",
               "description": "Color used if a primary button is disabled"
+            },
+            "loading": {
+              "value": "{color.grey.20}",
+              "type": "color"
             }
           },
           "secondary": {
