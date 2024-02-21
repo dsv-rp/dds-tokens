@@ -937,12 +937,12 @@
         "value": "{space.0}",
         "type": "spacing"
       },
-      "3XS": {
-        "value": "{space.2}",
-        "type": "spacing"
-      },
       "2XS": {
         "value": "{space.4}",
+        "type": "spacing"
+      },
+      "3XS": {
+        "value": "{space.2}",
         "type": "spacing"
       },
       "XS": {
