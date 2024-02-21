@@ -1113,12 +1113,12 @@
               "value": "{color.blue.40}",
               "type": "color"
             },
-            "focus": {
-              "value": "{color.blue.80}",
-              "type": "color"
-            },
             "press": {
               "value": "{color.blue.70}",
+              "type": "color"
+            },
+            "focus": {
+              "value": "{color.blue.80}",
               "type": "color"
             },
             "disabled": {
