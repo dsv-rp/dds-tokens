@@ -3,13 +3,13 @@
     "reference",
     "system",
     "component",
-    "brand-a/light/system",
-    "brand-a/light/component",
-    "brand-a/dark/system",
-    "brand-a/dark/component",
-    "brand-b/light/system",
-    "brand-b/light/component",
-    "brand-b/dark/system",
-    "brand-b/dark/component"
+    "daikin/light/system",
+    "daikin/light/component",
+    "daikin/dark/system",
+    "daikin/dark/component",
+    "aaf/light/system",
+    "aaf/light/component",
+    "aaf/dark/system",
+    "aaf/dark/component"
   ]
 }
