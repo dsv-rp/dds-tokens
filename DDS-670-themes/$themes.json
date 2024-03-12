@@ -7,16 +7,12 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "daikin/light/system": "enabled",
-      "daikin/light/component": "enabled",
-      "daikin/dark/system": "disabled",
-      "daikin/dark/component": "disabled",
-      "aaf/light/system": "disabled",
-      "aaf/light/component": "disabled",
-      "aaf/dark/system": "disabled",
-      "aaf/dark/component": "disabled"
+      "dkn/light/system": "enabled",
+      "dkn/light/component": "enabled",
+      "dkn/dark/system": "disabled",
+      "dkn/dark/component": "disabled"
     },
-    "group": "Daikin"
+    "group": "DKN"
   },
   {
     "id": "05b7910dfcd804207fd5ceeeac8d1e7a44b35d7c",
@@ -26,16 +22,12 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "daikin/light/system": "disabled",
-      "daikin/light/component": "disabled",
-      "daikin/dark/system": "enabled",
-      "daikin/dark/component": "enabled",
-      "aaf/light/system": "disabled",
-      "aaf/light/component": "disabled",
-      "aaf/dark/system": "disabled",
-      "aaf/dark/component": "disabled"
+      "dkn/light/system": "disabled",
+      "dkn/light/component": "disabled",
+      "dkn/dark/system": "enabled",
+      "dkn/dark/component": "enabled"
     },
-    "group": "Daikin"
+    "group": "DKN"
   },
   {
     "id": "39a098e7762a7f008490481d4757642b1b668321",
@@ -45,14 +37,12 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "daikin/light/system": "disabled",
-      "daikin/light/component": "disabled",
-      "daikin/dark/system": "disabled",
-      "daikin/dark/component": "disabled",
       "aaf/light/system": "enabled",
       "aaf/light/component": "enabled",
-      "aaf/dark/system": "disabled",
-      "aaf/dark/component": "disabled"
+      "dkn/light/system": "disabled",
+      "dkn/light/component": "disabled",
+      "dkn/dark/system": "disabled",
+      "dkn/dark/component": "disabled"
     },
     "group": "AAF"
   },
@@ -64,14 +54,12 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "daikin/light/system": "disabled",
-      "daikin/light/component": "disabled",
-      "daikin/dark/system": "disabled",
-      "daikin/dark/component": "disabled",
-      "aaf/light/system": "disabled",
-      "aaf/light/component": "disabled",
       "aaf/dark/system": "enabled",
-      "aaf/dark/component": "enabled"
+      "aaf/dark/component": "enabled",
+      "dkn/light/system": "disabled",
+      "dkn/light/component": "disabled",
+      "dkn/dark/system": "disabled",
+      "dkn/dark/component": "disabled"
     },
     "group": "AAF"
   }
