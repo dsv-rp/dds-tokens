@@ -8,9 +8,7 @@
       "system": "enabled",
       "component": "enabled",
       "dkn/light/system": "enabled",
-      "dkn/light/component": "enabled",
-      "dkn/dark/system": "disabled",
-      "dkn/dark/component": "disabled"
+      "dkn/light/component": "enabled"
     },
     "group": "DKN"
   },
@@ -22,8 +20,6 @@
       "reference": "enabled",
       "system": "enabled",
       "component": "enabled",
-      "dkn/light/system": "disabled",
-      "dkn/light/component": "disabled",
       "dkn/dark/system": "enabled",
       "dkn/dark/component": "enabled"
     },
@@ -38,11 +34,7 @@
       "system": "enabled",
       "component": "enabled",
       "aaf/light/system": "enabled",
-      "aaf/light/component": "enabled",
-      "dkn/light/system": "disabled",
-      "dkn/light/component": "disabled",
-      "dkn/dark/system": "disabled",
-      "dkn/dark/component": "disabled"
+      "aaf/light/component": "enabled"
     },
     "group": "AAF"
   },
@@ -55,11 +47,7 @@
       "system": "enabled",
       "component": "enabled",
       "aaf/dark/system": "enabled",
-      "aaf/dark/component": "enabled",
-      "dkn/light/system": "disabled",
-      "dkn/light/component": "disabled",
-      "dkn/dark/system": "disabled",
-      "dkn/dark/component": "disabled"
+      "aaf/dark/component": "enabled"
     },
     "group": "AAF"
   }
