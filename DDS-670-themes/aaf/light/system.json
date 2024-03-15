@@ -1,0 +1,53 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "{color.red.aaf.600}",
+        "type": "color",
+        "description": "Primary brand blue"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "{color.brand.primary}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.white}",
+        "type": "color"
+      },
+      "default": {
+        "value": "{color.grey.90}",
+        "type": "color"
+      },
+      "default-sub": {
+        "value": "{color.grey.70}",
+        "type": "color"
+      }
+    }
+  },
+  "component": {
+    "color": {
+      "background": {
+        "value": "{color.white}",
+        "type": "color"
+      }
+    }
+  },
+  "object": {
+    "color": {
+      "background": {
+        "value": "{color.grey.90}",
+        "type": "color"
+      }
+    }
+  },
+  "mode": {
+    "color": {
+      "background": {
+        "value": "{color.white}",
+        "type": "color"
+      }
+    }
+  }
+}
