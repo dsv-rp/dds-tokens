@@ -148,10 +148,6 @@
           "value": "{color.grey.70}",
           "type": "color"
         },
-        "positive": {
-          "value": "{color.feedback.positive}",
-          "type": "color"
-        },
         "negative": {
           "value": "{color.feedback.negative}",
           "type": "color"
@@ -172,6 +168,30 @@
           "color": "{color.feedback.negative}",
           "width": "{border-width.1}",
           "style": "solid"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "notification": {
+    "color": {
+      "background": {
+        "positive": {
+          "value": "{color.feedback.positive}",
+          "type": "color"
+        },
+        "negative": {
+          "value": "{color.feedback.negative}",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "positive": {
+        "value": {
+          "color": "{notification.color.background.positive}",
+          "width": "{border-width.M}",
+          "style": "Solid"
         },
         "type": "border"
       }

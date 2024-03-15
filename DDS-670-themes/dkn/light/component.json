@@ -25,7 +25,11 @@
     "color": {
       "background": {
         "value": "{object.color.background}",
-        "type": "color"
+        "type": "color",
+        "gray": {
+          "value": "{object.color.background}",
+          "type": "color"
+        }
       }
     }
   },
