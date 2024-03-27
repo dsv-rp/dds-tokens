@@ -1,0 +1,54 @@
+[
+  {
+    "id": "098dc788a03b232460495b9960bc227e47904387",
+    "name": "Light",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "dkn/light/system": "enabled",
+      "dkn/light/component": "enabled"
+    },
+    "group": "DKN"
+  },
+  {
+    "id": "05b7910dfcd804207fd5ceeeac8d1e7a44b35d7c",
+    "name": "Dark",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "dkn/dark/system": "enabled",
+      "dkn/dark/component": "enabled"
+    },
+    "group": "DKN"
+  },
+  {
+    "id": "39a098e7762a7f008490481d4757642b1b668321",
+    "name": "Light",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "aaf/light/system": "enabled",
+      "aaf/light/component": "enabled"
+    },
+    "group": "AAF"
+  },
+  {
+    "id": "46b7b45ad095e7d7cf169eceb410a2511fa4a1f0",
+    "name": "Dark",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "system": "enabled",
+      "component": "enabled",
+      "aaf/dark/system": "enabled",
+      "aaf/dark/component": "enabled"
+    },
+    "group": "AAF"
+  }
+]
