@@ -101,10 +101,6 @@
           "disabled": {
             "value": "{color.grey.30}",
             "type": "color"
-          },
-          "disabled-copy-test": {
-            "value": "{color.grey.30}",
-            "type": "color"
           }
         },
         "primary": {
