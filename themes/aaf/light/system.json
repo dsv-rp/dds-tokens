@@ -5,6 +5,10 @@
         "value": "{color.red.aaf.600}",
         "type": "color",
         "description": "Primary brand blue"
+      },
+      "secondary": {
+        "value": "{color.red.aaf.400}",
+        "type": "color"
       }
     },
     "text": {

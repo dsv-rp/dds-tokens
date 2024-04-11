@@ -246,6 +246,18 @@
           "value": "#F5C0B8",
           "type": "color"
         },
+        "300": {
+          "value": "#F8AEBA",
+          "type": "color"
+        },
+        "400": {
+          "value": "#DB4F66",
+          "type": "color"
+        },
+        "500": {
+          "value": "#D2324C",
+          "type": "color"
+        },
         "600": {
           "value": "#C8102E",
           "type": "color"
