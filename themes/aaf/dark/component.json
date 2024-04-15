@@ -83,7 +83,7 @@
       "text": {
         "secondary": {
           "active": {
-            "value": "{color.brand.primary}",
+            "value": "{color.text.brand.primary}",
             "type": "color"
           },
           "hover": {
@@ -104,7 +104,7 @@
           }
         },
         "primary": {
-          "value": "{color.text.secondary}",
+          "value": "{color.text.mode}",
           "type": "color"
         }
       }

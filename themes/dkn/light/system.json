@@ -13,11 +13,13 @@
       }
     },
     "text": {
-      "primary": {
-        "value": "{color.brand.primary}",
-        "type": "color"
+      "brand": {
+        "primary": {
+          "value": "{color.brand.primary}",
+          "type": "color"
+        }
       },
-      "secondary": {
+      "mode": {
         "value": "{color.white}",
         "type": "color"
       },
