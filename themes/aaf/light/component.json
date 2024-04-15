@@ -63,15 +63,15 @@
             "type": "color"
           },
           "hover": {
-            "value": "{color.blue.40}",
+            "value": "{color.brand.secondary}",
             "type": "color"
           },
           "press": {
-            "value": "{color.blue.70}",
+            "value": "{color.red.aaf.500}",
             "type": "color"
           },
           "focus": {
-            "value": "{color.blue.80}",
+            "value": "{color.red.aaf.300}",
             "type": "color"
           },
           "disabled": {
@@ -87,15 +87,15 @@
             "type": "color"
           },
           "hover": {
-            "value": "{color.blue.40}",
+            "value": "{color.brand.secondary}",
             "type": "color"
           },
           "press": {
-            "value": "{color.blue.70}",
+            "value": "{color.red.aaf.500}",
             "type": "color"
           },
           "focus": {
-            "value": "{color.blue.80}",
+            "value": "{color.red.aaf.300}",
             "type": "color"
           },
           "disabled": {
