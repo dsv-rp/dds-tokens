@@ -19,7 +19,7 @@
           "type": "color"
         }
       },
-      "": {
+      "theme": {
         "value": "{color.white}",
         "type": "color"
       },

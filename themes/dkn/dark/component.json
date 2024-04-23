@@ -104,7 +104,7 @@
           }
         },
         "primary": {
-          "value": "{color.text.}",
+          "value": "{color.text.theme}",
           "type": "color"
         }
       }
