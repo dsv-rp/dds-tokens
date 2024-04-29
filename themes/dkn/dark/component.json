@@ -2,7 +2,7 @@
   "container": {
     "color": {
       "background": {
-        "value": "{component.color.background}",
+        "value": "{color.background.component}",
         "type": "color"
       },
       "text": {
@@ -24,7 +24,7 @@
   "icon": {
     "color": {
       "background": {
-        "value": "{object.color.background}",
+        "value": "{color.background.object}",
         "type": "color"
       }
     }

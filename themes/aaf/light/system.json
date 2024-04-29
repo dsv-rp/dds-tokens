@@ -32,21 +32,15 @@
       }
     },
     "background": {
-      "value": "{color.white}",
-      "type": "color"
-    }
-  },
-  "component": {
-    "color": {
-      "background": {
+      "theme": {
         "value": "{color.white}",
         "type": "color"
-      }
-    }
-  },
-  "object": {
-    "color": {
-      "background": {
+      },
+      "component": {
+        "value": "{color.white}",
+        "type": "color"
+      },
+      "object": {
         "value": "{color.grey.90}",
         "type": "color"
       }
