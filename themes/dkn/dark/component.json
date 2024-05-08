@@ -21,6 +21,22 @@
       "type": "boxShadow"
     }
   },
+  "notification": {
+    "shadow": {
+      "value": "{shadow.white}",
+      "type": "boxShadow"
+    },
+    "color": {
+      "background": {
+        "value": "{color.background.component}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{color.text.default}",
+        "type": "color"
+      }
+    }
+  },
   "icon": {
     "color": {
       "background": {
@@ -157,18 +173,6 @@
           },
           "type": "border"
         }
-      }
-    }
-  },
-  "notification": {
-    "color": {
-      "background": {
-        "value": "{color.background.component}",
-        "type": "color"
-      },
-      "text": {
-        "value": "{color.text.default}",
-        "type": "color"
       }
     }
   }
