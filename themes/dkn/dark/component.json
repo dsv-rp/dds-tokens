@@ -24,8 +24,14 @@
   "icon": {
     "color": {
       "background": {
-        "value": "{color.background.object}",
-        "type": "color"
+        "default": {
+          "value": "{color.background.object}",
+          "type": "color"
+        },
+        "theme": {
+          "value": "{color.background.theme}",
+          "type": "color"
+        }
       }
     }
   },
@@ -151,6 +157,18 @@
           },
           "type": "border"
         }
+      }
+    }
+  },
+  "notification": {
+    "color": {
+      "background": {
+        "value": "{color.background.component}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{color.text.default}",
+        "type": "color"
       }
     }
   }
