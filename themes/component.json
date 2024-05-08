@@ -248,6 +248,13 @@
           "width": "{border-width.M}"
         },
         "type": "border"
+      },
+      "information": {
+        "value": {
+          "color": "{color.feedback.information}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
       }
     }
   },
