@@ -175,5 +175,53 @@
         }
       }
     }
+  },
+  "tab": {
+    "color": {
+      "line": {
+        "active": {
+          "value": "{color.brand.primary}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.brand.secondary}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.30}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{color.blue.20}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.grey.80}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "active": {
+          "value": "{color.text.brand.primary}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.brand.secondary}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.30}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{color.blue.20}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.grey.80}",
+          "type": "color"
+        }
+      }
+    }
   }
 }
