@@ -1,0 +1,45 @@
+{
+    "name": "@daikinlab/dds-tokens",
+    "version": "0.0.0",
+    "description": "Design token definitions for DDS",
+    "exports": {
+        "./css/daikin/*": "./build/css/DKN/*",
+        "./js/daikin/*": {
+            "import": "./build/js/DKN/*",
+            "types": "./build/js/DKN/*.d.ts"
+        },
+        "./css/aaf/*": "./build/css/AAF/*",
+        "./js/aaf/*": {
+            "import": "./build/js/AAF/*",
+            "types": "./build/js/DKN/*.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "node build-tokens.js",
+        "format": "prettier --write \"**/*.{js,json,yaml}\""
+    },
+    "files": [
+        "build"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dsv-rp/dds-tokens.git"
+    },
+    "keywords": [
+        "design",
+        "system",
+        "dds",
+        "tokens"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dsv-rp/dds-tokens/issues"
+    },
+    "homepage": "https://github.com/dsv-rp/dds-tokens#readme",
+    "devDependencies": {
+        "@tokens-studio/sd-transforms": "^0.11.10",
+        "prettier": "^3.2.5",
+        "style-dictionary": "^3.9.0"
+    }
+}

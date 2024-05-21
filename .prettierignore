@@ -1,0 +1,5 @@
+/node_modules/**
+/build/**
+/themes/**
+package-lock.json
+/.nx/cache
