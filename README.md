@@ -13,7 +13,7 @@ For a complete list of outputs, please check out the file outputs in the `build`
 ## Usage
 
 ```
-npm install @daikinlab/dds-tokens
+npm install @daikin-oss/dds-tokens
 ```
 
 Import as js variables:
@@ -21,18 +21,18 @@ Import as js variables:
 ```
 import {
     buttonColorBackgroundPrimaryActive
-} from '@daikinlab/dds-tokens/js/daikin/Light/variables.js';
+} from '@daikin-oss/dds-tokens/js/daikin/Light/variables.js';
 ```
 
 Import the CSS:
 
 ```
-import variables from '@daikinlab/dds-tokens/css/daikin/Dark/variables.css'
+import variables from '@daikin-oss/dds-tokens/css/daikin/Dark/variables.css'
 ```
 
 The above includes all CSS classes - including core styles and components
 There are also component-specific files if you don't need everything:
 
 ```
-import buttonStyles from '@daikinlab/dds-tokens/css/daikin/Dark/buttons.css'
+import buttonStyles from '@daikin-oss/dds-tokens/css/daikin/Dark/buttons.css'
 ```
