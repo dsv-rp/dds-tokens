@@ -194,5 +194,78 @@
         "type": "border"
       }
     }
+  },
+  "notification": {
+    "color": {
+      "background": {
+        "positive": {
+          "value": "{color.feedback.positive}",
+          "type": "color"
+        },
+        "negative": {
+          "value": "{color.feedback.negative}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.feedback.warning}",
+          "type": "color"
+        },
+        "alarm": {
+          "value": "{color.feedback.alarm}",
+          "type": "color"
+        },
+        "information": {
+          "value": "{color.feedback.information}",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "positive": {
+        "value": {
+          "color": "{color.feedback.positive}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "negative": {
+        "value": {
+          "color": "{color.feedback.negative}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "warning": {
+        "value": {
+          "color": "{color.feedback.warning}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "alarm": {
+        "value": {
+          "color": "{color.feedback.alarm}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "information": {
+        "value": {
+          "color": "{color.feedback.information}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "icon": {
+    "color": {
+      "background": {
+        "neutral": {
+          "value": "{color.grey.60}",
+          "type": "color"
+        }
+      }
+    }
   }
 }

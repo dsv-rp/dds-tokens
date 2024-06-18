@@ -414,6 +414,14 @@
         "value": "{color.red.60}",
         "type": "color",
         "description": "System status is negative"
+      },
+      "alarm": {
+        "value": "{color.orange.60}",
+        "type": "color"
+      },
+      "information": {
+        "value": "{color.blue.60}",
+        "type": "color"
       }
     }
   }
