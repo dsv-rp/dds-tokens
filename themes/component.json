@@ -32,6 +32,10 @@
       "icon": {
         "value": "{color.white}",
         "type": "color"
+      },
+      "icon-copy": {
+        "value": "{color.white}",
+        "type": "color"
       }
     }
   },
