@@ -223,5 +223,187 @@
         }
       }
     }
+  },
+  "textfield": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{color.red.10}",
+          "type": "color"
+        }
+      },
+      "fontcolor": {
+        "label": {
+          "default": {
+            "value": "{color.text.default}",
+            "type": "color"
+          },
+          "disable": {
+            "value": "{color.grey.30}",
+            "type": "color"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.default}",
+            "type": "color"
+          },
+          "disable": {
+            "value": "{color.grey.30}",
+            "type": "color"
+          }
+        },
+        "Helpertext": {
+          "default": {
+            "value": "{color.text.default-sub}",
+            "type": "color"
+          },
+          "disable": {
+            "value": "{color.grey.30}",
+            "type": "color"
+          }
+        },
+        "errormessage": {
+          "default": {
+            "value": "{color.red.60}",
+            "type": "color"
+          }
+        }
+      },
+      "icon": {
+        "numberinput": {
+          "default": {
+            "value": "{color.grey.70}",
+            "type": "color"
+          },
+          "disable": {
+            "value": "{color.grey.30}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{color.grey.30}",
+            "type": "color",
+            "description": "for number input \"-\" and \"+\" button icon backbround"
+          }
+        },
+        "passwordinput": {
+          "default": {
+            "value": "{color.grey.70}",
+            "type": "color",
+            "description": "for password input icon color"
+          },
+          "disable": {
+            "value": "{color.grey.30}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border-inside": {
+      "default": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      },
+      "Hover": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      },
+      "focus": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      },
+      "Active": {
+        "value": {
+          "color": "{color.grey.80}",
+          "width": "{border-width.1}"
+        },
+        "type": "border"
+      },
+      "error": {
+        "value": {
+          "color": "{color.red.60}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      },
+      "disable": {
+        "value": {
+          "color": "{color.grey.30}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      },
+      "Required": {
+        "value": {
+          "color": "{color.grey.70}",
+          "width": "{border-width.1}",
+          "style": "inside"
+        },
+        "type": "border"
+      }
+    },
+    "border-ouside": {
+      "Hover": {
+        "value": {
+          "color": "{color.blue.40}",
+          "width": "{border-width.2}",
+          "style": "outside"
+        },
+        "type": "border"
+      },
+      "focus": {
+        "value": {
+          "color": "{color.grey.40}",
+          "width": "{border-width.2}",
+          "style": "outside"
+        },
+        "type": "border"
+      }
+    },
+    "label": {
+      "value": "{font-size.M}",
+      "type": "fontSizes"
+    },
+    "text": {
+      "value": "{font-size.M}",
+      "type": "fontSizes"
+    },
+    "helpertext": {
+      "value": "{font-size.XS}",
+      "type": "fontSizes"
+    },
+    "errormessage": {
+      "value": "{font-size.M}",
+      "type": "fontSizes"
+    }
+  },
+  "inputfield": {
+    "border": {
+      "value": "{border-radius.XS}",
+      "type": "borderRadius"
+    },
+    "iconbackground": {
+      "value": "{border-radius.2XS}",
+      "type": "borderRadius",
+      "description": "for number input \"-\" and \"+\" button icon background border radius"
+    }
   }
 }
