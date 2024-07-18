@@ -312,7 +312,7 @@
         },
         "type": "border"
       },
-      "Hover": {
+      "hover": {
         "value": {
           "color": "{color.grey.70}",
           "width": "{border-width.1}",
@@ -328,7 +328,7 @@
         },
         "type": "border"
       },
-      "Active": {
+      "active": {
         "value": {
           "color": "{color.grey.80}",
           "width": "{border-width.1}"
@@ -351,7 +351,7 @@
         },
         "type": "border"
       },
-      "Required": {
+      "required": {
         "value": {
           "color": "{color.grey.70}",
           "width": "{border-width.1}",
@@ -361,7 +361,7 @@
       }
     },
     "border-ouside": {
-      "Hover": {
+      "hover": {
         "value": {
           "color": "{color.blue.40}",
           "width": "{border-width.2}",
@@ -404,6 +404,124 @@
       "value": "{border-radius.2XS}",
       "type": "borderRadius",
       "description": "for number input \"-\" and \"+\" button icon background border radius"
+    }
+  },
+  "accordion": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.grey.40}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{accordion.color.background.default}",
+          "type": "color"
+        },
+        "disable": {
+          "value": "{accordion.color.background.default}",
+          "type": "color"
+        }
+      },
+      "line": {
+        "default": {
+          "value": "{color.grey.40}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{accordion.color.line.default}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{accordion.color.line.default}",
+          "type": "color"
+        },
+        "disable": {
+          "value": "{accordion.color.line.default}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "default": {
+          "value": "{color.grey.70}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{accordion.color.icon.default}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{accordion.color.icon.default}",
+          "type": "color"
+        },
+        "disable": {
+          "value": "{color.grey.30}",
+          "type": "color"
+        }
+      }
+    },
+    "title": {
+      "value": "{font-size.M}",
+      "type": "fontSizes"
+    },
+    "text": {
+      "value": "{font-size.S}",
+      "type": "fontSizes"
+    }
+  },
+  "Accordion": {
+    "border": {
+      "focus": {
+        "value": {
+          "color": "{color.blue.60}",
+          "width": "{border-width.M}",
+          "style": "inside"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "Accodion": {
+    "border": {
+      "close": {
+        "width": {
+          "value": "400px",
+          "type": "dimension",
+          "description": "it will be change with the display width"
+        },
+        "hight": {
+          "value": "48px",
+          "type": "dimension"
+        }
+      },
+      "open": {
+        "width": {
+          "value": "400px",
+          "type": "dimension",
+          "description": "it will be change with the display width"
+        },
+        "hight": {
+          "value": "180px",
+          "type": "dimension",
+          "description": "it will be change when the text overflow"
+        }
+      }
+    }
+  },
+  "text field": {
+    "border": {
+      "width": {
+        "value": "340px",
+        "type": "dimension",
+        "description": "it will be change with the display width"
+      },
+      "hight": {
+        "value": "48px",
+        "type": "dimension"
+      }
     }
   }
 }
