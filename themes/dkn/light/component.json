@@ -236,7 +236,7 @@
           "type": "color"
         }
       },
-      "fontcolor": {
+      "text": {
         "label": {
           "default": {
             "value": "{color.text.default}",
@@ -522,6 +522,40 @@
         "value": "48px",
         "type": "dimension"
       }
+    }
+  },
+  "pagination": {
+    "color": {
+      "text": {
+        "default": {
+          "value": "{table.page-number.color.text.default}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{button.color.background.primary.press}",
+          "type": "color"
+        }
+      },
+      "line": {
+        "hover": {
+          "value": "{button.color.background.primary.press}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{button.color.background.primary.press}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "default": {
+          "value": "{table.page-number.color.text.default}",
+          "type": "color"
+        }
+      }
+    },
+    "pagenumber": {
+      "value": "{font-size.M}",
+      "type": "fontSizes"
     }
   }
 }
