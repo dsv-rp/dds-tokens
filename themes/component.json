@@ -281,7 +281,7 @@
           "description": "{tooltip.color.background.secondary} #414141"
         }
       },
-      "fontcolor": {
+      "text": {
         "primary": {
           "value": "{color.black}",
           "type": "color"
@@ -296,7 +296,7 @@
       "primary": {
         "value": {
           "color": "{color.grey.90}",
-          "width": "{border-width.1}",
+          "width": "{border-width.S}",
           "style": "Inside"
         },
         "type": "border"
