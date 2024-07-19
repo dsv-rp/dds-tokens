@@ -426,24 +426,6 @@
           "type": "color"
         }
       },
-      "line": {
-        "default": {
-          "value": "{color.grey.40}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{accordion.color.line.default}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{accordion.color.line.default}",
-          "type": "color"
-        },
-        "disable": {
-          "value": "{accordion.color.line.default}",
-          "type": "color"
-        }
-      },
       "icon": {
         "default": {
           "value": "{color.grey.70}",
@@ -474,6 +456,24 @@
   },
   "Accordion": {
     "border": {
+      "default": {
+        "value": {
+          "color": "{color.grey.40}",
+          "width": "{border-width.S}",
+          "style": "inside"
+        },
+        "type": "border",
+        "description": "Remove the vertical lines on the left and right sides of the frame.\n"
+      },
+      "hover": {
+        "value": {
+          "color": "{color.grey.40}",
+          "width": "{border-width.S}",
+          "style": "inside"
+        },
+        "type": "border",
+        "description": "Remove the vertical lines on the left and right sides of the frame.\n"
+      },
       "focus": {
         "value": {
           "color": "{color.blue.60}",
@@ -481,6 +481,15 @@
           "style": "inside"
         },
         "type": "border"
+      },
+      "disable": {
+        "value": {
+          "color": "{color.grey.40}",
+          "width": "{border-width.S}",
+          "style": "inside"
+        },
+        "type": "border",
+        "description": "Remove the vertical lines on the left and right sides of the frame.\n"
       }
     }
   },
