@@ -223,5 +223,40 @@
         }
       }
     }
+  },
+  "tooltip": {
+    "color": {
+      "background": {
+        "primary": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.grey.90}",
+          "type": "color",
+          "description": "{tooltip.color.background.secondary} #414141"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "{color.black}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "value": {
+          "color": "{color.grey.90}",
+          "width": "{border-width.S}",
+          "style": "Inside"
+        },
+        "type": "border"
+      }
+    }
   }
 }
