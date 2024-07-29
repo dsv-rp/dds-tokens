@@ -5,17 +5,17 @@
     "exports": {
         "./css/daikin/*": "./build/css/DKN/*",
         "./js/daikin/*": {
-            "import": "./build/js/DKN/*",
-            "types": "./build/js/DKN/*.d.ts"
+            "import": "./build/js/es/DKN/*",
+            "require": "./build/js/cjs/DKN/*"
         },
         "./css/aaf/*": "./build/css/AAF/*",
         "./js/aaf/*": {
-            "import": "./build/js/AAF/*",
-            "types": "./build/js/DKN/*.d.ts"
+            "import": "./build/js/es/AAF/*",
+            "require": "./build/js/cjs/AAF/*"
         }
     },
     "scripts": {
-        "build": "node build-tokens.js",
+        "build": "rm -rf build && node build-tokens.js",
         "format": "prettier --write \"**/*.{js,json,yaml}\""
     },
     "files": [

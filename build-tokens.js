@@ -12,13 +12,27 @@ async function run() {
                 .filter(([, val]) => val !== 'disabled')
                 .map(([tokenset]) => `themes/${tokenset}.json`),
             platforms: {
-                js: {
+                esm: {
                     transformGroup: 'tokens-studio',
-                    buildPath: 'build/js/',
+                    buildPath: 'build/js/es/',
                     files: [
                         {
                             destination: `${theme.group}/${theme.name}/variables.js`,
                             format: 'javascript/es6'
+                        },
+                        {
+                            format: 'typescript/es6-declarations',
+                            destination: `${theme.group}/${theme.name}/variables.d.ts`
+                        }
+                    ]
+                },
+                cjs: {
+                    transformGroup: 'tokens-studio',
+                    buildPath: 'build/js/cjs/',
+                    files: [
+                        {
+                            destination: `${theme.group}/${theme.name}/variables.js`,
+                            format: 'javascript/module-flat'
                         },
                         {
                             format: 'typescript/es6-declarations',
