@@ -1,6 +1,6 @@
 {
     "name": "@daikin-oss/dds-tokens",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Design token definitions for DDS",
     "exports": {
         "./css/daikin/*": "./build/css/DKN/*",
