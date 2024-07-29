@@ -18,21 +18,24 @@ npm install @daikin-oss/dds-tokens
 
 Import as js variables:
 
-```
-import {
+```js
+import { buttonColorBackgroundPrimaryActive } from '@daikin-oss/dds-tokens/js/daikin/Light/variables.js';
+
+// CommonJS
+const {
     buttonColorBackgroundPrimaryActive
-} from '@daikin-oss/dds-tokens/js/daikin/Light/variables.js';
+} = require('@daikin-oss/dds-tokens/js/daikin/Light/variables.js');
 ```
 
 Import the CSS:
 
-```
+```CSS
 import variables from '@daikin-oss/dds-tokens/css/daikin/Dark/variables.css'
 ```
 
 The above includes all CSS classes - including core styles and components
 There are also component-specific files if you don't need everything:
 
-```
+```CSS
 import buttonStyles from '@daikin-oss/dds-tokens/css/daikin/Dark/buttons.css'
 ```
