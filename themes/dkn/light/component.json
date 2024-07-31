@@ -560,6 +560,16 @@
           "value": "{table.page-number.color.text.default}",
           "type": "color"
         }
+      },
+      "dropdown": {
+        "line": {
+          "value": "{color.grey.70}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{color.grey.90}",
+          "type": "color"
+        }
       }
     },
     "pagenumber": {
