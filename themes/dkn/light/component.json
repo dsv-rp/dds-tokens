@@ -228,7 +228,7 @@
     "color": {
       "background": {
         "primary": {
-          "value": "{color.white}",
+          "value": "{color.text.theme}",
           "type": "color"
         },
         "secondary": {
@@ -239,11 +239,11 @@
       },
       "text": {
         "primary": {
-          "value": "{color.black}",
+          "value": "{color.text.default}",
           "type": "color"
         },
         "secondary": {
-          "value": "{color.white}",
+          "value": "{color.text.theme}",
           "type": "color"
         }
       }
