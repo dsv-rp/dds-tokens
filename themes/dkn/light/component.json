@@ -223,5 +223,31 @@
         }
       }
     }
+  },
+  "card": {
+    "color": {
+      "background": {
+        "value": "{container.color.background}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "hover": {
+        "value": {
+          "color": "#BFBFBF",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "alert": {
+        "value": {
+          "color": "{notification.color.background.negative}",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      }
+    }
   }
 }
