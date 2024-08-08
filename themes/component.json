@@ -267,15 +267,5 @@
         }
       }
     }
-  },
-  "card": {
-    "border": {
-      "alert": {
-        "value": {
-          "color": "{color.feedback.negative}"
-        },
-        "type": "border"
-      }
-    }
   }
 }
