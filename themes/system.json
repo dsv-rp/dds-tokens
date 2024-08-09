@@ -397,32 +397,5 @@
       "value": "{border-width.4}",
       "type": "borderWidth"
     }
-  },
-  "color": {
-    "feedback": {
-      "positive": {
-        "value": "{color.green.60}",
-        "type": "color",
-        "description": "System status is positive"
-      },
-      "warning": {
-        "value": "{color.yellow.50}",
-        "type": "color",
-        "description": "System status has a warning"
-      },
-      "negative": {
-        "value": "{color.red.60}",
-        "type": "color",
-        "description": "System status is negative"
-      },
-      "alarm": {
-        "value": "{color.orange.60}",
-        "type": "color"
-      },
-      "information": {
-        "value": "{color.blue.60}",
-        "type": "color"
-      }
-    }
   }
 }

@@ -242,7 +242,7 @@
       },
       "alert": {
         "value": {
-          "color": "{notification.color.background.negative}",
+          "color": "{color.feeback.negative}",
           "width": "2",
           "style": "solid"
         },
