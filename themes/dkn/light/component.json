@@ -15,10 +15,36 @@
           "type": "color"
         }
       }
-    },
+    }
+  },
+  "card": {
     "shadow": {
       "value": "{shadow.black}",
       "type": "boxShadow"
+    },
+    "color": {
+      "background": {
+        "value": "{container.color.background}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "hover": {
+        "value": {
+          "color": "#BFBFBF",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "alert": {
+        "value": {
+          "color": "{color.feeback.negative}",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      }
     }
   },
   "notification": {
@@ -221,32 +247,6 @@
           "value": "{color.grey.30}",
           "type": "color"
         }
-      }
-    }
-  },
-  "card": {
-    "color": {
-      "background": {
-        "value": "{container.color.background}",
-        "type": "color"
-      }
-    },
-    "border": {
-      "hover": {
-        "value": {
-          "color": "#BFBFBF",
-          "width": "2",
-          "style": "solid"
-        },
-        "type": "border"
-      },
-      "alert": {
-        "value": {
-          "color": "{color.feeback.negative}",
-          "width": "2",
-          "style": "solid"
-        },
-        "type": "border"
       }
     }
   }
