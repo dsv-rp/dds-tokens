@@ -15,7 +15,9 @@
           "type": "color"
         }
       }
-    },
+    }
+  },
+  "card": {
     "shadow": {
       "value": "{shadow.white}",
       "type": "boxShadow"
