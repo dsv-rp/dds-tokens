@@ -399,7 +399,7 @@
     }
   },
   "color": {
-    "feedback": {
+    "feeback": {
       "positive": {
         "value": "{color.green.60}",
         "type": "color",
@@ -408,20 +408,22 @@
       "warning": {
         "value": "{color.yellow.50}",
         "type": "color",
-        "description": "System status has a warning"
+        "description": "System status is warning"
       },
       "negative": {
         "value": "{color.red.60}",
         "type": "color",
-        "description": "System status is negative"
+        "description": "System status is warning"
       },
       "alarm": {
         "value": "{color.orange.60}",
-        "type": "color"
+        "type": "color",
+        "description": "System status is warning"
       },
       "information": {
         "value": "{color.blue.60}",
-        "type": "color"
+        "type": "color",
+        "description": "System status is warning"
       }
     }
   }
