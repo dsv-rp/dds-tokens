@@ -6,7 +6,6 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "system": "enabled",
-      "component": "enabled",
       "dkn/light/system": "enabled",
       "dkn/light/component": "enabled"
     },
@@ -19,7 +18,6 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "system": "enabled",
-      "component": "enabled",
       "dkn/dark/system": "enabled",
       "dkn/dark/component": "enabled"
     },
@@ -32,7 +30,6 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "system": "enabled",
-      "component": "enabled",
       "aaf/light/system": "enabled",
       "aaf/light/component": "enabled"
     },
@@ -45,7 +42,6 @@
     "selectedTokenSets": {
       "reference": "enabled",
       "system": "enabled",
-      "component": "enabled",
       "aaf/dark/system": "enabled",
       "aaf/dark/component": "enabled"
     },

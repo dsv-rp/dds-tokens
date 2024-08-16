@@ -2,7 +2,6 @@
   "tokenSetOrder": [
     "reference",
     "system",
-    "component",
     "dkn/light/system",
     "dkn/light/component",
     "dkn/dark/system",
