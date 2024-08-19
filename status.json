@@ -1,0 +1,12 @@
+{
+  "currentVersion": "0.0.0",
+  "previousVersion": null,
+  "nextVersion": "0.1.0",
+  "semverBumpType": "feature",
+  "hasChanges": true,
+  "compareResult": {
+    "totalAdded": 1144,
+    "totalModified": 0,
+    "totalRemoved": 0
+  }
+}

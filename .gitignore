@@ -1,6 +1,7 @@
 node_modules
-dist
-lib
 build
+
+previous-release
+.changeset/auto-generated-token-changes.md
 
 .DS_Store
