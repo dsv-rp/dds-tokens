@@ -6,6 +6,12 @@ import type { Theme, ThemeTokensetMap } from "./types";
 
 await register(StyleDictionary);
 
+/**
+ * Creates `ThemeTokensetMap` from specified themes directory.
+ * @param themesDir Themes directory.
+ * @param allowMissing If `true`, `null` is returned if the themes are not found. If `false`, an exception is thrown in that situation.
+ * @returns `Record<themeName, Record<tokenName, tokenValue>>`
+ */
 export async function loadThemeTokensetMap(
   themesDir: string,
   allowMissing = false
