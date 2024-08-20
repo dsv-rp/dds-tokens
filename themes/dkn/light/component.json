@@ -62,8 +62,30 @@
     },
     "color": {
       "background": {
-        "value": "{color.background.component}",
-        "type": "color"
+        "default": {
+          "value": "{color.background.component}",
+          "type": "color"
+        },
+        "positive": {
+          "value": "{color.feeback.positive}",
+          "type": "color"
+        },
+        "negative": {
+          "value": "{color.feeback.negative}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.feeback.warning}",
+          "type": "color"
+        },
+        "alarm": {
+          "value": "{color.feeback.alarm}",
+          "type": "color"
+        },
+        "information": {
+          "value": "{color.feeback.information}",
+          "type": "color"
+        }
       },
       "text": {
         "value": "{color.text.default}",
