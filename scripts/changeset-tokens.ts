@@ -3,13 +3,13 @@ import {
   compareThemeTokensets,
   formatCompareResult,
   getSemverBumpType,
-  type ThemeCompareResult,
 } from "./lib/compare";
 import {
   CURRENT_PROJECT_DIR,
   PREVIOUS_PROJECT_DIR,
   TOKENS_CHANGESET_FILENAME,
 } from "./lib/config";
+import { loadThemeTokensetMap } from "./lib/loader";
 import { loadPackageJSON } from "./lib/package-json";
 import { semverBumpTypeToDigit } from "./lib/semver";
 
@@ -17,9 +17,9 @@ import { semverBumpTypeToDigit } from "./lib/semver";
 await fsp.rm(TOKENS_CHANGESET_FILENAME, { force: true });
 
 // Compare tokensets.
-const compareResult = await compareThemeTokensets(
-  `${CURRENT_PROJECT_DIR}/themes`,
-  `${PREVIOUS_PROJECT_DIR}/themes`
+const compareResult = compareThemeTokensets(
+  await loadThemeTokensetMap(`${CURRENT_PROJECT_DIR}/themes`, false),
+  await loadThemeTokensetMap(`${PREVIOUS_PROJECT_DIR}/themes`, true)
 );
 
 // Calculate bump type (breaking, feature, fix).

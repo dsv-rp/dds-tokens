@@ -1,5 +1,5 @@
-import { loadThemeTokensetMap } from "./loader";
 import type { SemverBumpType } from "./semver";
+import type { ThemeTokensetMap } from "./types";
 
 /**
  * The result of comparing the token sets (`themes` directory) in the two repositories
@@ -19,13 +19,10 @@ export interface ThemeCompareResult {
  * @param previousThemesDir Previous `themes` directory.
  * @returns The result of comparing the token sets.
  */
-export async function compareThemeTokensets(
-  currentThemesDir: string,
-  previousThemesDir: string
-): Promise<ThemeCompareResult> {
-  const current = await loadThemeTokensetMap(currentThemesDir, false);
-  const previous = await loadThemeTokensetMap(previousThemesDir, true);
-
+export function compareThemeTokensets(
+  current: ThemeTokensetMap,
+  previous: ThemeTokensetMap
+): ThemeCompareResult {
   let totalAdded = 0;
   let totalModified = 0;
   for (const [theme, tokenset] of Object.entries(current)) {
