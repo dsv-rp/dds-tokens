@@ -190,27 +190,35 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common1: {
-            key: "current",
+            common: "value",
+            commonUpdated: "current",
+            onlyCurrent: "value",
           },
           common2: {
-            key: "current",
+            common: "value",
+            commonUpdated: "current",
+            onlyCurrent: "value",
           },
         },
         // previous
         {
           common1: {
-            key: "previous",
+            common: "value",
+            commonUpdated: "previous",
+            onlyPrevious: "value",
           },
           common2: {
-            key: "previous",
+            common: "value",
+            commonUpdated: "previous",
+            onlyPrevious: "value",
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
-        "totalAdded": 0,
+        "totalAdded": 2,
         "totalModified": 2,
-        "totalRemoved": 0,
+        "totalRemoved": 2,
       }
     `);
   });
