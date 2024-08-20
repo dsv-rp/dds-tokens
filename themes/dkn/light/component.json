@@ -62,15 +62,15 @@
     },
     "color": {
       "background": {
-        "default": {
+        "theme": {
           "value": "{color.background.component}",
           "type": "color"
         },
-        "positive": {
+        "success": {
           "value": "{color.feeback.positive}",
           "type": "color"
         },
-        "negative": {
+        "error": {
           "value": "{color.feeback.negative}",
           "type": "color"
         },
