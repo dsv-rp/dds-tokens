@@ -81,8 +81,8 @@ Import all themes:
 Import individual themes:
 
 ```scss
-@use "@daikin-oss/dds-tokens/scss/daikin/Light/mixin" as daikin-light;
-@use "@daikin-oss/dds-tokens/scss/daikin/Dark/mixin" as daikin-dark;
+@use "@daikin-oss/dds-tokens/scss/daikin/Light/mixin" as daikin-Light;
+@use "@daikin-oss/dds-tokens/scss/daikin/Dark/mixin" as daikin-Dark;
 
 :root {
   @include daikin-Light.variables;
