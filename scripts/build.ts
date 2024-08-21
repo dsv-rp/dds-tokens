@@ -39,6 +39,9 @@ for (const theme of $themes) {
     .map(([tokenset]) => `themes/${tokenset}.json`);
 
   const config: Config = {
+    log: {
+      verbosity: "verbose"
+    },
     source,
     preprocessors: ["tokens-studio"],
     platforms: {
