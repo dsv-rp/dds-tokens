@@ -1,15 +1,15 @@
 # dds-tokens
 
-This package outputs:
+This package contains:
 
-- Tokens as both `js` and `css` variables
-- Brand-specific tokens (i.e. `Daikin` and `AAF`)
-- `Light` and `Dark` mode
+- Tokens as JS, CSS and SCSS variables
+- Brand-specific tokens (e.g. `Daikin` and `AAF`)
+- `Light` and `Dark` mode for each themes
 - General styles as `variables.(css|js)`
-- Component-specific styles (i.e. `buttons.css`)
+- Component-specific styles (e.g. `buttons.css`)
 - SCSS mixins
 
-For a complete list of outputs, please check out the file outputs in the `build` folder.
+For the complete list of outputs, please check out the files output in the `build` folder.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Install package:
 npm install @daikin-oss/dds-tokens
 ```
 
-### Import as JS variables
+### Import JS variables
 
 ```js
 // ESM
@@ -31,7 +31,7 @@ const {
 } = require("@daikin-oss/dds-tokens/js/daikin/Light/variables.js");
 ```
 
-### Import the CSS
+### Import CSS
 
 ```js
 import variables from "@daikin-oss/dds-tokens/css/daikin/Dark/variables.css";
