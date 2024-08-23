@@ -12,6 +12,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Spell Check
+        continue-on-error: true
+        uses: crate-ci/typos@master
+        with:
+          files: ./themes
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

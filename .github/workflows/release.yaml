@@ -32,6 +32,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Spell Check
+        continue-on-error: true
+        uses: crate-ci/typos@master
+        with:
+          files: ./themes
+
       - name: Get Previous Release Tag
         id: previous_release
         continue-on-error: true
