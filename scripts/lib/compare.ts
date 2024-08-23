@@ -15,8 +15,8 @@ export interface ThemeCompareResult {
 
 /**
  * Compares the two tokensets and calculates the increase/decrease and changes in tokens.
- * @param current Current tokenset
- * @param previous Previous tokenset
+ * @param current Current tokensets
+ * @param previous Previous tokensets
  * @returns The comparison result of the tokensets
  */
 export function compareThemeTokensets(
