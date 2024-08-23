@@ -2,7 +2,7 @@ import type { SemverBumpType } from "./semver";
 import type { ThemeTokensetMap } from "./types";
 
 /**
- * The result of comparing the token sets (`themes` directory) in the two repositories
+ * The comparison result of the tokensets (loaded from `themes` directory)
  */
 export interface ThemeCompareResult {
   /** Number of tokens added (total for all themes) */
@@ -14,10 +14,10 @@ export interface ThemeCompareResult {
 }
 
 /**
- * Compares the two `themes` directories and calculates the increase/decrease and changes in tokens.
- * @param currentThemesDir Current `themes` directory.
- * @param previousThemesDir Previous `themes` directory.
- * @returns The result of comparing the token sets.
+ * Compares the two tokensets and calculates the increase/decrease and changes in tokens.
+ * @param current Current tokenset
+ * @param previous Previous tokenset
+ * @returns The comparison result of the tokenset
  */
 export function compareThemeTokensets(
   current: ThemeTokensetMap,
@@ -54,8 +54,8 @@ export function compareThemeTokensets(
 }
 
 /**
- * Calculates the type of changes from the comparison results of the token set.
- * @param result The comparison results of the token set
+ * Calculates the type of changes from the comparison results of the tokenset.
+ * @param result The comparison result of the tokenset
  * @returns The type of changes
  */
 export function getSemverBumpType(
@@ -77,8 +77,8 @@ export function getSemverBumpType(
 }
 
 /**
- * Converts the comparison results of the token set into a changelog in Markdown format.
- * @param result The comparison results of the token set
+ * Converts the comparison results of the tokenset into a changelog in Markdown format.
+ * @param result The comparison result of the tokenset
  * @returns A changelog in Markdown format
  */
 export function formatCompareResult(result: ThemeCompareResult): string {
