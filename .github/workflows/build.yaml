@@ -15,8 +15,6 @@ jobs:
       - name: Spell Check
         continue-on-error: true
         uses: crate-ci/typos@master
-        with:
-          files: ./themes
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
