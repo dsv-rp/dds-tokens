@@ -16,10 +16,6 @@ jobs:
         continue-on-error: true
         uses: crate-ci/typos@master
 
-      - name: Remove Spell Checker
-        continue-on-error: true
-        run: rm ./typos
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
