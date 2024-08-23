@@ -23,7 +23,7 @@ const compareResult = compareThemeTokensets(
 );
 
 // Calculate bump type (breaking, feature, fix).
-// Note that this does not immediately correspond to bump digit, due to rapid release.
+// Note that this does not immediately correspond to the bump digit, due to the rapid development.
 const semverBumpType = getSemverBumpType(compareResult);
 const hasChanges = semverBumpType != null;
 if (!hasChanges) {

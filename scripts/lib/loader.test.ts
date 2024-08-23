@@ -24,7 +24,7 @@ test("loadThemeTokensetMap (missing)", async ({ expect }) => {
     loadThemeTokensetMap(`${CURRENT_PROJECT_DIR}/not-exist`, false)
   ).rejects.toThrowError();
 
-  // do not throw if allowMissing is false.
+  // do not throw if allowMissing is true.
   expect(
     await loadThemeTokensetMap(`${CURRENT_PROJECT_DIR}/not-exist`, true)
   ).toEqual({});

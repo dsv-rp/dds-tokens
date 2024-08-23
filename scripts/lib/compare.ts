@@ -56,7 +56,7 @@ export function compareThemeTokensets(
 /**
  * Calculates the type of changes from the comparison results of the tokenset.
  * @param result The comparison result of the tokensets
- * @returns The type of changes
+ * @returns The type of changes. `null` if no changes found.
  */
 export function getSemverBumpType(
   result: ThemeCompareResult

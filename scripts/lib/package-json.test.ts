@@ -18,7 +18,7 @@ test("loadPackageJSON (missing)", async ({ expect }) => {
     loadPackageJSON(`${CURRENT_PROJECT_DIR}/not-exist/package.json`, false)
   ).rejects.toThrowError();
 
-  // do not throw if allowMissing is false.
+  // do not throw if allowMissing is true.
   expect(
     await loadPackageJSON(`${CURRENT_PROJECT_DIR}/not-exist/package.json`, true)
   ).toBe(null);
