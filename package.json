@@ -5,7 +5,9 @@
   "type": "module",
   "files": [
     "build",
-    "themes"
+    "themes",
+    "README.md",
+    "CHANGELOG.md"
   ],
   "exports": {
     "./js/*.js": {
