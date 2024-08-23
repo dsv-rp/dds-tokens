@@ -17,7 +17,7 @@ export interface ThemeCompareResult {
  * Compares the two tokensets and calculates the increase/decrease and changes in tokens.
  * @param current Current tokenset
  * @param previous Previous tokenset
- * @returns The comparison result of the tokenset
+ * @returns The comparison result of the tokensets
  */
 export function compareThemeTokensets(
   current: ThemeTokensetMap,
@@ -55,7 +55,7 @@ export function compareThemeTokensets(
 
 /**
  * Calculates the type of changes from the comparison results of the tokenset.
- * @param result The comparison result of the tokenset
+ * @param result The comparison result of the tokensets
  * @returns The type of changes
  */
 export function getSemverBumpType(
@@ -78,7 +78,7 @@ export function getSemverBumpType(
 
 /**
  * Converts the comparison results of the tokenset into a changelog in Markdown format.
- * @param result The comparison result of the tokenset
+ * @param result The comparison result of the tokensets
  * @returns A changelog in Markdown format
  */
 export function formatCompareResult(result: ThemeCompareResult): string {
