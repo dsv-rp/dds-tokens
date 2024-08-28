@@ -1,6 +1,11 @@
 node_modules
-dist
-lib
 build
+
+previous-release
+.changeset/auto-generated-token-changes.md
+
+# `crate-ci/typos` action downloads `typos` binary to the repo root.
+# Prevent being included in release PR.
+typos
 
 .DS_Store

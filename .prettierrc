@@ -1,14 +1,5 @@
 {
-  "singleQuote": true,
-  "trailingComma": "none",
-  "tabWidth": 4,
-  "printWidth": 90,
-  "overrides": [
-    {
-      "files": ".github/**/*.yaml",
-      "options": {
-        "tabWidth": 2
-      }
-    }
-  ]
+  "plugins": ["prettier-plugin-organize-imports"],
+  "trailingComma": "es5",
+  "organizeImportsSkipDestructiveCodeActions": true
 }

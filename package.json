@@ -1,45 +1,66 @@
 {
-    "name": "@daikin-oss/dds-tokens",
-    "version": "0.1.0",
-    "description": "Design token definitions for DDS",
-    "exports": {
-        "./css/daikin/*": "./build/css/DKN/*",
-        "./js/daikin/*": {
-            "import": "./build/js/es/DKN/*",
-            "require": "./build/js/cjs/DKN/*"
-        },
-        "./css/aaf/*": "./build/css/AAF/*",
-        "./js/aaf/*": {
-            "import": "./build/js/es/AAF/*",
-            "require": "./build/js/cjs/AAF/*"
-        }
+  "name": "@daikin-oss/dds-tokens",
+  "version": "0.1.0",
+  "description": "Design token definitions for DDS",
+  "type": "module",
+  "files": [
+    "build",
+    "themes",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    "./js/*.js": {
+      "import": "./build/js/*.js",
+      "require": "./build/js/*.cjs",
+      "types": "./build/js/*.d.ts",
+      "default": "./build/js/*.js"
     },
-    "scripts": {
-        "build": "rm -rf build && node build-tokens.js",
-        "format": "prettier --write \"**/*.{js,json,yaml}\""
+    "./js/*": {
+      "import": "./build/js/*.js",
+      "require": "./build/js/*.cjs",
+      "types": "./build/js/*.d.ts",
+      "default": "./build/js/*.js"
     },
-    "files": [
-        "build"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/dsv-rp/dds-tokens.git"
-    },
-    "keywords": [
-        "design",
-        "system",
-        "dds",
-        "tokens"
-    ],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/dsv-rp/dds-tokens/issues"
-    },
-    "homepage": "https://github.com/dsv-rp/dds-tokens#readme",
-    "devDependencies": {
-        "@tokens-studio/sd-transforms": "^0.11.10",
-        "prettier": "^3.2.5",
-        "style-dictionary": "^3.9.0"
-    }
+    "./css/*": "./build/css/*",
+    "./scss/*": "./build/scss/*",
+    "./themes/*": "./themes/*"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "changeset-tokens": "tsx scripts/changeset-tokens.ts",
+    "changeset-version": "changeset version && npm install --package-lock-only",
+    "changeset-publish": "changeset publish",
+    "format": "prettier -w .",
+    "test:unit": "vitest",
+    "test:e2e": "node --test e2e",
+    "test": "npm run test:unit -- --run && npm run test:e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsv-rp/dds-tokens.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "dds",
+    "tokens"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsv-rp/dds-tokens/issues"
+  },
+  "homepage": "https://github.com/dsv-rp/dds-tokens#readme",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.7",
+    "@tokens-studio/sd-transforms": "^1.2.3",
+    "@types/node": "^20.16.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "style-dictionary": "^4.0.1",
+    "tsx": "^4.19.0",
+    "vitest": "^2.0.5"
+  }
 }

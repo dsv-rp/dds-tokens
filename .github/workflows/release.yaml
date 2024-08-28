@@ -1,0 +1,86 @@
+name: Release or Prepare for Release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  # Build and Invoke Changesets Action
+  # Changesets Action will do:
+  # - Create or update release PR if this is not a release commit
+  # - Publish to npm if this is a release commit
+  release:
+    name: Release or Prepare for Release
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: read
+      packages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Spell Check
+        continue-on-error: true
+        uses: crate-ci/typos@master
+
+      - name: Get Previous Release Tag
+        id: previous_release
+        continue-on-error: true
+        run: echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Previous Release
+        if: steps.previous_release.outputs.tag != ''
+        uses: actions/checkout@v4
+        with:
+          path: previous-release
+          ref: ${{ steps.previous_release.outputs.tag }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm run test
+
+      - name: Create Tokens Changeset
+        run: npm run changeset-tokens
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: npm run changeset-version
+          publish: npm run changeset-publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
+
+      - name: Edit Release Pull Request
+        if: steps.changesets.outputs.pullRequestNumber != ''
+        continue-on-error: true
+        run: gh pr edit $PR_NUMBER --add-label release -t "Release v$(jq -r .version package.json)"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.changesets.outputs.pullRequestNumber }}
