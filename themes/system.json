@@ -86,22 +86,22 @@
         "type": "typography",
         "description": "Body is primarily used for components and for blocks of text."
       },
-      "L": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.normal}",
-          "fontSize": "{font-size.L}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
       "M": {
         "value": {
           "fontFamily": "{font-family.base}",
           "fontWeight": "{font-weight.regular}",
           "lineHeight": "{line-height.normal}",
           "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.L}"
         },
         "type": "typography",
         "description": "Body is primarily used for components and for blocks of text."
@@ -198,22 +198,22 @@
         "type": "typography",
         "description": "Body is primarily used for components and for blocks of text."
       },
-      "L": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.tight}",
-          "fontSize": "{font-size.L}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
       "M": {
         "value": {
           "fontFamily": "{font-family.base}",
           "fontWeight": "{font-weight.regular}",
           "lineHeight": "{line-height.tight}",
           "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.L}"
         },
         "type": "typography",
         "description": "Body is primarily used for components and for blocks of text."
