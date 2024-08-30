@@ -149,11 +149,11 @@
           "type": "color"
         },
         "positive": {
-          "value": "{color.feeback.positive}",
+          "value": "{color.feedback.positive}",
           "type": "color"
         },
         "negative": {
-          "value": "{color.feeback.negative}",
+          "value": "{color.feedback.negative}",
           "type": "color"
         }
       }
@@ -169,7 +169,7 @@
       },
       "negative": {
         "value": {
-          "color": "{color.feeback.negative}",
+          "color": "{color.feedback.negative}",
           "width": "{border-width.1}",
           "style": "solid"
         },
@@ -199,23 +199,23 @@
     "color": {
       "background": {
         "positive": {
-          "value": "{color.feeback.positive}",
+          "value": "{color.feedback.positive}",
           "type": "color"
         },
         "negative": {
-          "value": "{color.feeback.negative}",
+          "value": "{color.feedback.negative}",
           "type": "color"
         },
         "warning": {
-          "value": "{color.feeback.warning}",
+          "value": "{color.feedback.warning}",
           "type": "color"
         },
         "alarm": {
-          "value": "{color.feeback.alarm}",
+          "value": "{color.feedback.alarm}",
           "type": "color"
         },
         "information": {
-          "value": "{color.feeback.information}",
+          "value": "{color.feedback.information}",
           "type": "color"
         }
       }
@@ -223,35 +223,35 @@
     "border": {
       "positive": {
         "value": {
-          "color": "{color.feeback.positive}",
+          "color": "{color.feedback.positive}",
           "width": "{border-width.M}"
         },
         "type": "border"
       },
       "negative": {
         "value": {
-          "color": "{color.feeback.negative}",
+          "color": "{color.feedback.negative}",
           "width": "{border-width.M}"
         },
         "type": "border"
       },
       "warning": {
         "value": {
-          "color": "{color.feeback.warning}",
+          "color": "{color.feedback.warning}",
           "width": "{border-width.M}"
         },
         "type": "border"
       },
       "alarm": {
         "value": {
-          "color": "{color.feeback.alarm}",
+          "color": "{color.feedback.alarm}",
           "width": "{border-width.M}"
         },
         "type": "border"
       },
       "information": {
         "value": {
-          "color": "{color.feeback.information}",
+          "color": "{color.feedback.information}",
           "width": "{border-width.M}"
         },
         "type": "border"

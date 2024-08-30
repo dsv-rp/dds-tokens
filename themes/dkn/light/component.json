@@ -39,7 +39,7 @@
       },
       "alert": {
         "value": {
-          "color": "{color.feeback.negative}",
+          "color": "{color.feedback.negative}",
           "width": "2",
           "style": "solid"
         },

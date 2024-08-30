@@ -627,7 +627,7 @@
     }
   },
   "color": {
-    "feeback": {
+    "feedback": {
       "positive": {
         "value": "{color.green.60}",
         "type": "color",
