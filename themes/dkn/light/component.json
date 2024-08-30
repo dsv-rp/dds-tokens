@@ -91,6 +91,41 @@
         "value": "{color.text.default}",
         "type": "color"
       }
+    },
+    "border": {
+      "success": {
+        "value": {
+          "color": "{color.feedback.positive}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "error": {
+        "value": {
+          "color": "{color.feedback.negative}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "warning": {
+        "value": {
+          "color": "{color.feedback.warning}"
+        },
+        "type": "border"
+      },
+      "alarm": {
+        "value": {
+          "color": "{color.feedback.alarm}",
+          "width": "{border-width.M}"
+        },
+        "type": "border"
+      },
+      "information": {
+        "value": {
+          "color": "{color.feedback.information}"
+        },
+        "type": "border"
+      }
     }
   },
   "icon": {
