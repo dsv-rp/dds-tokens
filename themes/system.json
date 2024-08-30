@@ -53,239 +53,467 @@
     }
   },
   "line-height": {
-    "M": {
+    "tight": {
       "value": "{line-height.130}",
       "type": "lineHeights",
       "description": "Latin, Arabic, and Hebrew scripts"
     },
-    "L": {
+    "normal": {
       "value": "{line-height.150}",
       "type": "lineHeights",
       "description": "Latin, Arabic, and Hebrew scripts"
     }
   },
-  "body": {
-    "XS": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.XS}"
+  "regular": {
+    "normal": {
+      "XS": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.XS}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
+      "S": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.S}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "M": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.L}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "2XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.2XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "3XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.3XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "4XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.4XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "5XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.5XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "6XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.7XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      }
     },
-    "S": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.S}"
+    "tight": {
+      "XS": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.XS}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "M": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.M}"
+      "S": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.S}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "L": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.L}"
+      "M": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.XL}"
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.L}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "2XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.2XL}"
+      "XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "3XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.3XL}"
+      "2XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.2XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "4XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.4XL}"
+      "3XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.3XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "5XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.5XL}"
+      "4XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.4XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "6XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.6XL}"
+      "5XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.5XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
-    },
-    "7XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.regular}",
-        "lineHeight": "{line-height.L}",
-        "fontSize": "{font-size.7XL}"
+      "6XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
       },
-      "type": "typography",
-      "description": "Body is primarily used for components and for blocks of text."
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.7XL}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      }
     }
   },
-  "header": {
-    "XS": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.XS}"
+  "bold": {
+    "normal": {
+      "XS": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.XS}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
+      "S": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.S}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "M": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.L}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "2XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.2XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "3XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.3XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "4XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.4XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "5XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.5XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "6XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      },
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.7XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      }
     },
-    "S": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.S}"
+    "tight": {
+      "XS": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.XS}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "M": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.M}"
+      "S": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.S}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "L": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.L}"
+      "M": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.M}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.XL}"
+      "L": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.L}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "2XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.2XL}"
+      "XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "3XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.3XL}"
+      "2XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.2XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "4XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.4XL}"
+      "3XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.3XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "5XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.5XL}"
+      "4XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.4XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "6XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.6XL}"
+      "5XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.5XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
-    },
-    "7XL": {
-      "value": {
-        "fontFamily": "{font-family.roboto}",
-        "fontWeight": "{font-weight.bold}",
-        "lineHeight": "{line-height.M}",
-        "fontSize": "{font-size.7XL}"
+      "6XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.6XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
       },
-      "type": "typography",
-      "description": "Header is used to create various levels of typographic hierarchies."
+      "7XL": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.bold}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.7XL}"
+        },
+        "type": "typography",
+        "description": "Header is used to create various levels of typographic hierarchies."
+      }
     }
   },
   "space": {
@@ -399,7 +627,7 @@
     }
   },
   "color": {
-    "feeback": {
+    "feedback": {
       "positive": {
         "value": "{color.green.60}",
         "type": "color",
