@@ -25,13 +25,35 @@
   },
   "notification": {
     "shadow": {
-      "value": "{shadow.white}",
+      "value": "{shadow.black}",
       "type": "boxShadow"
     },
     "color": {
       "background": {
-        "value": "{color.background.component}",
-        "type": "color"
+        "theme": {
+          "value": "{color.background.component}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{color.feedback.positive}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{color.feedback.negative}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.feedback.warning}",
+          "type": "color"
+        },
+        "alarm": {
+          "value": "{color.feedback.alarm}",
+          "type": "color"
+        },
+        "information": {
+          "value": "{color.feedback.information}",
+          "type": "color"
+        }
       },
       "text": {
         "value": "{color.text.default}",
