@@ -198,11 +198,11 @@
   "notification": {
     "color": {
       "background": {
-        "positive": {
+        "success": {
           "value": "{color.feedback.positive}",
           "type": "color"
         },
-        "negative": {
+        "error": {
           "value": "{color.feedback.negative}",
           "type": "color"
         },
@@ -221,14 +221,14 @@
       }
     },
     "border": {
-      "positive": {
+      "success": {
         "value": {
           "color": "{color.feedback.positive}",
           "width": "{border-width.M}"
         },
         "type": "border"
       },
-      "negative": {
+      "error": {
         "value": {
           "color": "{color.feedback.negative}",
           "width": "{border-width.M}"
