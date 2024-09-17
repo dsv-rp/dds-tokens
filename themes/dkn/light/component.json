@@ -19,7 +19,7 @@
   },
   "card": {
     "shadow": {
-      "value": "{shadow.black}",
+      "value": "{shadow.black.0}",
       "type": "boxShadow"
     },
     "color": {
@@ -57,7 +57,7 @@
   },
   "notification": {
     "shadow": {
-      "value": "{shadow.black}",
+      "value": "{shadow.black.0}",
       "type": "boxShadow"
     },
     "color": {

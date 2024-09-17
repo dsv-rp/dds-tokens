@@ -19,13 +19,13 @@
   },
   "card": {
     "shadow": {
-      "value": "{shadow.white}",
+      "value": "{shadow.white.0}",
       "type": "boxShadow"
     }
   },
   "notification": {
     "shadow": {
-      "value": "{shadow.black}",
+      "value": "{shadow.black.0}",
       "type": "boxShadow"
     },
     "color": {
