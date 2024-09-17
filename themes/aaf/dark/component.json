@@ -17,7 +17,7 @@
       }
     },
     "shadow": {
-      "value": "{shadow.white}",
+      "value": "{shadow.white.0}",
       "type": "boxShadow"
     }
   },
