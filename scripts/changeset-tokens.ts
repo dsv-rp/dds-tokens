@@ -6,6 +6,7 @@ import {
 } from "./lib/compare";
 import {
   CURRENT_PROJECT_DIR,
+  PICK_TOKEN_COUNT,
   PREVIOUS_PROJECT_DIR,
   THEMES_DIR,
   TOKENS_CHANGESET_FILENAME,
@@ -44,7 +45,7 @@ const content =
 "${packageName}": ${bumpDigit}
 ---
 
-${formatCompareResult(compareResult)}
+${formatCompareResult(compareResult, PICK_TOKEN_COUNT)}
 `.trim() + "\n";
 await fsp.writeFile(TOKENS_CHANGESET_FILENAME, content);
 

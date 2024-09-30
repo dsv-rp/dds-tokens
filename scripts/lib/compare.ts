@@ -97,19 +97,40 @@ export function getSemverBumpType(
   return null;
 }
 
+function pickTokenNames(
+  tokenNames: readonly string[],
+  maxCount: number
+): string {
+  const suffix = tokenNames.length > maxCount ? " and more" : "";
+  return (
+    new Array(Math.min(maxCount, tokenNames.length))
+      .fill(0)
+      .map(
+        (_, index) =>
+          // Retrieve sparsely to ensure diversity since token names are sorted.
+          tokenNames[Math.floor((index * tokenNames.length) / maxCount)]
+      )
+      .map((v) => `\`${v}\``)
+      .join(", ") + suffix
+  );
+}
+
 /**
  * Converts the comparison results of the tokenset into a changelog in Markdown format.
  * @param result The comparison result of the tokensets
  * @returns A changelog in Markdown format
  */
-export function formatCompareResult(result: ThemeCompareResult): string {
+export function formatCompareResult(
+  result: ThemeCompareResult,
+  pickTokenCount: number
+): string {
   let text = "";
 
   if (result.totalRemoved > 0) {
-    text += `**BREAKING CHANGE**: ${result.totalRemoved} token(s) removed.  \n`;
+    text += `**BREAKING CHANGE**: ${result.totalRemoved} token(s) removed (${pickTokenNames(result.tokenNamesRemoved, pickTokenCount)}).  \n`;
   }
   if (result.totalModifiedType > 0) {
-    text += `**BREAKING CHANGE**: ${result.totalModifiedType} token(s) updated with incompatible changes.  \n`;
+    text += `**BREAKING CHANGE**: ${result.totalModifiedType} token(s) updated with incompatible changes (${pickTokenNames(result.tokenNamesTypeChanged, pickTokenCount)}).  \n`;
   }
   if (result.totalAdded > 0) {
     text += `${result.totalAdded} token(s) added.  \n`;
