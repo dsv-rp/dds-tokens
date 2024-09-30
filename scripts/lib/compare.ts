@@ -7,10 +7,14 @@ import type { ThemeTokensetMap } from "./types";
 export interface ThemeCompareResult {
   /** Number of tokens added (total for all themes) */
   totalAdded: number;
-  /** Number of tokens modified (total for all themes) */
-  totalModified: number;
   /** Number of tokens removed (total for all themes) */
   totalRemoved: number;
+  /** Number of tokens type modified (total for all themes) */
+  totalModified: number;
+  totalModifiedType: number;
+  totalModifiedValue: number;
+  tokenNamesRemoved: string[];
+  tokenNamesTypeChanged: string[];
 }
 
 /**
@@ -23,15 +27,24 @@ export function compareThemeTokensets(
   current: ThemeTokensetMap,
   previous: ThemeTokensetMap
 ): ThemeCompareResult {
+  const tokenNameSetRemoved = new Set<string>();
+  const tokenNameSetTypeChanged = new Set<string>();
+
   let totalAdded = 0;
-  let totalModified = 0;
+  let totalModifiedValue = 0;
+  let totalModifiedType = 0;
   for (const [theme, tokenset] of Object.entries(current)) {
     const previousTokenset = previous[theme] ?? {};
-    for (const [tokenName, currentValue] of Object.entries(tokenset)) {
+    for (const [tokenName, [currentType, currentValue]] of Object.entries(
+      tokenset
+    )) {
       if (previousTokenset[tokenName] == null) {
         totalAdded++;
-      } else if (currentValue !== previousTokenset[tokenName]) {
-        totalModified++;
+      } else if (currentType !== previousTokenset[tokenName][0]) {
+        totalModifiedType++;
+        tokenNameSetTypeChanged.add(tokenName);
+      } else if (currentValue !== previousTokenset[tokenName][1]) {
+        totalModifiedValue++;
       }
     }
   }
@@ -42,14 +55,19 @@ export function compareThemeTokensets(
     for (const tokenName of Object.keys(tokenset)) {
       if (currentTokenset[tokenName] == null) {
         totalRemoved++;
+        tokenNameSetRemoved.add(tokenName);
       }
     }
   }
 
   return {
     totalAdded,
-    totalModified,
     totalRemoved,
+    totalModified: totalModifiedType + totalModifiedValue,
+    totalModifiedType,
+    totalModifiedValue,
+    tokenNamesRemoved: Array.from(tokenNameSetRemoved).sort(),
+    tokenNamesTypeChanged: Array.from(tokenNameSetTypeChanged).sort(),
   };
 }
 
@@ -59,9 +77,12 @@ export function compareThemeTokensets(
  * @returns The type of changes. `null` if no changes found.
  */
 export function getSemverBumpType(
-  result: ThemeCompareResult
+  result: Omit<
+    ThemeCompareResult,
+    "tokenNamesRemoved" | "tokenNamesTypeChanged"
+  >
 ): SemverBumpType | null {
-  if (result.totalRemoved > 0) {
+  if (result.totalRemoved > 0 || result.totalModifiedType > 0) {
     return "breaking";
   }
 
@@ -69,7 +90,7 @@ export function getSemverBumpType(
     return "feature";
   }
 
-  if (result.totalModified > 0) {
+  if (result.totalModifiedValue > 0) {
     return "fix";
   }
 
@@ -83,14 +104,18 @@ export function getSemverBumpType(
  */
 export function formatCompareResult(result: ThemeCompareResult): string {
   let text = "";
+
   if (result.totalRemoved > 0) {
     text += `**BREAKING CHANGE**: ${result.totalRemoved} token(s) removed.  \n`;
+  }
+  if (result.totalModifiedType > 0) {
+    text += `**BREAKING CHANGE**: ${result.totalModifiedType} token(s) updated with incompatible changes.  \n`;
   }
   if (result.totalAdded > 0) {
     text += `${result.totalAdded} token(s) added.  \n`;
   }
-  if (result.totalModified > 0) {
-    text += `${result.totalModified} token(s) updated.  \n`;
+  if (result.totalModifiedValue > 0) {
+    text += `${result.totalModifiedValue} token(s) updated.  \n`;
   }
   return text;
 }

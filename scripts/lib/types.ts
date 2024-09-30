@@ -7,7 +7,7 @@ export interface Theme {
 }
 
 /** Record<tokenName, tokenValue> */
-export type Tokenset = Record<string, string>;
+export type Tokenset = Record<string, [type: string, value: string]>;
 
 /** Record<themeName, Tokenset> */
 export type ThemeTokensetMap = Record<string, Tokenset>;

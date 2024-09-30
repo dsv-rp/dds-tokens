@@ -10,7 +10,7 @@ await register(StyleDictionary);
  * Creates `ThemeTokensetMap` from specified themes directory.
  * @param themesDir Themes directory.
  * @param allowMissing If `true`, `null` is returned if the themes are not found. If `false`, an exception is thrown in that situation.
- * @returns `Record<themeName, Record<tokenName, tokenValue>>`
+ * @returns `Record<themeName, Record<tokenName, [tokenType, tokenValue]>>`
  */
 export async function loadThemeTokensetMap(
   themesDir: string,
@@ -50,7 +50,10 @@ export async function loadThemeTokensetMap(
     const tokenRecord = Object.fromEntries(
       dictionary.allTokens
         .toSorted((a, b) => a.name.localeCompare(b.name, "en-US"))
-        .map(({ name, value }) => [name, value])
+        .map(({ name, value, type }) => [
+          name,
+          [type ?? "unknown", value] as [string, string],
+        ])
     );
 
     result[themeName] = tokenRecord;

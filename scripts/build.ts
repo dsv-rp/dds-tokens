@@ -1,19 +1,130 @@
 import { register } from "@tokens-studio/sd-transforms";
 import fsp from "node:fs/promises";
 import StyleDictionary, { type Config } from "style-dictionary";
-import { GROUP_NAME_MAP, THEME_NAME_MAP } from "./lib/config";
+import type { FormatFn } from "style-dictionary/types";
+import {
+  BUILD_DIR,
+  CURRENT_PROJECT_DIR,
+  GROUP_NAME_MAP,
+  THEME_NAME_MAP,
+  THEMES_DIR,
+} from "./lib/config";
 import type { Theme } from "./lib/types";
+
+function jsonTypesFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
+  return JSON.stringify(
+    Object.fromEntries(
+      dictionary.allTokens.map((token) => [token.name, token.type ?? "unknown"])
+    ),
+    null,
+    2
+  ) + "\n";
+}
+
+function createConfig(baseDir: string, source: string[]): Config {
+  return {
+    log: {
+      verbosity: "verbose",
+    },
+    source,
+    preprocessors: ["tokens-studio"],
+    platforms: {
+      js: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/js/${baseDir}/`,
+        files: [
+          {
+            destination: "variables.js",
+            format: "javascript/es6",
+          },
+          {
+            destination: "variables.cjs",
+            format: "javascript/module-flat",
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "variables.d.ts",
+          },
+        ],
+      },
+      css: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/css/${baseDir}/`,
+        prefix: "dds",
+        transforms: ["name/kebab"],
+        files: [
+          // Includes all tokens
+          // For general use (users use most components), storybook
+          {
+            destination: "variables.css",
+            format: "css/variables",
+            options: {
+              outputReferences: true,
+              outputReferencesFallback: true,
+            },
+          },
+          // Specific
+          // For when users want to import subsets of style
+          {
+            destination: "buttons.css",
+            format: "css/variables",
+            filter: (token) => {
+              return token.path.includes("button");
+            },
+          },
+        ],
+      },
+      scss: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/scss/${baseDir}/`,
+        prefix: "dds",
+        transforms: ["name/kebab"],
+        files: [
+          {
+            destination: "_mixins.scss",
+            format: "css/variables",
+            options: {
+              outputReferences: true,
+              outputReferencesFallback: true,
+              selector: "@mixin variables",
+            },
+          },
+        ],
+      },
+      json: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/json/${baseDir}/`,
+        transforms: ["name/kebab"],
+        files: [
+          {
+            destination: "types.json",
+            format: "json/types",
+          },
+        ],
+      },
+    },
+  };
+}
 
 // Required to use `@tokens-studio/sd-transforms`
 await register(StyleDictionary);
 
+// Register json/types format
+StyleDictionary.registerFormat({
+  name: "json/types",
+  format: jsonTypesFormatter,
+});
+
 // Load theme index
 const $themes = JSON.parse(
-  await fsp.readFile("themes/$themes.json", "utf-8")
+  await fsp.readFile(
+    `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/$themes.json`,
+    "utf-8"
+  )
 ) as readonly Theme[];
 
 // Cleanup build dir
-await fsp.rm("build", { force: true, recursive: true });
+await fsp.rm(BUILD_DIR, { force: true, recursive: true });
 
 // Build
 const scssMixins: [importPath: string, prefix: string][] = [];
@@ -33,86 +144,22 @@ for (const theme of $themes) {
   }
 
   const baseDir = `${groupName}/${themeName}`;
-
   const source = Object.entries(theme.selectedTokenSets)
     .filter(([, val]) => val !== "disabled")
-    .map(([tokenset]) => `themes/${tokenset}.json`);
+    .map(
+      ([tokenset]) => `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/${tokenset}.json`
+    );
 
-  const config: Config = {
-    log: {
-      verbosity: "verbose"
-    },
-    source,
-    preprocessors: ["tokens-studio"],
-    platforms: {
-      js: {
-        transformGroup: "tokens-studio",
-        buildPath: `build/js/${baseDir}/`,
-        files: [
-          {
-            destination: "variables.js",
-            format: "javascript/es6",
-          },
-          {
-            destination: "variables.cjs",
-            format: "javascript/module-flat",
-          },
-          {
-            format: "typescript/es6-declarations",
-            destination: "variables.d.ts",
-          },
-        ],
-      },
-      css: {
-        transformGroup: "tokens-studio",
-        buildPath: `build/css/${baseDir}/`,
-        prefix: "dds",
-        transforms: ["name/kebab"],
-        files: [
-          // Includes all tokens
-          // For general use (users use most components), storybook
-          {
-            destination: "variables.css",
-            format: "css/variables",
-          },
-          // Specific
-          // For when users want to import subsets of style
-          {
-            destination: "buttons.css",
-            format: "css/variables",
-            filter: (token) => {
-              return token.path.includes("button");
-            },
-          },
-        ],
-      },
-    },
-  };
-
-  const sd = new StyleDictionary(config);
+  const sd = new StyleDictionary(createConfig(baseDir, source));
   await sd.cleanAllPlatforms();
   await sd.buildAllPlatforms();
-
-  // Build SCSS mixins
-  // Style Dictionary doesn't have a SCSS mixin format.
-  const css = await fsp.readFile(`build/css/${baseDir}/variables.css`, "utf-8");
-  await fsp.mkdir(`build/scss/${baseDir}`, {
-    recursive: true,
-  });
-
-  // The underscore in the filename prefix indicates that the SCSS file is a [partial](https://sass-lang.com/guide/#partials).
-  // This underscore should be omitted when they are `@use`-ed or `@forward`-ed by other SCSS files.
-  await fsp.writeFile(
-    `build/scss/${baseDir}/_mixins.scss`,
-    css.replace(":root", "@mixin variables")
-  );
 
   scssMixins.push([`${baseDir}/mixins`, `${groupName}-${themeName}`]);
 }
 
-// Build SCSS root
+// Write SCSS root
 await fsp.writeFile(
-  "build/scss/_mixins.scss",
+  `${BUILD_DIR}/scss/_mixins.scss`,
   scssMixins
     .map(
       ([importPath, prefix]) =>
