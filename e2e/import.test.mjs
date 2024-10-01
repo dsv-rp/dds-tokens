@@ -9,14 +9,14 @@ import { equal } from "node:assert/strict";
 import { createRequire } from "node:module";
 import { test } from "node:test";
 
-test("can static import js", () => {
+await test("can static import js", () => {
   equal(typeof colorBlue10, "string");
   equal(typeof colorBlue20, "string");
   equal(typeof tokens, "object");
   equal(tokens["color-blue-30"], "color");
 });
 
-test("can dynamic import js", async () => {
+await test("can dynamic import js", async () => {
   equal(
     typeof (await import("@daikin-oss/dds-tokens/js/daikin/Light/variables"))
       .colorBlue10,
@@ -37,7 +37,7 @@ test("can dynamic import js", async () => {
   );
 });
 
-test("can require cjs", () => {
+await test("can require cjs", () => {
   const require = createRequire(import.meta.url);
 
   equal(

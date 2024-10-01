@@ -57,7 +57,7 @@ SCSS mixins require the SCSS compiler, but they provide flexibility in terms of 
 Import all themes:
 
 ```scss
-@use "@daikin-oss/dds-tokens/scss/mixin" as dds-tokens;
+@use "@daikin-oss/dds-tokens/scss/mixins" as dds-tokens;
 
 :root {
   @include dds-tokens.daikin-Light-variables;
@@ -81,8 +81,8 @@ Import all themes:
 Import individual themes:
 
 ```scss
-@use "@daikin-oss/dds-tokens/scss/daikin/Light/mixin" as daikin-Light;
-@use "@daikin-oss/dds-tokens/scss/daikin/Dark/mixin" as daikin-Dark;
+@use "@daikin-oss/dds-tokens/scss/daikin/Light/mixins" as daikin-Light;
+@use "@daikin-oss/dds-tokens/scss/daikin/Dark/mixins" as daikin-Dark;
 
 :root {
   @include daikin-Light.variables;

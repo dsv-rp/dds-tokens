@@ -1,0 +1,10 @@
+@use "../build/scss/daikin/Light/mixins" as daikin-Light;
+@use "../build/scss/daikin/Dark/mixins" as daikin-Dark;
+
+:root {
+  @include daikin-Light.variables;
+}
+
+:root.dark {
+  @include daikin-Dark.variables;
+}
