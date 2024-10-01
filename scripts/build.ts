@@ -12,13 +12,18 @@ import {
 import type { Theme } from "./lib/types";
 
 function jsonTypesFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
-  return JSON.stringify(
-    Object.fromEntries(
-      dictionary.allTokens.map((token) => [token.name, token.type ?? "unknown"])
-    ),
-    null,
-    2
-  ) + "\n";
+  return (
+    JSON.stringify(
+      Object.fromEntries(
+        dictionary.allTokens.map((token) => [
+          token.name,
+          token.type ?? "unknown",
+        ])
+      ),
+      null,
+      2
+    ) + "\n"
+  );
 }
 
 function createConfig(baseDir: string, source: string[]): Config {
@@ -59,8 +64,7 @@ function createConfig(baseDir: string, source: string[]): Config {
             destination: "variables.css",
             format: "css/variables",
             options: {
-              outputReferences: true,
-              outputReferencesFallback: true,
+              outputReferences: false,
             },
           },
           // Specific
@@ -84,8 +88,7 @@ function createConfig(baseDir: string, source: string[]): Config {
             destination: "_mixins.scss",
             format: "css/variables",
             options: {
-              outputReferences: true,
-              outputReferencesFallback: true,
+              outputReferences: false,
               selector: "@mixin variables",
             },
           },
