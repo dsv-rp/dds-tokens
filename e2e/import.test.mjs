@@ -4,7 +4,7 @@
 
 import { colorBlue10 } from "@daikin-oss/dds-tokens/js/daikin/Light/variables";
 import { colorBlue20 } from "@daikin-oss/dds-tokens/js/daikin/Light/variables.js";
-import tokens from "@daikin-oss/dds-tokens/json/daikin/Light/types.json" with { type: "json" };
+import tokens from "@daikin-oss/dds-tokens/json/daikin/Light/tokens.json" with { type: "json" };
 import { equal } from "node:assert/strict";
 import { createRequire } from "node:module";
 import { test } from "node:test";
@@ -13,7 +13,7 @@ await test("can static import js", () => {
   equal(typeof colorBlue10, "string");
   equal(typeof colorBlue20, "string");
   equal(typeof tokens, "object");
-  equal(tokens["color-blue-30"], "color");
+  equal(tokens["color-blue-30"]?.[1], "color");
 });
 
 await test("can dynamic import js", async () => {
@@ -29,10 +29,10 @@ await test("can dynamic import js", async () => {
   );
   equal(
     (
-      await import("@daikin-oss/dds-tokens/json/daikin/Light/types.json", {
+      await import("@daikin-oss/dds-tokens/json/daikin/Light/tokens.json", {
         with: { type: "json" },
       })
-    ).default["color-blue-30"],
+    ).default["color-blue-30"]?.[1],
     "color"
   );
 });
@@ -51,9 +51,9 @@ await test("can require cjs", () => {
     "string"
   );
   equal(
-    require("@daikin-oss/dds-tokens/json/daikin/Light/types.json")[
+    require("@daikin-oss/dds-tokens/json/daikin/Light/tokens.json")[
       "color-blue-30"
-    ],
+    ]?.[1],
     "color"
   );
 });
