@@ -11,13 +11,13 @@ import {
 } from "./lib/config";
 import type { Theme } from "./lib/types";
 
-function jsonTypesFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
+function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
   return (
     JSON.stringify(
       Object.fromEntries(
         dictionary.allTokens.map((token) => [
           token.name,
-          token.type ?? "unknown",
+          [token.value ?? "unknown", token.type ?? "unknown"],
         ])
       ),
       null,
@@ -100,8 +100,8 @@ function createConfig(baseDir: string, source: string[]): Config {
         transforms: ["name/kebab"],
         files: [
           {
-            destination: "types.json",
-            format: "json/types",
+            destination: "tokens.json",
+            format: "json/tokens",
           },
         ],
       },
@@ -112,10 +112,10 @@ function createConfig(baseDir: string, source: string[]): Config {
 // Required to use `@tokens-studio/sd-transforms`
 await register(StyleDictionary);
 
-// Register json/types format
+// Register json/tokens format
 StyleDictionary.registerFormat({
-  name: "json/types",
-  format: jsonTypesFormatter,
+  name: "json/tokens",
+  format: jsonTokensFormatter,
 });
 
 // Load theme index

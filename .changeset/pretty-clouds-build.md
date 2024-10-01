@@ -2,4 +2,4 @@
 "@daikin-oss/dds-tokens": patch
 ---
 
-Add types JSON (DDS-1513)
+Add JSON builds (DDS-1513)
