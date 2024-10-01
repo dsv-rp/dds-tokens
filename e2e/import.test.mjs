@@ -13,7 +13,7 @@ test("can static import js", () => {
   equal(typeof colorBlue10, "string");
   equal(typeof colorBlue20, "string");
   equal(typeof tokens, "object");
-  equal(typeof tokens["color-blue-30"], "string");
+  equal(tokens["color-blue-30"], "color");
 });
 
 test("can dynamic import js", async () => {
@@ -28,12 +28,12 @@ test("can dynamic import js", async () => {
     "string"
   );
   equal(
-    typeof (
+    (
       await import("@daikin-oss/dds-tokens/json/daikin/Light/types.json", {
         with: { type: "json" },
       })
     ).default["color-blue-30"],
-    "string"
+    "color"
   );
 });
 
@@ -51,9 +51,9 @@ test("can require cjs", () => {
     "string"
   );
   equal(
-    typeof require("@daikin-oss/dds-tokens/json/daikin/Light/types.json")[
+    require("@daikin-oss/dds-tokens/json/daikin/Light/types.json")[
       "color-blue-30"
     ],
-    "string"
+    "color"
   );
 });

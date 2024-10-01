@@ -17,9 +17,9 @@ test("can require js", () => {
     "string"
   );
   equal(
-    typeof require("@daikin-oss/dds-tokens/json/daikin/Light/types.json")[
+    require("@daikin-oss/dds-tokens/json/daikin/Light/types.json")[
       "color-blue-30"
     ],
-    "string"
+    "color"
   );
 });
