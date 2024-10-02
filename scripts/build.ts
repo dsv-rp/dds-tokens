@@ -17,7 +17,7 @@ function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
       Object.fromEntries(
         dictionary.allTokens.map((token) => [
           token.name,
-          [token.value ?? "unknown", token.type ?? "unknown"],
+          [String(token.value ?? "unknown"), token.type ?? "unknown"],
         ])
       ),
       null,

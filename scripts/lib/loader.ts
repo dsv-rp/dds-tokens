@@ -2,7 +2,7 @@ import { register } from "@tokens-studio/sd-transforms";
 import fs from "node:fs";
 import fsp from "node:fs/promises";
 import StyleDictionary from "style-dictionary";
-import type { Theme, ThemeTokensetMap } from "./types";
+import type { Theme, ThemeTokensetMap, TokenValue } from "./types";
 
 await register(StyleDictionary);
 
@@ -52,7 +52,7 @@ export async function loadThemeTokensetMap(
         .toSorted((a, b) => a.name.localeCompare(b.name, "en-US"))
         .map(({ name, value, type }) => [
           name,
-          [type ?? "unknown", value] as [string, string],
+          [type ?? "unknown", value] as [string, TokenValue],
         ])
     );
 
