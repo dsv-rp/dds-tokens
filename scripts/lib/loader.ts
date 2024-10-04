@@ -45,7 +45,7 @@ export async function loadThemeTokensetMap(
         },
       },
     });
-    const { dictionary } = await sd.getPlatform("data");
+    const dictionary = await sd.getPlatformTokens("data");
 
     const tokenRecord = Object.fromEntries(
       dictionary.allTokens
