@@ -16,8 +16,12 @@ describe("compareThemeTokensets", () => {
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 0,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 0,
       }
     `);
@@ -27,20 +31,24 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common: {
-            common: "value",
+            common: ["color", "value"],
           },
         },
         // previous
         {
           common: {
-            common: "value",
+            common: ["color", "value"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 0,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 0,
       }
     `);
@@ -50,20 +58,24 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common: {
-            commonUpdated: "current",
+            commonUpdated: ["color", "current"],
           },
         },
         // previous
         {
           common: {
-            commonUpdated: "previous",
+            commonUpdated: ["color", "previous"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 0,
         "totalModified": 1,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 1,
         "totalRemoved": 0,
       }
     `);
@@ -73,7 +85,65 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common: {
-            onlyCurrent: "value",
+            commonTypeUpdated: ["color", "value"],
+          },
+        },
+        // previous
+        {
+          common: {
+            commonTypeUpdated: ["dimension", "value"],
+          },
+        }
+      )
+    ).toMatchInlineSnapshot(`
+      {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [
+          "commonTypeUpdated",
+        ],
+        "totalAdded": 0,
+        "totalModified": 1,
+        "totalModifiedType": 1,
+        "totalModifiedValue": 0,
+        "totalRemoved": 0,
+      }
+    `);
+
+    expect(
+      compareThemeTokensets(
+        // current
+        {
+          common: {
+            commonBothUpdated: ["color", "previous"],
+          },
+        },
+        // previous
+        {
+          common: {
+            commonBothUpdated: ["dimension", "current"],
+          },
+        }
+      )
+    ).toMatchInlineSnapshot(`
+      {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [
+          "commonBothUpdated",
+        ],
+        "totalAdded": 0,
+        "totalModified": 1,
+        "totalModifiedType": 1,
+        "totalModifiedValue": 0,
+        "totalRemoved": 0,
+      }
+    `);
+
+    expect(
+      compareThemeTokensets(
+        // current
+        {
+          common: {
+            onlyCurrent: ["color", "value"],
           },
         },
         // previous
@@ -83,8 +153,12 @@ describe("compareThemeTokensets", () => {
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 1,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 0,
       }
     `);
@@ -98,14 +172,20 @@ describe("compareThemeTokensets", () => {
         // previous
         {
           common: {
-            onlyPrevious: "value",
+            onlyPrevious: ["color", "value"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [
+          "onlyPrevious",
+        ],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 0,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 1,
       }
     `);
@@ -115,24 +195,30 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common: {
-            common: "value",
-            commonUpdated: "current",
-            onlyCurrent: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "current"],
+            onlyCurrent: ["color", "value"],
           },
         },
         // previous
         {
           common: {
-            common: "value",
-            commonUpdated: "previous",
-            onlyPrevious: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "previous"],
+            onlyPrevious: ["color", "value"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [
+          "onlyPrevious",
+        ],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 1,
         "totalModified": 1,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 1,
         "totalRemoved": 1,
       }
     `);
@@ -144,20 +230,26 @@ describe("compareThemeTokensets", () => {
         // current
         {
           onlyCurrent: {
-            key: "value",
+            key: ["color", "value"],
           },
         },
         // previous
         {
           onlyPrevious: {
-            key: "value",
+            key: ["color", "value"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [
+          "key",
+        ],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 1,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 1,
       }
     `);
@@ -169,7 +261,7 @@ describe("compareThemeTokensets", () => {
         // current
         {
           onlyCurrent: {
-            key: "value",
+            key: ["color", "value"],
           },
         },
         // previous
@@ -177,8 +269,12 @@ describe("compareThemeTokensets", () => {
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 1,
         "totalModified": 0,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 0,
         "totalRemoved": 0,
       }
     `);
@@ -190,34 +286,40 @@ describe("compareThemeTokensets", () => {
         // current
         {
           common1: {
-            common: "value",
-            commonUpdated: "current",
-            onlyCurrent: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "current"],
+            onlyCurrent: ["color", "value"],
           },
           common2: {
-            common: "value",
-            commonUpdated: "current",
-            onlyCurrent: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "current"],
+            onlyCurrent: ["color", "value"],
           },
         },
         // previous
         {
           common1: {
-            common: "value",
-            commonUpdated: "previous",
-            onlyPrevious: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "previous"],
+            onlyPrevious: ["color", "value"],
           },
           common2: {
-            common: "value",
-            commonUpdated: "previous",
-            onlyPrevious: "value",
+            common: ["color", "value"],
+            commonUpdated: ["color", "previous"],
+            onlyPrevious: ["color", "value"],
           },
         }
       )
     ).toMatchInlineSnapshot(`
       {
+        "tokenNamesRemoved": [
+          "onlyPrevious",
+        ],
+        "tokenNamesTypeChanged": [],
         "totalAdded": 2,
         "totalModified": 2,
+        "totalModifiedType": 0,
+        "totalModifiedValue": 2,
         "totalRemoved": 2,
       }
     `);
@@ -229,34 +331,64 @@ describe("getSemverBumpType", () => {
     expect(
       getSemverBumpType({
         totalAdded: 0,
-        totalModified: 0,
         totalRemoved: 1,
+        totalModified: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 0,
       })
     ).toBe("breaking");
 
     expect(
       getSemverBumpType({
         totalAdded: 1,
-        totalModified: 0,
         totalRemoved: 1,
+        totalModified: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 0,
       })
     ).toBe("breaking");
 
     expect(
       getSemverBumpType({
         totalAdded: 0,
-        totalModified: 1,
         totalRemoved: 1,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).toBe("breaking");
 
     expect(
       getSemverBumpType({
         totalAdded: 1,
-        totalModified: 1,
         totalRemoved: 1,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).toBe("breaking");
+  });
+
+  test("returns `breaking` if there are incompatible changes", ({ expect }) => {
+    expect(
+      getSemverBumpType({
+        totalAdded: 0,
+        totalRemoved: 0,
+        totalModified: 1,
+        totalModifiedType: 1,
+        totalModifiedValue: 0,
+      })
+    ).toBe("breaking");
+
+    expect(
+      getSemverBumpType({
+        totalAdded: 0,
+        totalRemoved: 0,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
+      })
+    ).not.toBe("breaking");
   });
 
   test("returns `feature` if something added and nothing removed", ({
@@ -265,24 +397,30 @@ describe("getSemverBumpType", () => {
     expect(
       getSemverBumpType({
         totalAdded: 1,
-        totalModified: 0,
         totalRemoved: 0,
+        totalModified: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 0,
       })
     ).toBe("feature");
 
     expect(
       getSemverBumpType({
         totalAdded: 1,
+        totalRemoved: 0,
         totalModified: 1,
-        totalRemoved: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).toBe("feature");
 
     expect(
       getSemverBumpType({
         totalAdded: 1,
-        totalModified: 0,
         totalRemoved: 1,
+        totalModified: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 0,
       })
     ).not.toBe("feature");
   });
@@ -293,24 +431,30 @@ describe("getSemverBumpType", () => {
     expect(
       getSemverBumpType({
         totalAdded: 0,
-        totalModified: 1,
         totalRemoved: 0,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).toBe("fix");
 
     expect(
       getSemverBumpType({
         totalAdded: 1,
-        totalModified: 1,
         totalRemoved: 0,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).not.toBe("fix");
 
     expect(
       getSemverBumpType({
         totalAdded: 0,
-        totalModified: 1,
         totalRemoved: 1,
+        totalModified: 1,
+        totalModifiedType: 0,
+        totalModifiedValue: 1,
       })
     ).not.toBe("fix");
   });
@@ -319,8 +463,10 @@ describe("getSemverBumpType", () => {
     expect(
       getSemverBumpType({
         totalAdded: 0,
-        totalModified: 0,
         totalRemoved: 0,
+        totalModified: 0,
+        totalModifiedType: 0,
+        totalModifiedValue: 0,
       })
     ).toBe(null);
   });
