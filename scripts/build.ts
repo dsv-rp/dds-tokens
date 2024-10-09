@@ -50,6 +50,10 @@ function createConfig(baseDir: string, source: string[]): Config {
             format: "typescript/es6-declarations",
             destination: "variables.d.ts",
           },
+          {
+            format: "typescript/es6-declarations",
+            destination: "variables.d.cts",
+          },
         ],
       },
       css: {
@@ -101,7 +105,7 @@ function createConfig(baseDir: string, source: string[]): Config {
         files: [
           {
             destination: "tokens.json",
-            format: "json/tokens",
+            format: "dds/json/tokens",
           },
         ],
       },
@@ -114,7 +118,7 @@ await register(StyleDictionary);
 
 // Register json/tokens format
 StyleDictionary.registerFormat({
-  name: "json/tokens",
+  name: "dds/json/tokens",
   format: jsonTokensFormatter,
 });
 
