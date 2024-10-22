@@ -16,4 +16,10 @@ test("can require js", () => {
       .colorBlue20,
     "string"
   );
+  equal(
+    require("@daikin-oss/dds-tokens/json/daikin/Light/tokens.json")[
+      "color-blue-30"
+    ]?.[1],
+    "color"
+  );
 });

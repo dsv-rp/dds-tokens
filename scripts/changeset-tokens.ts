@@ -6,7 +6,9 @@ import {
 } from "./lib/compare";
 import {
   CURRENT_PROJECT_DIR,
+  PICK_TOKEN_COUNT,
   PREVIOUS_PROJECT_DIR,
+  THEMES_DIR,
   TOKENS_CHANGESET_FILENAME,
 } from "./lib/config";
 import { loadThemeTokensetMap } from "./lib/loader";
@@ -18,8 +20,8 @@ await fsp.rm(TOKENS_CHANGESET_FILENAME, { force: true });
 
 // Compare tokensets.
 const compareResult = compareThemeTokensets(
-  await loadThemeTokensetMap(`${CURRENT_PROJECT_DIR}/themes`, false),
-  await loadThemeTokensetMap(`${PREVIOUS_PROJECT_DIR}/themes`, true)
+  await loadThemeTokensetMap(`${CURRENT_PROJECT_DIR}/${THEMES_DIR}`, false),
+  await loadThemeTokensetMap(`${PREVIOUS_PROJECT_DIR}/${THEMES_DIR}`, true)
 );
 
 // Calculate bump type (breaking, feature, fix).
@@ -43,7 +45,7 @@ const content =
 "${packageName}": ${bumpDigit}
 ---
 
-${formatCompareResult(compareResult)}
+${formatCompareResult(compareResult, PICK_TOKEN_COUNT)}
 `.trim() + "\n";
 await fsp.writeFile(TOKENS_CHANGESET_FILENAME, content);
 

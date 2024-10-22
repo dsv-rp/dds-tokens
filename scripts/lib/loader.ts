@@ -2,7 +2,7 @@ import { register } from "@tokens-studio/sd-transforms";
 import fs from "node:fs";
 import fsp from "node:fs/promises";
 import StyleDictionary from "style-dictionary";
-import type { Theme, ThemeTokensetMap } from "./types";
+import type { Theme, ThemeTokensetMap, TokenValue } from "./types";
 
 await register(StyleDictionary);
 
@@ -10,7 +10,7 @@ await register(StyleDictionary);
  * Creates `ThemeTokensetMap` from specified themes directory.
  * @param themesDir Themes directory.
  * @param allowMissing If `true`, `null` is returned if the themes are not found. If `false`, an exception is thrown in that situation.
- * @returns `Record<themeName, Record<tokenName, tokenValue>>`
+ * @returns `Record<themeName, Record<tokenName, [tokenType, tokenValue]>>`
  */
 export async function loadThemeTokensetMap(
   themesDir: string,
@@ -45,12 +45,15 @@ export async function loadThemeTokensetMap(
         },
       },
     });
-    const { dictionary } = await sd.getPlatform("data");
+    const dictionary = await sd.getPlatformTokens("data");
 
     const tokenRecord = Object.fromEntries(
       dictionary.allTokens
         .toSorted((a, b) => a.name.localeCompare(b.name, "en-US"))
-        .map(({ name, value }) => [name, value])
+        .map(({ name, value, type }) => [
+          name,
+          [type ?? "unknown", value] as [string, TokenValue],
+        ])
     );
 
     result[themeName] = tokenRecord;
