@@ -47,7 +47,7 @@
       },
       "underline": {
         "value": {
-          "color": "{color.coolgrey.20}",
+          "color": "{color.bluegrey.20}",
           "width": "1",
           "style": "solid"
         },
