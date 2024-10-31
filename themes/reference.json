@@ -541,68 +541,20 @@
     }
   },
   "space": {
-    "0": {
-      "value": "0",
-      "type": "spacing"
-    },
-    "2": {
-      "value": "2",
-      "type": "spacing"
-    },
-    "4": {
-      "value": "4",
-      "type": "spacing"
-    },
-    "8": {
-      "value": "8",
-      "type": "spacing"
-    },
-    "12": {
-      "value": "12",
-      "type": "spacing"
-    },
-    "16": {
+    "100": {
       "value": "16",
       "type": "spacing"
     },
-    "20": {
-      "value": "20",
-      "type": "spacing"
-    },
-    "24": {
-      "value": "24",
-      "type": "spacing"
-    },
-    "32": {
+    "200": {
       "value": "32",
       "type": "spacing"
     },
-    "40": {
-      "value": "40",
+    "025": {
+      "value": "4",
       "type": "spacing"
     },
-    "48": {
-      "value": "48",
-      "type": "spacing"
-    },
-    "56": {
-      "value": "56",
-      "type": "spacing"
-    },
-    "64": {
-      "value": "64",
-      "type": "spacing"
-    },
-    "72": {
-      "value": "72",
-      "type": "spacing"
-    },
-    "80": {
-      "value": "80",
-      "type": "spacing"
-    },
-    "96": {
-      "value": "96",
+    "050": {
+      "value": "8",
       "type": "spacing"
     }
   },
