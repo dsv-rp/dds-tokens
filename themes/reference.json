@@ -276,7 +276,7 @@
         }
       }
     },
-    "grey": {
+    "gray": {
       "10": {
         "value": "#F2F2F2",
         "type": "color"
@@ -326,7 +326,27 @@
         "type": "color"
       }
     },
-    "bluegrey": {
+    "black": {
+      "value": "#000000",
+      "type": "color",
+      "shadow": {
+        "value": "#0000001A",
+        "type": "color"
+      }
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "black-shadow": {
+      "value": "#0000001A",
+      "type": "color"
+    },
+    "white-shadow": {
+      "value": "#ffffff1A",
+      "type": "color"
+    },
+    "bluegray": {
       "10": {
         "value": "#EEF0F2",
         "type": "color"
@@ -376,25 +396,19 @@
         "type": "color"
       }
     },
-    "black": {
-      "value": "#000000",
-      "type": "color",
-      "shadow": {
-        "value": "#0000001A",
+    "dark-gray": {
+      "105": {
+        "value": "#383838",
+        "type": "color"
+      },
+      "115": {
+        "value": "#282828",
+        "type": "color"
+      },
+      "125": {
+        "value": "#1A1A1A",
         "type": "color"
       }
-    },
-    "white": {
-      "value": "#ffffff",
-      "type": "color"
-    },
-    "black-shadow": {
-      "value": "#0000001A",
-      "type": "color"
-    },
-    "white-shadow": {
-      "value": "#ffffff1A",
-      "type": "color"
     }
   },
   "font-size": {
