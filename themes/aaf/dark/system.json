@@ -19,7 +19,7 @@
         }
       },
       "theme": {
-        "value": "{color.grey.90}",
+        "value": "{color.gray.90}",
         "type": "color"
       },
       "default": {
@@ -27,7 +27,7 @@
         "type": "color"
       },
       "default-sub": {
-        "value": "{color.grey.10}",
+        "value": "{color.gray.10}",
         "type": "color"
       }
     },
@@ -37,7 +37,7 @@
         "type": "color"
       },
       "component": {
-        "value": "{color.grey.90}",
+        "value": "{color.gray.90}",
         "type": "color"
       },
       "object": {
