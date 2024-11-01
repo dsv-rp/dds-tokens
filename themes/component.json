@@ -181,7 +181,7 @@
     "border": {
       "underline": {
         "value": {
-          "color": "{color.bluegray.30}",
+          "color": "{color.blue-gray.30}",
           "width": "{border-width.1}"
         },
         "type": "border"
