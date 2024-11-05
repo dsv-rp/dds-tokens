@@ -411,79 +411,6 @@
       }
     }
   },
-  "font-size": {
-    "12": {
-      "value": "12px",
-      "type": "fontSizes"
-    },
-    "14": {
-      "value": "14px",
-      "type": "fontSizes"
-    },
-    "16": {
-      "value": "16px",
-      "type": "fontSizes"
-    },
-    "18": {
-      "value": "18px",
-      "type": "fontSizes"
-    },
-    "20": {
-      "value": "20px",
-      "type": "fontSizes"
-    },
-    "24": {
-      "value": "24px",
-      "type": "fontSizes"
-    },
-    "28": {
-      "value": "28px",
-      "type": "fontSizes"
-    },
-    "32": {
-      "value": "32px",
-      "type": "fontSizes"
-    },
-    "36": {
-      "value": "36px",
-      "type": "fontSizes"
-    },
-    "40": {
-      "value": "40px",
-      "type": "fontSizes"
-    },
-    "48": {
-      "value": "48px",
-      "type": "fontSizes"
-    }
-  },
-  "line-height": {
-    "130": {
-      "value": "130%",
-      "type": "lineHeights"
-    },
-    "150": {
-      "value": "150%",
-      "type": "lineHeights"
-    }
-  },
-  "font-weight": {
-    "bold": {
-      "value": "Bold",
-      "type": "fontWeights"
-    },
-    "regular": {
-      "value": "Regular",
-      "type": "fontWeights"
-    }
-  },
-  "font-family": {
-    "roboto": {
-      "value": "Roboto",
-      "type": "fontFamilies",
-      "description": "The primary font used in the DDS Design Kit is Roboto"
-    }
-  },
   "border-radius": {
     "2": {
       "value": "2",
@@ -530,19 +457,19 @@
   },
   "space": {
     "100": {
-      "value": "16",
-      "type": "spacing"
-    },
-    "200": {
-      "value": "32",
-      "type": "spacing"
-    },
-    "025": {
       "value": "4",
       "type": "spacing"
     },
-    "050": {
+    "200": {
       "value": "8",
+      "type": "spacing"
+    },
+    "400": {
+      "value": "16",
+      "type": "spacing"
+    },
+    "800": {
+      "value": "32",
       "type": "spacing"
     }
   },
@@ -568,6 +495,47 @@
         "type": "dropShadow"
       },
       "type": "boxShadow"
+    }
+  },
+  "font-size": {
+    "300": {
+      "value": "12px",
+      "type": "typography"
+    },
+    "350": {
+      "value": "14px",
+      "type": "typography"
+    },
+    "400": {
+      "value": "16px",
+      "type": "typography"
+    }
+  },
+  "line-height": {
+    "tight": {
+      "value": "130%",
+      "type": "typography"
+    },
+    "normal": {
+      "value": "150%",
+      "type": "typography"
+    }
+  },
+  "font-weight": {
+    "bold": {
+      "value": "Bold",
+      "type": "typography"
+    },
+    "regular": {
+      "value": "Regular",
+      "type": "typography"
+    }
+  },
+  "font-family": {
+    "base": {
+      "value": "Roboto",
+      "type": "typography",
+      "description": "The primary font used in the DDS Design Kit is Roboto"
     }
   }
 }
