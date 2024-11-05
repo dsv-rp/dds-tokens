@@ -1,16 +1,4 @@
 {
-  "line-height": {
-    "tight": {
-      "value": "{line-height.130}",
-      "type": "lineHeights",
-      "description": "Latin, Arabic, and Hebrew scripts"
-    },
-    "normal": {
-      "value": "{line-height.150}",
-      "type": "lineHeights",
-      "description": "Latin, Arabic, and Hebrew scripts"
-    }
-  },
   "border-radius": {
     "2XS": {
       "value": "{border-radius.2}",
