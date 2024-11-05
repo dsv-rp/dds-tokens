@@ -537,5 +537,137 @@
       "type": "typography",
       "description": "The primary font used in the DDS Design Kit is Roboto"
     }
+  },
+  "regular": {
+    "normal": {
+      "300": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.300}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "350": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.350}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "400": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.normal}",
+          "fontSize": "{font-size.400}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      }
+    },
+    "tight": {
+      "300": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.300}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "350": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.350}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      },
+      "400": {
+        "value": {
+          "fontFamily": "{font-family.base}",
+          "fontWeight": "{font-weight.regular}",
+          "lineHeight": "{line-height.tight}",
+          "fontSize": "{font-size.400}"
+        },
+        "type": "typography",
+        "description": "Body is primarily used for components and for blocks of text."
+      }
+    },
+    "bold": {
+      "normal": {
+        "200": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.normal}",
+            "fontSize": "{font-size.300}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        },
+        "350": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.normal}",
+            "fontSize": "{font-size.350}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        },
+        "400": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.normal}",
+            "fontSize": "{font-size.400}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        }
+      },
+      "tight": {
+        "300": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.tight}",
+            "fontSize": "{font-size.300}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        },
+        "350": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.tight}",
+            "fontSize": "{font-size.350}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        },
+        "400": {
+          "value": {
+            "fontFamily": "{font-family.base}",
+            "fontWeight": "{font-weight.bold}",
+            "lineHeight": "{line-height.tight}",
+            "fontSize": "{font-size.400}"
+          },
+          "type": "typography",
+          "description": "Header is used to create various levels of typographic hierarchies."
+        }
+      }
+    }
   }
 }
