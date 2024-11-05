@@ -1,11 +1,4 @@
 {
-  "font-family": {
-    "base": {
-      "value": "Roboto",
-      "type": "fontFamilies",
-      "description": "The primary font used in the DDS Design Kit is Roboto"
-    }
-  },
   "line-height": {
     "tight": {
       "value": "{line-height.130}",
