@@ -20,15 +20,15 @@
         }
       },
       "theme": {
-        "value": "{color.grey.100}",
+        "value": "{color.gray.100}",
         "type": "color"
       },
       "default": {
-        "value": "{color.grey.10}",
+        "value": "{color.gray.10}",
         "type": "color"
       },
       "default-sub": {
-        "value": "{color.grey.20}",
+        "value": "{color.gray.20}",
         "type": "color"
       }
     },
@@ -38,11 +38,11 @@
         "type": "color"
       },
       "component": {
-        "value": "{color.grey.100}",
+        "value": "{color.gray.100}",
         "type": "color"
       },
       "object": {
-        "value": "{color.grey.10}",
+        "value": "{color.gray.10}",
         "type": "color"
       }
     },

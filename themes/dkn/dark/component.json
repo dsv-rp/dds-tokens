@@ -132,7 +132,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{color.grey.80}",
+            "value": "{color.gray.80}",
             "type": "color"
           }
         }
@@ -156,7 +156,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{color.grey.80}",
+            "value": "{color.gray.80}",
             "type": "color"
           }
         }
@@ -180,7 +180,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{color.grey.80}",
+            "value": "{color.gray.80}",
             "type": "color"
           }
         },
@@ -255,7 +255,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{color.grey.80}",
+          "value": "{color.gray.80}",
           "type": "color"
         }
       },
@@ -277,7 +277,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{color.grey.80}",
+          "value": "{color.gray.80}",
           "type": "color"
         }
       }
