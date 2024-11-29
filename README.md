@@ -57,7 +57,7 @@ SCSS mixins require the SCSS compiler, but they provide flexibility in terms of 
 Import all themes:
 
 ```scss
-@use "@daikin-oss/dds-tokens/scss/mixin" as dds-tokens;
+@use "pkg:@daikin-oss/dds-tokens/scss/mixins" as dds-tokens;
 
 :root {
   @include dds-tokens.daikin-Light-variables;
@@ -81,8 +81,8 @@ Import all themes:
 Import individual themes:
 
 ```scss
-@use "@daikin-oss/dds-tokens/scss/daikin/Light/mixin" as daikin-Light;
-@use "@daikin-oss/dds-tokens/scss/daikin/Dark/mixin" as daikin-Dark;
+@use "pkg:@daikin-oss/dds-tokens/scss/daikin/Light/mixins" as daikin-Light;
+@use "pkg:@daikin-oss/dds-tokens/scss/daikin/Dark/mixins" as daikin-Dark;
 
 :root {
   @include daikin-Light.variables;
@@ -92,3 +92,11 @@ Import individual themes:
   @include daikin-Dark.variables;
 }
 ```
+
+## JSONs
+
+There are JSON files under `json/` that lists the types and values of the tokens.
+These are basically for internal use and are used to integrate design tokens with Tailwind CSS.
+The structure of the JSON files is `{ "<token name>": ["<token value>", "<token type>"] }`.
+
+In addition, the theme JSON files before building, which are located in `themes/`, are also published in the same path in the package.

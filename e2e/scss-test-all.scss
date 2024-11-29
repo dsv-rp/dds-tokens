@@ -1,0 +1,20 @@
+// We cannot use "pkg:@daikin-oss/dds-tokens/scss/mixins" as NodePackageImporter does not support importing self package.
+@use "../build/scss/mixins" as dds-tokens;
+
+:root {
+  @include dds-tokens.daikin-Light-variables;
+}
+
+:root[data-theme="aaf"] {
+  @include dds-tokens.aaf-Light-variables;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dds-tokens.daikin-Dark-variables;
+  }
+
+  :root[data-theme="aaf"] {
+    @include dds-tokens.aaf-Dark-variables;
+  }
+}

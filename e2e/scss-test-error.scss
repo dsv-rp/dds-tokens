@@ -1,0 +1,5 @@
+@use "../build/scss/daikin/Light/mixins" as daikin-Light;
+
+:root {
+  @include daikin-Light.notExist;
+}

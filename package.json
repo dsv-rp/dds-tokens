@@ -24,6 +24,7 @@
     },
     "./css/*": "./build/css/*",
     "./scss/*": "./build/scss/*",
+    "./json/*": "./build/json/*",
     "./themes/*": "./themes/*"
   },
   "scripts": {
@@ -54,13 +55,14 @@
   "homepage": "https://github.com/dsv-rp/dds-tokens#readme",
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.7",
-    "@tokens-studio/sd-transforms": "^1.2.3",
-    "@types/node": "^20.16.1",
-    "prettier": "^3.3.3",
-    "prettier-plugin-organize-imports": "^4.0.0",
-    "style-dictionary": "^4.0.1",
-    "tsx": "^4.19.0",
-    "vitest": "^2.0.5"
+    "@changesets/cli": "^2.27.10",
+    "@tokens-studio/sd-transforms": "^1.2.8",
+    "@types/node": "^20.17.8",
+    "prettier": "^3.4.0",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "sass-embedded": "^1.81.0",
+    "style-dictionary": "^4.2.0",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.5"
   }
 }
