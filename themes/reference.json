@@ -464,12 +464,20 @@
       "value": "8",
       "type": "spacing"
     },
+    "300": {
+      "value": "12",
+      "type": "spacing"
+    },
     "400": {
       "value": "16",
       "type": "spacing"
     },
     "800": {
       "value": "32",
+      "type": "spacing"
+    },
+    "050": {
+      "value": "2",
       "type": "spacing"
     }
   },

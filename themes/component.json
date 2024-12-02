@@ -1,18 +1,4 @@
 {
-  "button": {
-    "border": {
-      "sign-in": {
-        "active": {
-          "value": {
-            "color": "{color.gray.80}",
-            "width": "{border-width.1}",
-            "style": "Inside"
-          },
-          "type": "border"
-        }
-      }
-    }
-  },
   "checkbox": {
     "border": {
       "unselected": {
@@ -157,42 +143,6 @@
           "type": "color"
         }
       }
-    },
-    "border": {
-      "active": {
-        "value": {
-          "color": "{color.gray.70}",
-          "width": "{border-width.1}",
-          "style": "Solid"
-        },
-        "type": "border"
-      },
-      "negative": {
-        "value": {
-          "color": "{color.feedback.negative}",
-          "width": "{border-width.1}",
-          "style": "solid"
-        },
-        "type": "border"
-      }
-    }
-  },
-  "tab": {
-    "border": {
-      "underline": {
-        "value": {
-          "color": "{color.blue-gray.30}",
-          "width": "{border-width.1}"
-        },
-        "type": "border"
-      },
-      "selected": {
-        "value": {
-          "color": "{color.blue.60}",
-          "width": "{border-width.1}"
-        },
-        "type": "border"
-      }
     }
   },
   "notification": {
@@ -218,43 +168,6 @@
           "value": "{color.feedback.information}",
           "type": "color"
         }
-      }
-    },
-    "border": {
-      "success": {
-        "value": {
-          "color": "{color.feedback.positive}",
-          "width": "{border-width.M}"
-        },
-        "type": "border"
-      },
-      "error": {
-        "value": {
-          "color": "{color.feedback.negative}",
-          "width": "{border-width.M}"
-        },
-        "type": "border"
-      },
-      "warning": {
-        "value": {
-          "color": "{color.feedback.warning}",
-          "width": "{border-width.M}"
-        },
-        "type": "border"
-      },
-      "alarm": {
-        "value": {
-          "color": "{color.feedback.alarm}",
-          "width": "{border-width.M}"
-        },
-        "type": "border"
-      },
-      "information": {
-        "value": {
-          "color": "{color.feedback.information}",
-          "width": "{border-width.M}"
-        },
-        "type": "border"
       }
     }
   },
