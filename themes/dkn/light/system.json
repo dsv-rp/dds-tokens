@@ -108,6 +108,16 @@
             "value": "{color.gray.20}",
             "type": "color"
           }
+        },
+        "danger": {
+          "hover": {
+            "value": "{color.red.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.red.20}",
+            "type": "color"
+          }
         }
       },
       "neutral": {
@@ -121,6 +131,20 @@
         },
         "press": {
           "value": "{color.gray.100}",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "default": {
+          "value": "{color.red.70}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.red.80}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.red.90}",
           "type": "color"
         }
       }
