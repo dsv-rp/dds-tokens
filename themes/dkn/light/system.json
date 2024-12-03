@@ -118,6 +118,18 @@
             "value": "{color.red.20}",
             "type": "color"
           }
+        },
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.gray.10}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.gray.20}",
+          "type": "color"
         }
       },
       "neutral": {
