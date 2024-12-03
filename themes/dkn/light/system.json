@@ -181,6 +181,16 @@
           "value": "{color.white}",
           "type": "color"
         }
+      },
+      "border": {
+        "focus": {
+          "value": "{color.blue.80}",
+          "type": "color"
+        },
+        "empty": {
+          "value": "{color.gray.40}",
+          "type": "color"
+        }
       }
     }
   }
