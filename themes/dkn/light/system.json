@@ -98,6 +98,30 @@
             "value": "{color.blue.20}",
             "type": "color"
           }
+        },
+        "neutral": {
+          "hover": {
+            "value": "{color.gray.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.gray.20}",
+            "type": "color"
+          }
+        }
+      },
+      "neutral": {
+        "default": {
+          "value": "{color.gray.80}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.gray.90}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.gray.100}",
+          "type": "color"
         }
       }
     }
