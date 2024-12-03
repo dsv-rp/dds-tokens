@@ -217,7 +217,21 @@
           "value": "{color.gray.40}",
           "type": "color"
         }
+      },
+      "background": {
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "overlay": {
+          "value": "{color.black}",
+          "type": "color"
+        }
       }
+    },
+    "divider": {
+      "value": "{color.gray.40}",
+      "type": "color"
     }
   }
 }
