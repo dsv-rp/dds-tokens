@@ -163,6 +163,10 @@
       "information": {
         "value": "{color.blue.70}",
         "type": "color"
+      },
+      "disabled": {
+        "value": "{color.gray.50}",
+        "type": "color"
       }
     }
   }
