@@ -167,6 +167,20 @@
       "disabled": {
         "value": "{color.gray.50}",
         "type": "color"
+      },
+      "text": {
+        "primary": {
+          "value": "{color.gray.100}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.gray.80}",
+          "type": "color"
+        },
+        "inverse": {
+          "value": "{color.white}",
+          "type": "color"
+        }
       }
     }
   }
