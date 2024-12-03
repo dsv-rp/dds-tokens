@@ -235,5 +235,23 @@
         }
       }
     }
+  },
+  "color": {
+    "link": {
+      "text": {
+        "default": {
+          "value": "{color.blue.90}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.blue.100}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.100}",
+          "type": "color"
+        }
+      }
+    }
   }
 }
