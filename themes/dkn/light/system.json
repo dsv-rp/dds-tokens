@@ -147,6 +147,22 @@
           "value": "{color.red.90}",
           "type": "color"
         }
+      },
+      "success": {
+        "value": "{color.green.70}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.yellow.70}",
+        "type": "color"
+      },
+      "alarm": {
+        "value": "{color.orange.70}",
+        "type": "color"
+      },
+      "information": {
+        "value": "{color.blue.70}",
+        "type": "color"
       }
     }
   }
