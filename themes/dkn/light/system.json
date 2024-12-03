@@ -130,6 +130,20 @@
         "press": {
           "value": "{color.gray.20}",
           "type": "color"
+        },
+        "selected": {
+          "default": {
+            "value": "{color.blue.10}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.blue.20}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.blue.30}",
+            "type": "color"
+          }
         }
       },
       "neutral": {
