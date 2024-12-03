@@ -72,6 +72,34 @@
         "type": "color",
         "description": "System status is warning"
       }
+    },
+    "common": {
+      "brand": {
+        "default": {
+          "value": "{color.blue.70}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.blue.80}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.90}",
+          "type": "color"
+        }
+      },
+      "surface": {
+        "brand": {
+          "hover": {
+            "value": "{color.blue.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.blue.20}",
+            "type": "color"
+          }
+        }
+      }
     }
   }
 }
