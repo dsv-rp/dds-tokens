@@ -34,7 +34,7 @@ const {
 ### Import CSS
 
 ```js
-import variables from "@daikin-oss/dds-tokens/css/daikin/Dark/variables.css";
+import "@daikin-oss/dds-tokens/css/daikin/Dark/variables.css";
 ```
 
 or
