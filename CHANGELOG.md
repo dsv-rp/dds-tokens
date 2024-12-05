@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+### Patch Changes
+
+- 99 token(s) added.
+  44 token(s) updated.
+
 ## 0.2.0
 
 ### Minor Changes
