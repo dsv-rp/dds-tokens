@@ -248,8 +248,34 @@
           "type": "color"
         },
         "press": {
-          "value": "{color.blue.100}",
+          "value": "{color.blue.110}",
           "type": "color"
+        },
+        "visited": {
+          "default": {
+            "value": "{color.purple.90}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.purple.100}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.purple.110}",
+            "type": "color"
+          }
+        }
+      },
+      "surface": {
+        "visited": {
+          "hover": {
+            "value": "{color.purple.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.purple.20}",
+            "type": "color"
+          }
         }
       }
     }
