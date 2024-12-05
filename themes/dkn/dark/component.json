@@ -19,8 +19,40 @@
   },
   "card": {
     "shadow": {
-      "value": "{shadow.white}",
+      "value": "{shadow.black}",
       "type": "boxShadow"
+    },
+    "color": {
+      "background": {
+        "value": "{container.color.background}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "hover": {
+        "value": {
+          "color": "#BFBFBF",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "alert": {
+        "value": {
+          "color": "{color.feedback.negative}",
+          "width": "2",
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "underline": {
+        "value": {
+          "color": "{color.blue-gray.20}",
+          "width": "1",
+          "style": "solid"
+        },
+        "type": "border"
+      }
     }
   },
   "notification": {
@@ -89,15 +121,15 @@
             "type": "color"
           },
           "press": {
-            "value": "{color.blue.30}",
+            "value": "{color.blue.70}",
             "type": "color"
           },
           "focus": {
-            "value": "{color.blue.20}",
+            "value": "{color.blue.80}",
             "type": "color"
           },
           "disabled": {
-            "value": "{color.gray.80}",
+            "value": "{color.gray.30}",
             "type": "color"
           }
         }
@@ -113,15 +145,15 @@
             "type": "color"
           },
           "press": {
-            "value": "{color.blue.30}",
+            "value": "{color.blue.70}",
             "type": "color"
           },
           "focus": {
-            "value": "{color.blue.20}",
+            "value": "{color.blue.80}",
             "type": "color"
           },
           "disabled": {
-            "value": "{color.gray.80}",
+            "value": "{color.gray.30}",
             "type": "color"
           }
         }
@@ -137,15 +169,15 @@
             "type": "color"
           },
           "press": {
-            "value": "{color.blue.30}",
+            "value": "{color.blue.70}",
             "type": "color"
           },
           "focus": {
-            "value": "{color.blue.20}",
+            "value": "{color.blue.80}",
             "type": "color"
           },
           "disabled": {
-            "value": "{color.gray.80}",
+            "value": "{color.gray.30}",
             "type": "color"
           }
         },
@@ -168,15 +200,15 @@
           "type": "color"
         },
         "press": {
-          "value": "{color.blue.30}",
+          "value": "{color.blue.70}",
           "type": "color"
         },
         "focus": {
-          "value": "{color.blue.20}",
+          "value": "{color.blue.80}",
           "type": "color"
         },
         "disabled": {
-          "value": "{color.gray.80}",
+          "value": "{color.gray.30}",
           "type": "color"
         }
       },
@@ -190,16 +222,60 @@
           "type": "color"
         },
         "press": {
-          "value": "{color.blue.30}",
+          "value": "{color.blue.70}",
           "type": "color"
         },
         "focus": {
-          "value": "{color.blue.20}",
+          "value": "{color.blue.80}",
           "type": "color"
         },
         "disabled": {
-          "value": "{color.gray.80}",
+          "value": "{color.gray.30}",
           "type": "color"
+        }
+      }
+    }
+  },
+  "color": {
+    "link": {
+      "text": {
+        "default": {
+          "value": "{color.blue.40}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.blue.30}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.20}",
+          "type": "color"
+        },
+        "visited": {
+          "default": {
+            "value": "{color.purple.40}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.purple.30}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.purple.20}",
+            "type": "color"
+          }
+        }
+      },
+      "surface": {
+        "visited": {
+          "hover": {
+            "value": "{color.purple.120}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.purple.110}",
+            "type": "color"
+          }
         }
       }
     }
