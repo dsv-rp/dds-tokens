@@ -42,13 +42,15 @@ jobs:
           tag="v$(jq -r .version package.json)"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           if [ "$(git ls-remote origin refs/tags/$tag)" ]; then
-            echo "released=1" >> "$GITHUB_OUTPUT"
+            echo "published=true" >> "$GITHUB_OUTPUT"
           else
-            echo "released=0" >> "$GITHUB_OUTPUT"
+            # Tag not found.
+            # This means that the current commit is a release commit that changes the package version.
+            echo "published=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout Previous Release
-        if: steps.latest_release.outputs.released == '1'
+      - name: Checkout Latest Release
+        if: steps.latest_release.outputs.published == 'true'
         uses: actions/checkout@v4
         with:
           path: previous-release
@@ -70,7 +72,8 @@ jobs:
         run: npm run test
 
       - name: Create Tokens Changeset
-        if: steps.latest_release.outputs.released == '1'
+        # We must skip this process in a release commit, otherwise we will not be able to release.
+        if: steps.latest_release.outputs.published == 'true'
         run: npm run changeset-tokens
 
       - name: Create Release Pull Request or Publish to npm
