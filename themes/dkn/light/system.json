@@ -72,6 +72,166 @@
         "type": "color",
         "description": "System status is warning"
       }
+    },
+    "common": {
+      "brand": {
+        "default": {
+          "value": "{color.blue.70}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.blue.80}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.blue.90}",
+          "type": "color"
+        }
+      },
+      "surface": {
+        "brand": {
+          "hover": {
+            "value": "{color.blue.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.blue.20}",
+            "type": "color"
+          }
+        },
+        "neutral": {
+          "hover": {
+            "value": "{color.gray.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.gray.20}",
+            "type": "color"
+          }
+        },
+        "danger": {
+          "hover": {
+            "value": "{color.red.10}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.red.20}",
+            "type": "color"
+          }
+        },
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.gray.10}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.gray.20}",
+          "type": "color"
+        },
+        "selected": {
+          "default": {
+            "value": "{color.blue.10}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.blue.20}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.blue.30}",
+            "type": "color"
+          }
+        }
+      },
+      "neutral": {
+        "default": {
+          "value": "{color.gray.80}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.gray.90}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.gray.100}",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "default": {
+          "value": "{color.red.70}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.red.80}",
+          "type": "color"
+        },
+        "press": {
+          "value": "{color.red.90}",
+          "type": "color"
+        }
+      },
+      "success": {
+        "value": "{color.green.70}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.yellow.70}",
+        "type": "color"
+      },
+      "alarm": {
+        "value": "{color.orange.70}",
+        "type": "color"
+      },
+      "information": {
+        "value": "{color.blue.70}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.gray.50}",
+        "type": "color"
+      },
+      "text": {
+        "primary": {
+          "value": "{color.gray.100}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.gray.80}",
+          "type": "color"
+        },
+        "inverse": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "focus": {
+          "value": "{color.blue.80}",
+          "type": "color"
+        },
+        "empty": {
+          "value": "{color.gray.40}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "overlay": {
+          "value": "{color.black}",
+          "type": "color"
+        }
+      }
+    },
+    "divider": {
+      "value": "{color.gray.40}",
+      "type": "color"
     }
   }
 }
