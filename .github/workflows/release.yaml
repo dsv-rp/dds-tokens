@@ -36,17 +36,25 @@ jobs:
         continue-on-error: true
         uses: crate-ci/typos@master
 
-      - name: Get Previous Release Tag
-        id: previous_release
-        continue-on-error: true
-        run: echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
+      - name: Get Latest Release
+        id: latest_release
+        run: |
+          tag="v$(jq -r .version package.json)"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          if [ "$(git ls-remote origin refs/tags/$tag)" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            # Tag not found.
+            # This means that the current commit is a release commit that changes the package version.
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Checkout Previous Release
-        if: steps.previous_release.outputs.tag != ''
+      - name: Checkout Latest Release
+        if: steps.latest_release.outputs.published == 'true'
         uses: actions/checkout@v4
         with:
           path: previous-release
-          ref: ${{ steps.previous_release.outputs.tag }}
+          ref: ${{ steps.latest_release.outputs.tag }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -64,6 +72,8 @@ jobs:
         run: npm run test
 
       - name: Create Tokens Changeset
+        # We must skip this process in a release commit, otherwise we will not be able to release.
+        if: steps.latest_release.outputs.published == 'true'
         run: npm run changeset-tokens
 
       - name: Create Release Pull Request or Publish to npm
