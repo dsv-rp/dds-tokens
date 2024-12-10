@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0
+
+### Minor Changes
+
+- **BREAKING CHANGE**: 378 token(s) removed (`button-color-background-primary-active`, `checkbox-border-unselected`, `color-text-default`, `line-height-tight`, `regular-tight-350` and more).
+  **BREAKING CHANGE**: 24 token(s) updated with incompatible changes (`font-family-base`, `font-size-300`, `font-size-350`, `font-size-400`, `font-weight-bold` and more).
+  56 token(s) added.
+  4 token(s) updated.
+
 ## 0.2.1
 
 ### Patch Changes
