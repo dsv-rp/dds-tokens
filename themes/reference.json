@@ -338,14 +338,6 @@
       "value": "#ffffff",
       "type": "color"
     },
-    "black-shadow": {
-      "value": "#0000001A",
-      "type": "color"
-    },
-    "white-shadow": {
-      "value": "#ffffff1A",
-      "type": "color"
-    },
     "blue-gray": {
       "10": {
         "value": "#EEF0F2",
@@ -531,200 +523,165 @@
       "type": "spacing"
     }
   },
-  "shadow": {
-    "black": {
-      "value": {
-        "x": "0",
-        "y": "-2",
-        "blur": "19",
-        "spread": "0",
-        "color": "{color.black-shadow}",
-        "type": "dropShadow"
-      },
-      "type": "boxShadow"
-    },
-    "white": {
-      "value": {
-        "x": "0",
-        "y": "-2",
-        "blur": "19",
-        "spread": "0",
-        "color": "{color.white-shadow}",
-        "type": "dropShadow"
-      },
-      "type": "boxShadow"
-    }
-  },
-  "font-size": {
-    "300": {
-      "value": "12px",
-      "type": "typography"
-    },
-    "350": {
-      "value": "14px",
-      "type": "typography"
-    },
-    "400": {
-      "value": "16px",
-      "type": "typography"
-    }
-  },
-  "line-height": {
-    "tight": {
-      "value": "130%",
-      "type": "typography"
-    },
-    "normal": {
-      "value": "150%",
-      "type": "typography"
-    }
-  },
-  "font-weight": {
-    "bold": {
-      "value": "Bold",
-      "type": "typography"
-    },
+  "font": {
     "regular": {
-      "value": "Regular",
-      "type": "typography"
-    }
-  },
-  "font-family": {
-    "base": {
-      "value": "Roboto",
-      "type": "typography",
-      "description": "The primary font used in the DDS Design Kit is Roboto"
-    }
-  },
-  "regular": {
-    "normal": {
-      "300": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.normal}",
-          "fontSize": "{font-size.300}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
-      "350": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.normal}",
-          "fontSize": "{font-size.350}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
-      "400": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.normal}",
-          "fontSize": "{font-size.400}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      }
-    },
-    "tight": {
-      "300": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.tight}",
-          "fontSize": "{font-size.300}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
-      "350": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.tight}",
-          "fontSize": "{font-size.350}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      },
-      "400": {
-        "value": {
-          "fontFamily": "{font-family.base}",
-          "fontWeight": "{font-weight.regular}",
-          "lineHeight": "{line-height.tight}",
-          "fontSize": "{font-size.400}"
-        },
-        "type": "typography",
-        "description": "Body is primarily used for components and for blocks of text."
-      }
-    },
-    "bold": {
       "normal": {
         "300": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.normal}",
-            "fontSize": "{font-size.300}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.normal}",
+            "fontSize": "{font.size.300}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         },
         "350": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.normal}",
-            "fontSize": "{font-size.350}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.normal}",
+            "fontSize": "{font.size.350}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         },
         "400": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.normal}",
-            "fontSize": "{font-size.400}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.normal}",
+            "fontSize": "{font.size.400}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         }
       },
       "tight": {
         "300": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.tight}",
-            "fontSize": "{font-size.300}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.tight}",
+            "fontSize": "{font.size.300}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         },
         "350": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.tight}",
-            "fontSize": "{font-size.350}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.tight}",
+            "fontSize": "{font.size.350}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         },
         "400": {
           "value": {
-            "fontFamily": "{font-family.base}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.tight}",
-            "fontSize": "{font-size.400}"
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.tight}",
+            "fontSize": "{font.size.400}"
           },
-          "type": "typography",
-          "description": "Header is used to create various levels of typographic hierarchies."
+          "type": "typography"
         }
+      },
+      "bold": {
+        "normal": {
+          "300": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.normal}",
+              "fontSize": "{font.size.300}"
+            },
+            "type": "typography"
+          },
+          "350": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.normal}",
+              "fontSize": "{font.size.350}"
+            },
+            "type": "typography"
+          },
+          "400": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.normal}",
+              "fontSize": "{font.size.400}"
+            },
+            "type": "typography"
+          }
+        },
+        "tight": {
+          "300": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.tight}",
+              "fontSize": "{font.size.300}"
+            },
+            "type": "typography"
+          },
+          "350": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.tight}",
+              "fontSize": "{font.size.350}"
+            },
+            "type": "typography"
+          },
+          "400": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.tight}",
+              "fontSize": "{font.size.400}"
+            },
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "size": {
+      "300": {
+        "value": "12",
+        "type": "fontSizes"
+      },
+      "350": {
+        "value": "14",
+        "type": "fontSizes"
+      },
+      "400": {
+        "value": "16",
+        "type": "fontSizes"
+      }
+    },
+    "line-height": {
+      "tight": {
+        "value": "130%",
+        "type": "lineHeights"
+      },
+      "normal": {
+        "value": "150%",
+        "type": "lineHeights"
+      }
+    },
+    "weight": {
+      "bold": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      }
+    },
+    "family": {
+      "base": {
+        "value": "Roboto",
+        "type": "fontFamilies"
       }
     }
   }
