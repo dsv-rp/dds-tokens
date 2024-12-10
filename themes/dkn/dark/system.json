@@ -28,11 +28,11 @@
         },
         "neutral": {
           "hover": {
-            "value": "{color.gray.110}",
+            "value": "{color.dark-gray.115}",
             "type": "color"
           },
           "press": {
-            "value": "{color.gray.100}",
+            "value": "{color.gray.110}",
             "type": "color"
           }
         },
@@ -51,11 +51,11 @@
           "type": "color"
         },
         "hover": {
-          "value": "{color.gray.110}",
+          "value": "{color.dark-gray.115}",
           "type": "color"
         },
         "press": {
-          "value": "{color.gray.100}",
+          "value": "{color.gray.110}",
           "type": "color"
         },
         "selected": {
