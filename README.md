@@ -97,6 +97,6 @@ Import individual themes:
 
 There are JSON files under `json/` that lists the types and values of the tokens.
 These are basically for internal use and are used to integrate design tokens with Tailwind CSS.
-The structure of the JSON files is `{ "<token name>": ["<token value>", "<token type>"] }`.
+The structure of the JSON files is `{ "<token name>": ["<token value>", "<style-dictionary token type>", "<tokens-studio token type>" | null] }`.
 
 In addition, the theme JSON files before building, which are located in `themes/`, are also published in the same path in the package.
