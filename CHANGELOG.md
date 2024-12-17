@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+
+### Patch Changes
+
+- [#43](https://github.com/dsv-rp/dds-tokens/pull/43) [`f337cef`](https://github.com/dsv-rp/dds-tokens/commit/f337ceffd68b769f50bba793d3ce010a50b09ab9) Thanks [@yodas7](https://github.com/yodas7)! - Add Tokens Studio type to the tokens in the JSON outputs.
+
 ## 0.3.0
 
 ### Minor Changes
