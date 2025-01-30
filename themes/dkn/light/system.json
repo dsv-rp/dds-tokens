@@ -50,6 +50,10 @@
           "value": "{color.white}",
           "type": "color"
         },
+        "inverse": {
+          "value": "{color.gray.80}",
+          "type": "color"
+        },
         "hover": {
           "value": "{color.gray.10}",
           "type": "color"
