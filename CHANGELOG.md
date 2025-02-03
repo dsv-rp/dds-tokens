@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2
+
+### Patch Changes
+
+- 2 token(s) added.
+
 ## 0.3.1
 
 ### Patch Changes
