@@ -55,14 +55,14 @@
   "homepage": "https://github.com/dsv-rp/dds-tokens#readme",
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.10",
-    "@tokens-studio/sd-transforms": "^1.2.8",
-    "@types/node": "^20.17.8",
-    "prettier": "^3.4.0",
+    "@changesets/cli": "^2.27.12",
+    "@tokens-studio/sd-transforms": "^1.2.9",
+    "@types/node": "^20.17.17",
+    "prettier": "^3.4.2",
     "prettier-plugin-organize-imports": "^4.1.0",
-    "sass-embedded": "^1.81.0",
-    "style-dictionary": "^4.2.0",
+    "sass-embedded": "^1.83.4",
+    "style-dictionary": "^4.3.2",
     "tsx": "^4.19.2",
-    "vitest": "^2.1.5"
+    "vitest": "^3.0.5"
   }
 }
