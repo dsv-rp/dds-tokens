@@ -472,6 +472,10 @@
       "value": "16",
       "type": "spacing"
     },
+    "600": {
+      "value": "24",
+      "type": "spacing"
+    },
     "800": {
       "value": "32",
       "type": "spacing"
@@ -510,6 +514,15 @@
             "fontSize": "{font.size.400}"
           },
           "type": "typography"
+        },
+        "500": {
+          "value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.normal}",
+            "fontSize": "{font.size.500}"
+          },
+          "type": "typography"
         }
       },
       "tight": {
@@ -537,6 +550,15 @@
             "fontWeight": "{font.weight.regular}",
             "lineHeight": "{font.line-height.tight}",
             "fontSize": "{font.size.400}"
+          },
+          "type": "typography"
+        },
+        "500": {
+          "value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "lineHeight": "{font.line-height.tight}",
+            "fontSize": "{font.size.500}"
           },
           "type": "typography"
         }
@@ -569,6 +591,15 @@
               "fontSize": "{font.size.400}"
             },
             "type": "typography"
+          },
+          "500": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.normal}",
+              "fontSize": "{font.size.500}"
+            },
+            "type": "typography"
           }
         },
         "tight": {
@@ -598,6 +629,15 @@
               "fontSize": "{font.size.400}"
             },
             "type": "typography"
+          },
+          "500": {
+            "value": {
+              "fontFamily": "{font.family.base}",
+              "fontWeight": "{font.weight.bold}",
+              "lineHeight": "{font.line-height.tight}",
+              "fontSize": "{font.size.500}"
+            },
+            "type": "typography"
           }
         }
       }
@@ -613,6 +653,10 @@
       },
       "400": {
         "value": "16",
+        "type": "fontSizes"
+      },
+      "500": {
+        "value": "20",
         "type": "fontSizes"
       }
     },
