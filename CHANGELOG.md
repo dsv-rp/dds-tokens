@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0
+
+### Minor Changes
+
+- **BREAKING CHANGE**: 16 token(s) removed (`border-radius-150`, `border-radius-150`, `border-radius-250`, `border-radius-300`).
+  24 token(s) added.
+
 ## 0.3.2
 
 ### Patch Changes
