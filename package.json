@@ -10,6 +10,7 @@
     "CHANGELOG.md"
   ],
   "exports": {
+    "./package.json": "./package.json",
     "./js/*.js": {
       "import": "./build/js/*.js",
       "require": "./build/js/*.cjs",
