@@ -1,15 +1,9 @@
 {
   "tokenSetOrder": [
     "reference",
-    "system",
-    "component",
     "dkn/light/system",
     "dkn/light/component",
     "dkn/dark/system",
-    "dkn/dark/component",
-    "aaf/light/system",
-    "aaf/light/component",
-    "aaf/dark/system",
-    "aaf/dark/component"
+    "dkn/dark/component"
   ]
 }
