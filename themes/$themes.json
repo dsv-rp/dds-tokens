@@ -5,8 +5,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "system": "enabled",
-      "component": "enabled",
       "dkn/light/system": "enabled",
       "dkn/light/component": "enabled"
     },
@@ -19,8 +17,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "system": "enabled",
-      "component": "enabled",
       "dkn/dark/system": "enabled",
       "dkn/dark/component": "enabled"
     },
@@ -32,11 +28,7 @@
     "name": "Light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "reference": "enabled",
-      "system": "enabled",
-      "component": "enabled",
-      "aaf/light/system": "enabled",
-      "aaf/light/component": "enabled"
+      "reference": "enabled"
     },
     "group": "AAF",
     "$figmaVariableReferences": {}
@@ -46,11 +38,7 @@
     "name": "Dark",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "reference": "enabled",
-      "system": "enabled",
-      "component": "enabled",
-      "aaf/dark/system": "enabled",
-      "aaf/dark/component": "enabled"
+      "reference": "enabled"
     },
     "group": "AAF",
     "$figmaVariableReferences": {}
