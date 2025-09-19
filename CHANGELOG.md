@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1
+
+### Patch Changes
+
+- 32 token(s) added.
+
 ## 0.4.0
 
 ### Minor Changes
