@@ -127,7 +127,7 @@
       },
       "text": {
         "primary": {
-          "value": "{color.gray.100}",
+          "value": "{color.gray.120}",
           "type": "color"
         },
         "secondary": {
