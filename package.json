@@ -40,7 +40,7 @@
     "license-check": "license-checker --production --summary --onlyAllow \"$npm_package_config_licenseAllowlist\" || (echo 'Verify that all dependency licenses are safe via the allowlist. Manually review any unlisted licenses for potential legal risks before appending them to the allowlist.')"
   },
   "config": {
-    "licenseAllowlist": "MIT;BSD-2-Clause;BSD-3-Clause;ISC;Apache-2.0;"
+    "licenseAllowlist": "MIT;BSD-2-Clause;BSD-3-Clause;ISC;Apache-2.0"
   },
   "repository": {
     "type": "git",
