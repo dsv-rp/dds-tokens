@@ -37,10 +37,10 @@
     "test:unit": "vitest",
     "test:e2e": "node --test e2e",
     "test": "npm run test:unit -- --run && npm run test:e2e",
-    "license-check": "license-checker --production --summary --onlyAllow \"$npm_package_config_licenseAllowlist\" || (echo 'Verify that all dependency licenses are safe via the allowlist. Manually review any unlisted licenses for potential legal risks before appending them to the allowlist.')"
+    "license-check": "license-checker --summary --onlyAllow \"$npm_package_config_licenseAllowlist\""
   },
   "config": {
-    "licenseAllowlist": "MIT;BSD-2-Clause;BSD-3-Clause;ISC;Apache-2.0"
+    "licenseAllowlist": "0BSD;Apache-2.0;BlueOak-1.0.0;BSD-2-Clause;BSD-3-Clause;CC-BY-3.0;CC0-1.0;ISC;MIT;MIT;Public Domain;Unlicense"
   },
   "repository": {
     "type": "git",
@@ -63,7 +63,6 @@
     "@changesets/cli": "^2.27.12",
     "@tokens-studio/sd-transforms": "^1.2.9",
     "@types/node": "^20.17.17",
-    "husky": "^9.1.7",
     "license-checker": "^25.0.1",
     "prettier": "^3.4.2",
     "prettier-plugin-organize-imports": "^4.1.0",
