@@ -9,6 +9,7 @@ import {
   THEME_NAME_MAP,
   THEMES_DIR,
 } from "./lib/config";
+import { generateTailwindTheme } from "./lib/tailwind4";
 import type { Theme } from "./lib/types";
 
 function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
@@ -177,4 +178,15 @@ await fsp.writeFile(
         `@forward ${JSON.stringify(importPath)} as ${prefix}-*;\n`
     )
     .join("")
+);
+
+// Build Tailwind 4 theme file
+const cssContent = await fsp.readFile(
+  `${BUILD_DIR}/css/daikin/Light/variables.css`,
+  "utf-8"
+);
+
+await fsp.writeFile(
+  `${BUILD_DIR}/tailwind4.css`,
+  generateTailwindTheme(cssContent) + "\n"
 );

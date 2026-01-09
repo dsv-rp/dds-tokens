@@ -11,6 +11,7 @@
   ],
   "exports": {
     "./package.json": "./package.json",
+    "./tailwind4.css": "./build/tailwind4.css",
     "./js/*.js": {
       "import": "./build/js/*.js",
       "require": "./build/js/*.cjs",
@@ -35,7 +36,7 @@
     "changeset-publish": "changeset publish",
     "format": "prettier -w .",
     "test:unit": "vitest",
-    "test:e2e": "node --test e2e",
+    "test:e2e": "node --test e2e/*.mjs e2e/*.cjs",
     "test": "npm run test:unit -- --run && npm run test:e2e"
   },
   "repository": {
@@ -63,6 +64,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "sass-embedded": "^1.83.4",
     "style-dictionary": "^4.3.2",
+    "tailwindcss": "^4.1.18",
     "tsx": "^4.19.2",
     "vitest": "^3.0.5"
   }
