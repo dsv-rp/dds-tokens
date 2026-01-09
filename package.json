@@ -40,7 +40,7 @@
     "license-check": "license-checker --summary --onlyAllow \"$npm_package_config_licenseAllowlist\""
   },
   "config": {
-    "licenseAllowlist": "0BSD;Apache-2.0;BlueOak-1.0.0;BSD-2-Clause;BSD-3-Clause;CC-BY-3.0;CC0-1.0;ISC;MIT;MIT;Public Domain;Unlicense"
+    "licenseAllowlist": "0BSD;Apache-2.0;BlueOak-1.0.0;BSD-2-Clause;BSD-3-Clause;CC-BY-3.0;CC0-1.0;ISC;MIT;Public Domain;Unlicense"
   },
   "repository": {
     "type": "git",
