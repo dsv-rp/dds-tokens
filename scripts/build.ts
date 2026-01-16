@@ -153,7 +153,7 @@ StyleDictionary.registerFormat({
   format: jsonTokensFormatter,
 });
 
-// Register Tailwind 4 format
+// Register Tailwind CSS v4 formats
 StyleDictionary.registerFormat({
   name: "dds/tailwind4",
   format: tailwind4Formatter,
