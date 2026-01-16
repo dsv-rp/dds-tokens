@@ -1,108 +1,131 @@
-/**
- * Mapping from DDS token prefixes to Tailwind CSS variable prefixes
- * Each tuple contains [DDS prefix (without --dds-), Tailwind prefix or null]
- * - string value: maps to the specified Tailwind prefix
- * - null value: explicitly not supported in Tailwind (will be filtered out)
- */
-const TAILWIND_VARIABLE_MAPPINGS: ReadonlyArray<
-  readonly [string, string | null]
-> = [
-  ["--dds-color-", "--color-dds-"],
-  ["--dds-space-", "--spacing-dds-"],
-  ["--dds-border-radius-", "--radius-dds-"],
-  ["--dds-border-width-", "--border-width-dds-"],
-  ["--dds-font-size-", "--font-size-dds-"],
-  ["--dds-font-weight-", "--font-weight-dds-"],
-  ["--dds-font-family-", "--font-family-dds-"],
-  ["--dds-font-line-height-", "--line-height-dds-"],
-  // Explicitly unsupported prefixes (composite font tokens, etc.)
-  ["--dds-font-regular-", null],
-  ["--dds-font-bold-", null],
-  // Catch remaining font- tokens (should come after more specific ones)
-  ["--dds-font-", null],
-  ["--dds-divider", null],
-  ["--dds-link-", null],
-] as const;
+import type { Dictionary, FormatFn } from "style-dictionary/types";
 
 /**
- * Map DDS CSS variable name to Tailwind CSS variable name
- * @param tokenName - The DDS CSS variable name (e.g., "--dds-color-blue-10")
- * @returns The Tailwind CSS variable name (e.g., "--color-blue-10") or null if explicitly unsupported
- * @throws Error if the token prefix is not defined in TAILWIND_VARIABLE_MAPPINGS
+ * Mapping from token type to Tailwind CSS variable prefix
+ *
+ * Each tuple contains [token type, Tailwind CSS variable prefix]:
+ *
+ * - If a token type maps to a string, that string is the prefix to use
+ * - If a token type maps to null, that type is explicitly unsupported
  */
-export function mapToTailwindName(tokenName: string): string | null {
-  // Find matching mapping
-  for (const [ddsPrefix, tailwindPrefix] of TAILWIND_VARIABLE_MAPPINGS) {
-    if (tokenName.startsWith(ddsPrefix)) {
-      if (tailwindPrefix === null) {
-        return null;
-      }
-      return tokenName.replace(ddsPrefix, tailwindPrefix);
-    }
+const TAILWIND_TYPE_MAPPINGS: ReadonlyMap<string, string | null> = new Map([
+  ["color", "--color-dds-"],
+  ["dimension", "--spacing-dds-"],
+  ["borderRadius", "--radius-dds-"],
+  ["borderWidth", "--border-width-dds-"],
+  ["spacing", "--spacing-dds-"],
+  ["fontFamily", "--font-family-dds-"],
+  ["fontFamilies", "--font-family-dds-"],
+  ["fontSize", "--font-size-dds-"],
+  ["fontSizes", "--font-size-dds-"],
+  ["fontWeight", "--font-weight-dds-"],
+  ["fontWeights", "--font-weight-dds-"],
+  ["lineHeight", "--line-height-dds-"],
+  ["lineHeights", "--line-height-dds-"],
+  // Explicitly unsupported types
+  ["typography", null],
+  ["composition", null],
+]);
+
+/**
+ * Map DDS token to Tailwind CSS variable name based on token type
+ *
+ * @param tokenName - The DDS token name (e.g., "color-blue-10")
+ * @param tokenType - The token type (e.g., "color", "spacing")
+ * @returns The Tailwind CSS variable name (e.g., "--color-dds-color-blue-10") or null if explicitly unsupported
+ */
+export function mapToTailwindName(
+  tokenName: string,
+  tokenType: string | undefined
+): string | null {
+  if (!tokenType) {
+    return null;
   }
 
-  // No mapping found - throw error to catch undefined prefixes
-  throw new Error(
-    `Undefined DDS token prefix encountered: "${tokenName}". ` +
-      `Please add a mapping for this prefix in TAILWIND_VARIABLE_MAPPINGS.`
-  );
+  const tailwindPrefix = TAILWIND_TYPE_MAPPINGS.get(tokenType);
+
+  // Type not in mapping
+  if (tailwindPrefix === undefined) {
+    throw new Error(
+      `Unhandled token type "${tokenType}" for token "${tokenName}"`
+    );
+  }
+
+  // Explicitly unsupported
+  if (tailwindPrefix === null) {
+    return null;
+  }
+
+  // Combine Tailwind prefix with token name
+  return `${tailwindPrefix}${tokenName}`;
 }
 
 /**
- * Parse CSS content and extract DDS variable names
- * @param cssContent - The CSS file content
- * @returns Array of CSS variable names
+ * Generate Tailwind CSS v4 theme block from Style Dictionary tokens
+ *
+ * @param dictionary Style Dictionary dictionary containing tokens
+ * @param isCommonFile If true, generates for `build/tailwind4.css` (common file).
+ *                     If false, generates for theme-specific files like `build/css/daikin/Light/tailwind4.css`.
+ * @returns Tailwind CSS theme block string
  */
-export function parseCssVariables(cssContent: string): string[] {
-  const variableMatches = cssContent.matchAll(
-    /^\s*(--dds-[^:]+):\s*([^;]+);/gm
-  );
-  const variables: string[] = [];
-
-  for (const match of variableMatches) {
-    variables.push(match[1]);
-  }
-
-  return variables;
-}
-
-/**
- * Convert DDS CSS variables to Tailwind 4 theme format
- * @param cssContent - The CSS file content with DDS variables
- * @returns Array of Tailwind CSS variable declarations
- */
-export function convertToTailwindVariables(cssContent: string): string[] {
-  const variableNames = parseCssVariables(cssContent);
+function formatTailwind4(
+  dictionary: Dictionary,
+  isCommonFile: boolean
+): string {
   const tailwindVars: string[] = [];
 
-  for (const varName of variableNames) {
-    const tailwindName = mapToTailwindName(varName);
-    if (tailwindName) {
-      tailwindVars.push(`    ${tailwindName}: var(${varName});`);
+  for (const token of dictionary.allTokens) {
+    const type =
+      token.$extensions?.["studio.tokens"]?.originalType ?? token.type;
+    const tailwindName = mapToTailwindName(token.name, type);
+    if (!tailwindName) {
+      // unsupported type; skip
+      continue;
     }
+
+    // Common file: No fallback values (theme-agnostic)
+    // Theme-specific file: Include fallback values (theme-dependent)
+    const fallback = isCommonFile ? "" : `, ${token.value}`;
+
+    // token.name already has kebab-case transformation applied, without --dds- prefix
+    tailwindVars.push(
+      `  ${tailwindName}: var(--dds-${token.name}${fallback});`
+    );
   }
 
-  return tailwindVars;
-}
-
-/**
- * Generate Tailwind 4 theme block
- * @param variables - Array of Tailwind CSS variable declarations
- * @returns Tailwind 4 @theme inline block
- */
-export function generateTailwindThemeBlock(variables: string[]): string {
-  if (variables.length === 0) {
+  if (tailwindVars.length === 0) {
     return "";
   }
-  return `@theme inline {\n${variables.join("\n")}\n}`;
+
+  // Common file: Use `@theme inline` (no fallback values, can be inline)
+  // Theme-specific file: Use `@theme` (has fallback values, cannot be inline)
+  return `@theme${isCommonFile ? " inline" : ""} {\n${tailwindVars.join("\n")}\n}\n`;
 }
 
 /**
- * Generate complete Tailwind 4 theme CSS from DDS CSS content
- * @param cssContent - The CSS file content with DDS variables
- * @returns Tailwind 4 theme block
+ * Style Dictionary formatter for theme-specific Tailwind CSS v4 files
+ *
+ * Generates `@theme` blocks with fallback values for individual theme files
+ * (e.g., `build/css/daikin/Light/tailwind4.css`).
+ *
+ * These files include theme-specific values as fallbacks, allowing them to work standalone.
+ * Cannot use `@theme inline` because fallback values are not allowed in inline themes.
+ *
+ * Output format: `@theme { --color-dds-blue-10: var(--dds-color-blue-10, #ddf3fc); }`
  */
-export function generateTailwindTheme(cssContent: string): string {
-  const variables = convertToTailwindVariables(cssContent);
-  return generateTailwindThemeBlock(variables);
-}
+export const tailwind4Formatter: FormatFn = ({ dictionary }) =>
+  formatTailwind4(dictionary, false);
+
+/**
+ * Style Dictionary formatter for the common Tailwind CSS v4 theme file
+ *
+ * Generates an `@theme inline` block for `build/tailwind4.css` (common file).
+ *
+ * This file references DDS CSS variables without fallback values, as it is theme-agnostic
+ * and expects the actual theme CSS to be loaded separately. Uses `@theme inline` since
+ * there are no fallback values.
+ *
+ * Output format: `@theme inline { --color-dds-blue-10: var(--dds-color-blue-10); }`
+ */
+export const tailwind4CommonFormatter: FormatFn = ({ dictionary }) =>
+  formatTailwind4(dictionary, true);

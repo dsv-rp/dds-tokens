@@ -9,8 +9,13 @@ import {
   THEME_NAME_MAP,
   THEMES_DIR,
 } from "./lib/config";
-import { generateTailwindTheme } from "./lib/tailwind4";
+import { tailwind4CommonFormatter, tailwind4Formatter } from "./lib/tailwind4";
 import type { Theme } from "./lib/types";
+
+const DEFAULT_GROUP =
+  "daikin" satisfies (typeof GROUP_NAME_MAP)[keyof typeof GROUP_NAME_MAP];
+const DEFAULT_THEME =
+  "Light" satisfies (typeof THEME_NAME_MAP)[keyof typeof THEME_NAME_MAP];
 
 function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
   return (
@@ -31,7 +36,11 @@ function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
   );
 }
 
-function createConfig(baseDir: string, source: string[]): Config {
+function createConfig(
+  baseDir: string,
+  source: string[],
+  isDefault: boolean
+): Config {
   return {
     log: {
       verbosity: "verbose",
@@ -67,22 +76,11 @@ function createConfig(baseDir: string, source: string[]): Config {
         prefix: "dds",
         transforms: ["name/kebab"],
         files: [
-          // Includes all tokens
-          // For general use (users use most components), storybook
           {
             destination: "variables.css",
             format: "css/variables",
             options: {
               outputReferences: false,
-            },
-          },
-          // Specific
-          // For when users want to import subsets of style
-          {
-            destination: "buttons.css",
-            format: "css/variables",
-            filter: (token) => {
-              return token.path.includes("button");
             },
           },
         ],
@@ -114,6 +112,34 @@ function createConfig(baseDir: string, source: string[]): Config {
           },
         ],
       },
+      // Tailwind 4 theme CSS
+      tailwind4: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/css/${baseDir}/`,
+        transforms: ["name/kebab"],
+        files: [
+          {
+            destination: "tailwind4.css",
+            format: "dds/tailwind4",
+          },
+        ],
+      },
+      // Build build/tailwind4.css for default theme as well
+      ...(isDefault
+        ? {
+            tailwind4Common: {
+              transformGroup: "tokens-studio",
+              buildPath: `${BUILD_DIR}/`,
+              transforms: ["name/kebab"],
+              files: [
+                {
+                  destination: "tailwind4.css",
+                  format: "dds/tailwind4Common",
+                },
+              ],
+            },
+          }
+        : {}),
     },
   };
 }
@@ -125,6 +151,16 @@ await register(StyleDictionary);
 StyleDictionary.registerFormat({
   name: "dds/json/tokens",
   format: jsonTokensFormatter,
+});
+
+// Register Tailwind 4 format
+StyleDictionary.registerFormat({
+  name: "dds/tailwind4",
+  format: tailwind4Formatter,
+});
+StyleDictionary.registerFormat({
+  name: "dds/tailwind4Common",
+  format: tailwind4CommonFormatter,
 });
 
 // Load theme index
@@ -155,6 +191,8 @@ for (const theme of $themes) {
     );
   }
 
+  const isDefault = groupName === DEFAULT_GROUP && themeName === DEFAULT_THEME;
+
   const baseDir = `${groupName}/${themeName}`;
   const source = Object.entries(theme.selectedTokenSets)
     .filter(([, val]) => val !== "disabled")
@@ -162,7 +200,7 @@ for (const theme of $themes) {
       ([tokenset]) => `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/${tokenset}.json`
     );
 
-  const sd = new StyleDictionary(createConfig(baseDir, source));
+  const sd = new StyleDictionary(createConfig(baseDir, source, isDefault));
   await sd.cleanAllPlatforms();
   await sd.buildAllPlatforms();
 
@@ -178,15 +216,4 @@ await fsp.writeFile(
         `@forward ${JSON.stringify(importPath)} as ${prefix}-*;\n`
     )
     .join("")
-);
-
-// Build Tailwind 4 theme file
-const cssContent = await fsp.readFile(
-  `${BUILD_DIR}/css/daikin/Light/variables.css`,
-  "utf-8"
-);
-
-await fsp.writeFile(
-  `${BUILD_DIR}/tailwind4.css`,
-  generateTailwindTheme(cssContent) + "\n"
 );

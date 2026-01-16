@@ -1,227 +1,170 @@
 import { describe, expect, test } from "vitest";
-import {
-  convertToTailwindVariables,
-  generateTailwindTheme,
-  generateTailwindThemeBlock,
-  mapToTailwindName,
-  parseCssVariables,
-} from "./tailwind4";
+import { mapToTailwindName, tailwind4Formatter } from "./tailwind4";
 
 describe("tailwind 4 utilities", () => {
   describe("mapToTailwindName", () => {
-    test("maps color variables correctly", () => {
-      expect(mapToTailwindName("--dds-color-blue-10")).toBe(
-        "--color-dds-blue-10"
+    test("maps color tokens correctly", () => {
+      expect(mapToTailwindName("color-blue-10", "color")).toBe(
+        "--color-dds-color-blue-10"
       );
-      expect(mapToTailwindName("--dds-color-red-100")).toBe(
-        "--color-dds-red-100"
+      expect(mapToTailwindName("color-red-100", "color")).toBe(
+        "--color-dds-color-red-100"
       );
-      expect(mapToTailwindName("--dds-color-common-brand-default")).toBe(
-        "--color-dds-common-brand-default"
-      );
-    });
-
-    test("maps spacing variables correctly", () => {
-      expect(mapToTailwindName("--dds-space-100")).toBe("--spacing-dds-100");
-      expect(mapToTailwindName("--dds-space-200")).toBe("--spacing-dds-200");
-      expect(mapToTailwindName("--dds-space-050")).toBe("--spacing-dds-050");
-    });
-
-    test("maps border-radius to radius", () => {
-      expect(mapToTailwindName("--dds-border-radius-100")).toBe(
-        "--radius-dds-100"
-      );
-      expect(mapToTailwindName("--dds-border-radius-200")).toBe(
-        "--radius-dds-200"
-      );
-      expect(mapToTailwindName("--dds-border-radius-050")).toBe(
-        "--radius-dds-050"
+      expect(mapToTailwindName("color-common-brand-default", "color")).toBe(
+        "--color-dds-color-common-brand-default"
       );
     });
 
-    test("maps border-width correctly", () => {
-      expect(mapToTailwindName("--dds-border-width-100")).toBe(
-        "--border-width-dds-100"
+    test("maps spacing tokens correctly", () => {
+      expect(mapToTailwindName("space-100", "spacing")).toBe(
+        "--spacing-dds-space-100"
       );
-      expect(mapToTailwindName("--dds-border-width-025")).toBe(
-        "--border-width-dds-025"
+      expect(mapToTailwindName("space-200", "spacing")).toBe(
+        "--spacing-dds-space-200"
       );
-    });
-
-    test("maps font-size correctly", () => {
-      expect(mapToTailwindName("--dds-font-size-300")).toBe(
-        "--font-size-dds-300"
-      );
-      expect(mapToTailwindName("--dds-font-size-500")).toBe(
-        "--font-size-dds-500"
+      expect(mapToTailwindName("space-050", "spacing")).toBe(
+        "--spacing-dds-space-050"
       );
     });
 
-    test("maps font-weight correctly", () => {
-      expect(mapToTailwindName("--dds-font-weight-bold")).toBe(
-        "--font-weight-dds-bold"
+    test("maps borderRadius tokens correctly", () => {
+      expect(mapToTailwindName("border-radius-100", "borderRadius")).toBe(
+        "--radius-dds-border-radius-100"
       );
-      expect(mapToTailwindName("--dds-font-weight-regular")).toBe(
-        "--font-weight-dds-regular"
+      expect(mapToTailwindName("border-radius-200", "borderRadius")).toBe(
+        "--radius-dds-border-radius-200"
       );
-    });
-
-    test("maps font-family correctly", () => {
-      expect(mapToTailwindName("--dds-font-family-base")).toBe(
-        "--font-family-dds-base"
+      expect(mapToTailwindName("border-radius-050", "borderRadius")).toBe(
+        "--radius-dds-border-radius-050"
       );
     });
 
-    test("maps font-line-height to line-height", () => {
-      expect(mapToTailwindName("--dds-font-line-height-tight")).toBe(
-        "--line-height-dds-tight"
+    test("maps borderWidth tokens correctly", () => {
+      expect(mapToTailwindName("border-width-100", "borderWidth")).toBe(
+        "--border-width-dds-border-width-100"
       );
-      expect(mapToTailwindName("--dds-font-line-height-normal")).toBe(
-        "--line-height-dds-normal"
+      expect(mapToTailwindName("border-width-025", "borderWidth")).toBe(
+        "--border-width-dds-border-width-025"
+      );
+    });
+
+    test("maps fontSize tokens correctly", () => {
+      expect(mapToTailwindName("font-size-300", "fontSize")).toBe(
+        "--font-size-dds-font-size-300"
+      );
+      expect(mapToTailwindName("font-size-500", "fontSize")).toBe(
+        "--font-size-dds-font-size-500"
+      );
+    });
+
+    test("maps fontWeight tokens correctly", () => {
+      expect(mapToTailwindName("font-weight-bold", "fontWeight")).toBe(
+        "--font-weight-dds-font-weight-bold"
+      );
+      expect(mapToTailwindName("font-weight-regular", "fontWeight")).toBe(
+        "--font-weight-dds-font-weight-regular"
       );
     });
 
-    test("returns null for explicitly unsupported variables", () => {
-      expect(mapToTailwindName("--dds-font-regular-normal-300")).toBeNull();
-      expect(mapToTailwindName("--dds-font-bold-tight-400")).toBeNull();
-      expect(mapToTailwindName("--dds-divider")).toBeNull();
-      expect(mapToTailwindName("--dds-link-text-default")).toBeNull();
-    });
-
-    test("throws error for undefined variables", () => {
-      expect(() => mapToTailwindName("--custom-variable")).toThrow(
-        /Undefined DDS token prefix/
-      );
-      expect(() => mapToTailwindName("--dds-unknown-token-123")).toThrow(
-        /Undefined DDS token prefix/
-      );
-      expect(() => mapToTailwindName("--dds-new-prefix-value")).toThrow(
-        /Undefined DDS token prefix/
+    test("maps fontFamily tokens correctly", () => {
+      expect(mapToTailwindName("font-family-base", "fontFamily")).toBe(
+        "--font-family-dds-font-family-base"
       );
     });
-  });
 
-  describe("parseCssVariables", () => {
-    test("extracts CSS variables from content", () => {
-      const cssContent = `
-:root {
-  --dds-color-blue-10: #ddf3fc;
-  --dds-color-blue-20: #bbe7f9;
-  --dds-space-100: 4px;
-  --dds-border-radius-100: 4px;
-}
-      `;
-
-      const variables = parseCssVariables(cssContent);
-      expect(variables).toEqual([
-        "--dds-color-blue-10",
-        "--dds-color-blue-20",
-        "--dds-space-100",
-        "--dds-border-radius-100",
-      ]);
+    test("maps lineHeight tokens correctly", () => {
+      expect(mapToTailwindName("font-line-height-tight", "lineHeight")).toBe(
+        "--line-height-dds-font-line-height-tight"
+      );
+      expect(mapToTailwindName("font-line-height-normal", "lineHeight")).toBe(
+        "--line-height-dds-font-line-height-normal"
+      );
     });
 
-    test("handles empty content", () => {
-      expect(parseCssVariables("")).toEqual([]);
+    test("returns null for explicitly unsupported token types", () => {
+      expect(
+        mapToTailwindName("font-regular-normal-300", "typography")
+      ).toBeNull();
+      expect(
+        mapToTailwindName("font-bold-tight-400", "composition")
+      ).toBeNull();
     });
 
-    test("ignores non-dds variables", () => {
-      const cssContent = `
-:root {
-  --dds-color-blue-10: #ddf3fc;
-  --custom-var: 10px;
-  --another: red;
-}
-      `;
+    test("returns null for undefined token types", () => {
+      expect(mapToTailwindName("custom-variable", undefined)).toBeNull();
+    });
 
-      const variables = parseCssVariables(cssContent);
-      expect(variables).toEqual(["--dds-color-blue-10"]);
+    test("throws error for unmapped token types", () => {
+      expect(() => mapToTailwindName("some-token", "unknownType")).toThrow(
+        'Unhandled token type "unknownType" for token "some-token"'
+      );
     });
   });
 
-  describe("convertToTailwindVariables", () => {
-    test("converts DDS variables to Tailwind format", () => {
-      const cssContent = `
-:root {
-  --dds-color-blue-10: #ddf3fc;
-  --dds-space-100: 4px;
-  --dds-border-radius-100: 4px;
-}
-      `;
+  describe("tailwind4Formatter", () => {
+    test("generates Tailwind theme with color and spacing tokens", () => {
+      const mockDictionary = {
+        allTokens: [
+          { name: "color-blue-10", type: "color", value: "#ddf3fc" },
+          { name: "space-100", type: "spacing", value: "4px" },
+          { name: "border-radius-100", type: "borderRadius", value: "4px" },
+        ],
+      };
 
-      const tailwindVars = convertToTailwindVariables(cssContent);
-      expect(tailwindVars).toEqual([
-        "    --color-dds-blue-10: var(--dds-color-blue-10);",
-        "    --spacing-dds-100: var(--dds-space-100);",
-        "    --radius-dds-100: var(--dds-border-radius-100);",
-      ]);
-    });
-
-    test("filters out un-mappable variables", () => {
-      const cssContent = `
-:root {
-  --dds-color-blue-10: #ddf3fc;
-  --dds-font-regular-normal-300: 400 12px/1.5 Roboto;
-  --dds-space-100: 4px;
-}
-      `;
-
-      const tailwindVars = convertToTailwindVariables(cssContent);
-      expect(tailwindVars).toEqual([
-        "    --color-dds-blue-10: var(--dds-color-blue-10);",
-        "    --spacing-dds-100: var(--dds-space-100);",
-      ]);
-    });
-  });
-
-  describe("generateTailwindThemeBlock", () => {
-    test("generates @theme inline block with variables", () => {
-      const variables = [
-        "    --color-dds-blue-10: var(--dds-color-blue-10);",
-        "    --spacing-dds-100: var(--dds-space-100);",
-      ];
-
-      const result = generateTailwindThemeBlock(variables);
+      const result = tailwind4Formatter({ dictionary: mockDictionary } as any);
       expect(result).toBe(
-        `@theme inline {
-    --color-dds-blue-10: var(--dds-color-blue-10);
-    --spacing-dds-100: var(--dds-space-100);
-}`
+        `@theme {
+  --color-dds-color-blue-10: var(--dds-color-blue-10, #ddf3fc);
+  --spacing-dds-space-100: var(--dds-space-100, 4px);
+  --radius-dds-border-radius-100: var(--dds-border-radius-100, 4px);
+}
+`
       );
     });
 
-    test("returns empty string for empty array", () => {
-      expect(generateTailwindThemeBlock([])).toBe("");
-    });
-  });
+    test("filters out unsupported token types", () => {
+      const mockDictionary = {
+        allTokens: [
+          { name: "color-blue-10", type: "color", value: "#ddf3fc" },
+          { name: "font-regular-normal-300", type: "typography", value: "..." },
+          { name: "space-100", type: "spacing", value: "4px" },
+        ],
+      };
 
-  describe("generateTailwindTheme", () => {
-    test("generates complete Tailwind theme from CSS content", () => {
-      const cssContent = `
-:root {
-  --dds-color-blue-10: #ddf3fc;
-  --dds-space-100: 4px;
-}
-      `;
-
-      const result = generateTailwindTheme(cssContent);
+      const result = tailwind4Formatter({ dictionary: mockDictionary } as any);
       expect(result).toBe(
-        `@theme inline {
-    --color-dds-blue-10: var(--dds-color-blue-10);
-    --spacing-dds-100: var(--dds-space-100);
-}`
+        `@theme {
+  --color-dds-color-blue-10: var(--dds-color-blue-10, #ddf3fc);
+  --spacing-dds-space-100: var(--dds-space-100, 4px);
+}
+`
       );
     });
 
-    test("returns empty string when no mappable variables", () => {
-      const cssContent = `
-:root {
-  --dds-divider: #cecece;
-}
-      `;
+    test("returns empty string when no mappable tokens", () => {
+      const mockDictionary = {
+        allTokens: [{ name: "divider", type: "composition", value: "#cecece" }],
+      };
 
-      const result = generateTailwindTheme(cssContent);
+      const result = tailwind4Formatter({ dictionary: mockDictionary } as any);
       expect(result).toBe("");
+    });
+
+    test("handles tokens without type", () => {
+      const mockDictionary = {
+        allTokens: [
+          { name: "color-blue-10", type: "color", value: "#ddf3fc" },
+          { name: "some-token", type: undefined, value: "value" },
+        ],
+      };
+
+      const result = tailwind4Formatter({ dictionary: mockDictionary } as any);
+      expect(result).toBe(
+        `@theme {
+  --color-dds-color-blue-10: var(--dds-color-blue-10, #ddf3fc);
+}
+`
+      );
     });
   });
 });

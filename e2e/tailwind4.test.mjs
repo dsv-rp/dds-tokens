@@ -1,5 +1,6 @@
 import { equal } from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { test } from "node:test";
 import { compile } from "tailwindcss";
 
@@ -69,11 +70,11 @@ await test("can compile with Tailwind CSS v4 API", async () => {
 @import "@daikin-oss/dds-tokens/tailwind4.css";
 
 .test-colors {
-  @apply text-dds-blue-10;
+  @apply text-dds-color-blue-10;
 }
 
 .test-spacing {
-  @apply p-dds-200;
+  @apply p-dds-space-200;
 }
 `;
 
@@ -82,6 +83,7 @@ await test("can compile with Tailwind CSS v4 API", async () => {
     loadStylesheet: async (id, base) => {
       if (id === "@daikin-oss/dds-tokens/tailwind4.css") {
         return {
+          path: resolve("./build/tailwind4.css"),
           content: await readFile("./build/tailwind4.css", "utf-8"),
           base,
         };
@@ -106,4 +108,46 @@ await test("can compile with Tailwind CSS v4 API", async () => {
     true,
     "Should compile spacing utilities correctly"
   );
+});
+
+// Test individual theme files
+await test("individual theme files exist and have correct structure", async () => {
+  const themeFiles = [
+    "./build/css/daikin/Light/tailwind4.css",
+    "./build/css/daikin/Dark/tailwind4.css",
+    "./build/css/aaf/Light/tailwind4.css",
+    "./build/css/aaf/Dark/tailwind4.css",
+  ];
+
+  for (const filePath of themeFiles) {
+    const content = await readFile(filePath, "utf-8");
+
+    // Check file is not empty
+    equal(content.length > 0, true, `${filePath} should not be empty`);
+
+    // Check for @theme blocks
+    equal(
+      content.includes("@theme {"),
+      true,
+      `${filePath} should contain @theme block`
+    );
+
+    // Check for DDS variable references
+    equal(
+      content.includes("var(--dds-"),
+      true,
+      `${filePath} should reference DDS variables`
+    );
+
+    // Check for at least one Tailwind variable prefix
+    const hasTailwindPrefix =
+      content.includes("--color-dds-") ||
+      content.includes("--spacing-dds-") ||
+      content.includes("--font-size-dds-");
+    equal(
+      hasTailwindPrefix,
+      true,
+      `${filePath} should contain Tailwind variable prefixes`
+    );
+  }
 });
