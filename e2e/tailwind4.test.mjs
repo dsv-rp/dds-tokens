@@ -1,0 +1,153 @@
+import { equal } from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import { test } from "node:test";
+import { compile } from "tailwindcss";
+
+// Test that the generated tailwind4.css file is valid
+await test("tailwind4.css exists and has correct structure", async () => {
+  const content = await readFile("./build/tailwind4.css", "utf-8");
+
+  // Check file is not empty
+  equal(content.length > 0, true, "File should not be empty");
+
+  // Check for @theme inline blocks
+  equal(
+    content.includes("@theme inline {"),
+    true,
+    "Should contain @theme inline blocks"
+  );
+
+  // Check for color variables
+  equal(content.includes("--color-"), true, "Should contain color variables");
+  equal(
+    content.includes("var(--dds-color-"),
+    true,
+    "Should reference DDS color variables"
+  );
+
+  // Check for spacing variables
+  equal(
+    content.includes("--spacing-"),
+    true,
+    "Should contain spacing variables"
+  );
+  equal(
+    content.includes("var(--dds-space-"),
+    true,
+    "Should reference DDS space variables"
+  );
+
+  // Check for radius variables
+  equal(content.includes("--radius-"), true, "Should contain radius variables");
+  equal(
+    content.includes("var(--dds-border-radius-"),
+    true,
+    "Should reference DDS border-radius variables"
+  );
+
+  // Check for font variables
+  equal(
+    content.includes("--font-size-"),
+    true,
+    "Should contain font-size variables"
+  );
+  equal(
+    content.includes("--font-weight-"),
+    true,
+    "Should contain font-weight variables"
+  );
+  equal(
+    content.includes("--line-height-"),
+    true,
+    "Should contain line-height variables"
+  );
+});
+
+// Test that Tailwind CSS v4 can compile with the theme file
+await test("can compile with Tailwind CSS v4 API", async () => {
+  const testCss = `
+@import "@daikin-oss/dds-tokens/tailwind4.css";
+
+.test-colors {
+  @apply text-dds-color-blue-10;
+}
+
+.test-spacing {
+  @apply p-dds-space-200;
+}
+`;
+
+  // Compile with Tailwind CSS v4 API
+  const compiler = await compile(testCss, {
+    loadStylesheet: async (id, base) => {
+      if (id === "@daikin-oss/dds-tokens/tailwind4.css") {
+        return {
+          path: resolve("./build/tailwind4.css"),
+          content: await readFile("./build/tailwind4.css", "utf-8"),
+          base,
+        };
+      }
+      throw new Error(`Unknown stylesheet: ${id}`);
+    },
+  });
+  const output = compiler.build([]);
+
+  // Verify output
+  equal(
+    output.includes(`.test-colors {
+  color: var(--dds-color-blue-10);
+}`),
+    true,
+    "Should compile color utilities correctly"
+  );
+  equal(
+    output.includes(`.test-spacing {
+  padding: var(--dds-space-200);
+}`),
+    true,
+    "Should compile spacing utilities correctly"
+  );
+});
+
+// Test individual theme files
+await test("individual theme files exist and have correct structure", async () => {
+  const themeFiles = [
+    "./build/css/daikin/Light/tailwind4.css",
+    "./build/css/daikin/Dark/tailwind4.css",
+    "./build/css/aaf/Light/tailwind4.css",
+    "./build/css/aaf/Dark/tailwind4.css",
+  ];
+
+  for (const filePath of themeFiles) {
+    const content = await readFile(filePath, "utf-8");
+
+    // Check file is not empty
+    equal(content.length > 0, true, `${filePath} should not be empty`);
+
+    // Check for @theme blocks
+    equal(
+      content.includes("@theme {"),
+      true,
+      `${filePath} should contain @theme block`
+    );
+
+    // Check for DDS variable references
+    equal(
+      content.includes("var(--dds-"),
+      true,
+      `${filePath} should reference DDS variables`
+    );
+
+    // Check for at least one Tailwind variable prefix
+    const hasTailwindPrefix =
+      content.includes("--color-dds-") ||
+      content.includes("--spacing-dds-") ||
+      content.includes("--font-size-dds-");
+    equal(
+      hasTailwindPrefix,
+      true,
+      `${filePath} should contain Tailwind variable prefixes`
+    );
+  }
+});
