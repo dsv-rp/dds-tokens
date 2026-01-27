@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.0
+
+### Major Changes
+
+- [#61](https://github.com/dsv-rp/dds-tokens/pull/61) [`fff9fa2`](https://github.com/dsv-rp/dds-tokens/commit/fff9fa208f3d15053bec88efb1212cfc4dcadd87) Thanks [@yodas7](https://github.com/yodas7)! - Release v1.0.0
+
+### Minor Changes
+
+- **BREAKING CHANGE**: 32 token(s) removed (`font-regular-bold-normal-300`, `font-regular-bold-normal-350`, `font-regular-bold-normal-500`, `font-regular-bold-tight-300`, `font-regular-bold-tight-400` and more).
+  32 token(s) added.
+
+- [#58](https://github.com/dsv-rp/dds-tokens/pull/58) [`0cc4752`](https://github.com/dsv-rp/dds-tokens/commit/0cc475226648b9019f28f35be2ef2dd77371c0ef) Thanks [@yodas7](https://github.com/yodas7)! - Build Tailwind CSS v4 Theme CSS Files.
+
 ## 0.4.2
 
 ### Patch Changes
