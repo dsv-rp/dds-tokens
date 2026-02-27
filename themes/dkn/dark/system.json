@@ -50,6 +50,20 @@
           "value": "{color.gray.120}",
           "type": "color"
         },
+        "secondary": {
+          "default": {
+            "value": "{color.gray.110}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.gray.100}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.gray.90}",
+            "type": "color"
+          }
+        },
         "inverse": {
           "value": "{color.white}",
           "type": "color"
@@ -146,6 +160,10 @@
         },
         "empty": {
           "value": "{color.gray.90}",
+          "type": "color"
+        },
+        "inverse": {
+          "value": "{color.gray.120}",
           "type": "color"
         }
       },
