@@ -173,7 +173,7 @@
           "type": "color"
         },
         "overlay": {
-          "value": "{color.black}",
+          "value": "#000000bf",
           "type": "color"
         }
       }
