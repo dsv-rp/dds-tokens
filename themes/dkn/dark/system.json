@@ -141,7 +141,7 @@
       },
       "text": {
         "primary": {
-          "value": "{color.gray.30}",
+          "value": "{color.gray.10}",
           "type": "color"
         },
         "secondary": {
