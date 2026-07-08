@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+### Minor Changes
+
+- 12 token(s) added.
+
 ## 1.1.2
 
 ### Patch Changes
