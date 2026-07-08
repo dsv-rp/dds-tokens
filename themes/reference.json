@@ -453,6 +453,10 @@
     "050": {
       "value": "2",
       "type": "borderWidth"
+    },
+    "075": {
+      "value": "3",
+      "type": "borderWidth"
     }
   },
   "space": {

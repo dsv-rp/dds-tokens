@@ -89,6 +89,24 @@
             "value": "{color.blue.30}",
             "type": "color"
           }
+        },
+        "overlay": {
+          "default": {
+            "value": "#FFFFFFBF",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#F2F2F2BF",
+            "type": "color"
+          },
+          "press": {
+            "value": "#EBEBEBBF",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#BFBFBFBF",
+            "type": "color"
+          }
         }
       },
       "neutral": {
