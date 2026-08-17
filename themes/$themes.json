@@ -42,5 +42,27 @@
     },
     "group": "AAF",
     "$figmaVariableReferences": {}
+  },
+  {
+    "id": "1718f5184d7422cfac3395c7d8049aed82e196c9",
+    "name": "Default",
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "default/reference": "enabled"
+    },
+    "group": "Density"
+  },
+  {
+    "id": "eae129c90af893677194ad0f2cdce2ac5c0927de",
+    "name": "Compact",
+    "$figmaStyleReferences": {},
+    "$figmaVariableReferences": {},
+    "selectedTokenSets": {
+      "reference": "enabled",
+      "compact/reference": "enabled"
+    },
+    "group": "Density"
   }
 ]
