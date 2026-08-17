@@ -50,7 +50,7 @@
     "$figmaVariableReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "default/reference": "enabled"
+      "density/default/reference": "enabled"
     },
     "group": "Density"
   },
@@ -61,7 +61,7 @@
     "$figmaVariableReferences": {},
     "selectedTokenSets": {
       "reference": "enabled",
-      "compact/reference": "enabled"
+      "density/compact/reference": "enabled"
     },
     "group": "Density"
   }

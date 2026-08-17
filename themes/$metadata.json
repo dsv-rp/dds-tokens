@@ -9,8 +9,8 @@
     "aaf/dark/system",
     "aaf/light/component",
     "aaf/light/system",
-    "default/reference",
-    "compact/reference",
+    "density/default/reference",
+    "density/compact/reference",
     "component",
     "system"
   ]
