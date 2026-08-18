@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0
+
+### Minor Changes
+
+- 332 token(s) added.
+
+- [#71](https://github.com/dsv-rp/dds-tokens/pull/71) [`61f5d18`](https://github.com/dsv-rp/dds-tokens/commit/61f5d184d4bd284de8cf1bef140e104b79617b01) Thanks [@dk-satoukei](https://github.com/dk-satoukei)! - Add Density theme tokens (Default/Compact) for height-controlled components.
+
 ## 1.2.0
 
 ### Minor Changes
