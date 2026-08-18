@@ -12,6 +12,10 @@ This package provides design tokens for the Daikin Design System (DDS) in multip
 
 - Brands: `Daikin` and `AAF`
 - Color schemes: `Light` and `Dark` mode for each brand
+- Density: `Default` and `Compact` sizing, independent of brand/color scheme
+
+> [!NOTE]
+> Brand/color and density are independent axes, each split into separate files. You must import **both** a color theme file and a density file to register all the CSS variables some components rely on.
 
 For the complete list of output files, check the `build` folder after installation.
 
@@ -36,6 +40,18 @@ or
 ```
 
 This imports all design tokens as CSS custom properties under the `:root` selector.
+
+Density tokens (sizing for height-controlled components) are separate from the brand/color CSS files and can be imported independently, then combined with any brand/color theme:
+
+```css
+@import url("@daikin-oss/dds-tokens/css/daikin/Dark/variables.css");
+@import url("@daikin-oss/dds-tokens/css/density/Compact/variables.css");
+```
+
+Available density files:
+
+- `css/density/Default/variables.css`
+- `css/density/Compact/variables.css`
 
 ### Import SCSS mixins
 
@@ -80,6 +96,21 @@ Import individual themes:
 }
 ```
 
+Density mixins can be included the same way, independent of brand/color theme:
+
+```scss
+@use "pkg:@daikin-oss/dds-tokens/scss/density/Default/mixins" as density-Default;
+@use "pkg:@daikin-oss/dds-tokens/scss/density/Compact/mixins" as density-Compact;
+
+:root {
+  @include density-Default.variables;
+}
+
+:root[data-density="compact"] {
+  @include density-Compact.variables;
+}
+```
+
 ### Tailwind CSS v4 Integration
 
 This package provides Tailwind CSS v4 theme files that map DDS tokens to Tailwind CSS variables.
@@ -98,6 +129,8 @@ Example:
 
 ```css
 @import "@daikin-oss/dds-tokens/css/daikin/Light/variables.css";
+@import "@daikin-oss/dds-tokens/css/density/Default/variables.css";
+
 @import "@daikin-oss/dds-tokens/tailwind4.css";
 ```
 
@@ -107,6 +140,7 @@ You can also use theme-specific Tailwind CSS files that include fallback values:
 
 ```css
 @import "@daikin-oss/dds-tokens/css/daikin/Light/tailwind4.css";
+@import "@daikin-oss/dds-tokens/css/density/Default/tailwind4.css";
 ```
 
 Available files:
@@ -115,6 +149,8 @@ Available files:
 - `css/daikin/Dark/tailwind4.css`
 - `css/aaf/Light/tailwind4.css`
 - `css/aaf/Dark/tailwind4.css`
+- `css/density/Default/tailwind4.css`
+- `css/density/Compact/tailwind4.css`
 
 These files use `@theme` (not inline) with fallback values, allowing them to work standalone without requiring a separate DDS theme CSS file.
 
@@ -154,6 +190,7 @@ Example output:
 ```js
 // ESM
 import { colorBlue10 } from "@daikin-oss/dds-tokens/js/daikin/Light/variables.js";
+import { inputHeight } from "@daikin-oss/dds-tokens/js/density/Default/variables.js";
 
 // CommonJS
 const {
@@ -171,6 +208,8 @@ Available files:
 - `json/daikin/Dark/tokens.json`
 - `json/aaf/Light/tokens.json`
 - `json/aaf/Dark/tokens.json`
+- `json/density/Default/tokens.json`
+- `json/density/Compact/tokens.json`
 
 File structure: `{ "<token name>": ["<token value>", "<style-dictionary token type>", "<tokens-studio token type>" | null] }`
 
