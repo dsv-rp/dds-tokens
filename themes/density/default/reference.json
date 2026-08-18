@@ -46,6 +46,10 @@
       "value": "12",
       "type": "sizing"
     },
+    "40": {
+      "value": "16",
+      "type": "sizing"
+    },
     "60": {
       "value": "24",
       "type": "sizing"
