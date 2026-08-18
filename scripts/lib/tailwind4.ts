@@ -14,6 +14,7 @@ const TAILWIND_TYPE_MAPPINGS: ReadonlyMap<string, string | null> = new Map([
   ["borderRadius", "--radius-dds-"],
   ["borderWidth", "--border-width-dds-"],
   ["spacing", "--spacing-dds-"],
+  ["sizing", "--spacing-dds-"],
   ["fontFamily", "--font-family-dds-"],
   ["fontFamilies", "--font-family-dds-"],
   ["fontSize", "--font-size-dds-"],
@@ -25,6 +26,7 @@ const TAILWIND_TYPE_MAPPINGS: ReadonlyMap<string, string | null> = new Map([
   // Explicitly unsupported types
   ["typography", null],
   ["composition", null],
+  ["boolean", null],
 ]);
 
 /**

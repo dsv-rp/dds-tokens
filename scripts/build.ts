@@ -12,11 +12,6 @@ import {
 import { tailwind4CommonFormatter, tailwind4Formatter } from "./lib/tailwind4";
 import type { Theme } from "./lib/types";
 
-const DEFAULT_GROUP =
-  "daikin" satisfies (typeof GROUP_NAME_MAP)[keyof typeof GROUP_NAME_MAP];
-const DEFAULT_THEME =
-  "Light" satisfies (typeof THEME_NAME_MAP)[keyof typeof THEME_NAME_MAP];
-
 function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
   return (
     JSON.stringify(
@@ -36,11 +31,7 @@ function jsonTokensFormatter({ dictionary }: Parameters<FormatFn>[0]): string {
   );
 }
 
-function createConfig(
-  baseDir: string,
-  source: string[],
-  isDefault: boolean
-): Config {
+function createConfig(baseDir: string, source: string[]): Config {
   return {
     log: {
       verbosity: "verbose",
@@ -124,22 +115,42 @@ function createConfig(
           },
         ],
       },
-      // Build build/tailwind4.css for default theme as well
-      ...(isDefault
-        ? {
-            tailwind4Common: {
-              transformGroup: "tokens-studio",
-              buildPath: `${BUILD_DIR}/`,
-              transforms: ["name/kebab"],
-              files: [
-                {
-                  destination: "tailwind4.css",
-                  format: "dds/tailwind4Common",
-                },
-              ],
-            },
-          }
-        : {}),
+    },
+  };
+}
+
+/**
+ * Build `build/tailwind4.css`, the theme-agnostic common Tailwind CSS v4 file.
+ *
+ * This isn't tied to any single theme's build: it must declare a Tailwind variable
+ * for every token name that exists in ANY theme (e.g. density-only tokens like
+ * `inputHeight` aren't part of the daikin/Light source), so it's built from a
+ * virtual token set spanning the union of every token set referenced across
+ * `$themes.json`.
+ */
+function createCommonConfig(source: string[]): Config {
+  return {
+    log: {
+      verbosity: "verbose",
+      // Token sets that are mutually exclusive at runtime (e.g. density/default
+      // vs density/compact) are merged together here just to enumerate every
+      // token name, so colliding values across them are expected.
+      warnings: "disabled",
+    },
+    source,
+    preprocessors: ["tokens-studio"],
+    platforms: {
+      tailwind4Common: {
+        transformGroup: "tokens-studio",
+        buildPath: `${BUILD_DIR}/`,
+        transforms: ["name/kebab"],
+        files: [
+          {
+            destination: "tailwind4.css",
+            format: "dds/tailwind4Common",
+          },
+        ],
+      },
     },
   };
 }
@@ -176,6 +187,7 @@ await fsp.rm(BUILD_DIR, { force: true, recursive: true });
 
 // Build
 const scssMixins: [importPath: string, prefix: string][] = [];
+const commonTokenSets = new Set<string>();
 for (const theme of $themes) {
   const groupName = GROUP_NAME_MAP[theme.group];
   if (!groupName) {
@@ -191,21 +203,33 @@ for (const theme of $themes) {
     );
   }
 
-  const isDefault = groupName === DEFAULT_GROUP && themeName === DEFAULT_THEME;
-
   const baseDir = `${groupName}/${themeName}`;
-  const source = Object.entries(theme.selectedTokenSets)
+  const tokenSets = Object.entries(theme.selectedTokenSets)
     .filter(([, val]) => val !== "disabled")
-    .map(
-      ([tokenset]) => `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/${tokenset}.json`
-    );
+    .map(([tokenset]) => tokenset);
+  for (const tokenset of tokenSets) {
+    commonTokenSets.add(tokenset);
+  }
+  const source = tokenSets.map(
+    (tokenset) => `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/${tokenset}.json`
+  );
 
-  const sd = new StyleDictionary(createConfig(baseDir, source, isDefault));
+  const sd = new StyleDictionary(createConfig(baseDir, source));
   await sd.cleanAllPlatforms();
   await sd.buildAllPlatforms();
 
   scssMixins.push([`${baseDir}/mixins`, `${groupName}-${themeName}`]);
 }
+
+// Build build/tailwind4.css from the union of every token set used by any theme,
+// so it declares Tailwind variables for tokens that only exist in some themes
+// (e.g. density-only tokens).
+const commonSource = [...commonTokenSets].map(
+  (tokenset) => `${CURRENT_PROJECT_DIR}/${THEMES_DIR}/${tokenset}.json`
+);
+const commonSd = new StyleDictionary(createCommonConfig(commonSource));
+await commonSd.cleanAllPlatforms();
+await commonSd.buildAllPlatforms();
 
 // Write SCSS root
 await fsp.writeFile(
