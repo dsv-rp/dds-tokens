@@ -14,6 +14,8 @@ test("loadThemeTokensetMap", async ({ expect }) => {
       "AAF Light",
       "DKN Dark",
       "DKN Light",
+      "Density Compact",
+      "Density Default",
     ]
   `);
 });

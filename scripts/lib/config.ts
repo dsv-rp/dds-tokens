@@ -27,10 +27,13 @@ export const TOKENS_CHANGESET_FILENAME =
 export const GROUP_NAME_MAP: Partial<Readonly<Record<string, string>>> = {
   DKN: "daikin",
   AAF: "aaf",
+  Density: "density",
 };
 
 /** Theme name to directory name mapping */
 export const THEME_NAME_MAP: Partial<Readonly<Record<string, string>>> = {
   Light: "Light",
   Dark: "Dark",
+  Default: "Default",
+  Compact: "Compact",
 };
