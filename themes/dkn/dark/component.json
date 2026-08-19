@@ -41,6 +41,20 @@
           }
         }
       }
+    },
+    "table": {
+      "surface": {
+        "striped": {
+          "brand": {
+            "value": "{color.blue.125}",
+            "type": "color"
+          },
+          "neutral": {
+            "value": "{color.dark-gray.125}",
+            "type": "color"
+          }
+        }
+      }
     }
   }
 }

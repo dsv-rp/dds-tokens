@@ -13,6 +13,20 @@
         "press": {
           "value": "{color.blue.90}",
           "type": "color"
+        },
+        "elevated": {
+          "default": {
+            "value": "{color.blue.70}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.blue.80}",
+            "type": "color"
+          },
+          "press": {
+            "value": "{color.blue.90}",
+            "type": "color"
+          }
         }
       },
       "surface": {
@@ -34,6 +48,16 @@
           "press": {
             "value": "{color.gray.20}",
             "type": "color"
+          },
+          "overlay": {
+            "hover": {
+              "value": "#2121211A",
+              "type": "color"
+            },
+            "press": {
+              "value": "#21212126",
+              "type": "color"
+            }
           }
         },
         "danger": {
@@ -43,6 +67,10 @@
           },
           "press": {
             "value": "{color.red.20}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.red.05}",
             "type": "color"
           }
         },
@@ -88,6 +116,10 @@
           "press": {
             "value": "{color.blue.30}",
             "type": "color"
+          },
+          "secondary": {
+            "value": "{color.blue.05}",
+            "type": "color"
           }
         },
         "overlay": {
@@ -105,6 +137,22 @@
           },
           "disabled": {
             "value": "#BFBFBFBF",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.yellow.10}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.yellow.20}",
+            "type": "color"
+          }
+        },
+        "elevated": {
+          "lv1": {
+            "value": "{color.white}",
             "type": "color"
           }
         }
@@ -193,6 +241,100 @@
         "overlay": {
           "value": "#00000080",
           "type": "color"
+        }
+      },
+      "accent": {
+        "lv2": {
+          "base": {
+            "red": {
+              "value": "{color.red.20}",
+              "type": "color"
+            },
+            "yellow": {
+              "value": "{color.yellow.20}",
+              "type": "color"
+            },
+            "blue": {
+              "value": "{color.blue.20}",
+              "type": "color"
+            },
+            "green": {
+              "value": "{color.green.20}",
+              "type": "color"
+            },
+            "orange": {
+              "value": "{color.orange.20}",
+              "type": "color"
+            },
+            "purple": {
+              "value": "{color.purple.20}",
+              "type": "color"
+            },
+            "gray": {
+              "value": "{color.gray.20}",
+              "type": "color"
+            }
+          },
+          "elevated": {
+            "red": {
+              "value": "{color.red.20}",
+              "type": "color"
+            },
+            "yellow": {
+              "value": "{color.yellow.20}",
+              "type": "color"
+            },
+            "blue": {
+              "value": "{color.blue.20}",
+              "type": "color"
+            },
+            "green": {
+              "value": "{color.green.20}",
+              "type": "color"
+            },
+            "orange": {
+              "value": "{color.orange.20}",
+              "type": "color"
+            },
+            "purple": {
+              "value": "{color.purple.20}",
+              "type": "color"
+            },
+            "gray": {
+              "value": "{color.gray.20}",
+              "type": "color"
+            }
+          }
+        },
+        "lv5": {
+          "red": {
+            "value": "{color.red.50}",
+            "type": "color"
+          },
+          "yellow": {
+            "value": "{color.yellow.50}",
+            "type": "color"
+          },
+          "blue": {
+            "value": "{color.blue.50}",
+            "type": "color"
+          },
+          "green": {
+            "value": "{color.green.50}",
+            "type": "color"
+          },
+          "orange": {
+            "value": "{color.orange.50}",
+            "type": "color"
+          },
+          "purple": {
+            "value": "{color.purple.50}",
+            "type": "color"
+          },
+          "gray": {
+            "value": "{color.gray.50}",
+            "type": "color"
+          }
         }
       }
     },
