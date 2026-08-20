@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0-next.0
+
+### Minor Changes
+
+- 96 token(s) added.
+
 ## 1.3.0
 
 ### Minor Changes
