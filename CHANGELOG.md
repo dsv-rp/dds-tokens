@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-next.1
+
+### Major Changes
+
+- **BREAKING CHANGE**: 6 token(s) removed (`color-common-surface-secondary-default`, `color-common-surface-secondary-default`, `color-common-surface-secondary-hover`).
+  4 token(s) added.
+
 ## 1.4.0-next.0
 
 ### Minor Changes
