@@ -78,20 +78,6 @@
           "value": "{color.gray.120}",
           "type": "color"
         },
-        "secondary": {
-          "default": {
-            "value": "{color.gray.110}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{color.gray.100}",
-            "type": "color"
-          },
-          "press": {
-            "value": "{color.gray.90}",
-            "type": "color"
-          }
-        },
         "inverse": {
           "value": "{color.white}",
           "type": "color"
@@ -155,6 +141,16 @@
             "value": "{color.gray.110}",
             "type": "color"
           }
+        },
+        "disabled": {
+          "overlay": {
+            "value": "#61616133",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "value": "{color.gray.110}",
+          "type": "color"
         }
       },
       "neutral": {
