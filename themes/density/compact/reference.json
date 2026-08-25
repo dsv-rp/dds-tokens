@@ -7,6 +7,10 @@
     "value": "20",
     "type": "sizing"
   },
+  "iconButton": {
+    "value": "24",
+    "type": "sizing"
+  },
   "currentBorder": {
     "value": "{border-width.075}",
     "type": "borderWidth"
@@ -30,6 +34,10 @@
     },
     "05": {
       "value": "1",
+      "type": "sizing"
+    },
+    "00": {
+      "value": "0",
       "type": "sizing"
     }
   },
