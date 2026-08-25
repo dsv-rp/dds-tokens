@@ -5,6 +5,7 @@
     "@daikin-oss/dds-tokens": "1.3.0"
   },
   "changesets": [
+    "auto-generated-token-changes-0a618ef2",
     "auto-generated-token-changes-d6d77e18"
   ]
 }
