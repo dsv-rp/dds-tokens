@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-next.3
+
+### Minor Changes
+
+- 2 token(s) added.
+
 ## 2.0.0-next.2
 
 ### Minor Changes
