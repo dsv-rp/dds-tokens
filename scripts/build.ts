@@ -103,7 +103,7 @@ function createConfig(baseDir: string, source: string[]): Config {
           },
         ],
       },
-      // Tailwind 4 theme CSS
+      // Tailwind 4 theme CSS.
       tailwind4: {
         transformGroup: "tokens-studio",
         buildPath: `${BUILD_DIR}/css/${baseDir}/`,
