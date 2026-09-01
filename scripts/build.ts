@@ -123,9 +123,9 @@ function createConfig(baseDir: string, source: string[]): Config {
  * Build `build/tailwind4.css`, the theme-agnostic common Tailwind CSS v4 file.
  *
  * This isn't tied to any single theme's build: it must declare a Tailwind variable
- * for every token name that exists in ANY theme (e.g. density-only tokens like
+ * for every tokens name that exists in ANY theme (e.g. density-only tokens like
  * `inputHeight` aren't part of the daikin/Light source), so it's built from a
- * virtual token set spanning the union of every token set referenced across
+ * virtual token set spanning the union of every tokens set referenced across
  * `$themes.json`.
  */
 function createCommonConfig(source: string[]): Config {
