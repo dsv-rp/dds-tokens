@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- [#78](https://github.com/dsv-rp/dds-tokens/pull/78) [`50a7338`](https://github.com/dsv-rp/dds-tokens/commit/50a73381104404b1f4d4c40b769d86177ea4c4cc) Thanks [@github-actions](https://github.com/apps/github-actions)! - **BREAKING CHANGE**: 6 token(s) removed (`color-common-surface-secondary-default`, `color-common-surface-secondary-default`, `color-common-surface-secondary-hover`).
+  4 token(s) added.
+
+### Minor Changes
+
+- [#80](https://github.com/dsv-rp/dds-tokens/pull/80) [`647abcd`](https://github.com/dsv-rp/dds-tokens/commit/647abcde99576701bb415a03c9b0b53bb585cb03) Thanks [@github-actions](https://github.com/apps/github-actions)! - 4 token(s) added.
+
+- [#82](https://github.com/dsv-rp/dds-tokens/pull/82) [`82463a1`](https://github.com/dsv-rp/dds-tokens/commit/82463a1625a5da872963a3179444fc203e625ec5) Thanks [@github-actions](https://github.com/apps/github-actions)! - 2 token(s) added.
+
+### Patch Changes
+
+- [#85](https://github.com/dsv-rp/dds-tokens/pull/85) [`e3629d0`](https://github.com/dsv-rp/dds-tokens/commit/e3629d0aa668f17f9483ab1afa7ae28b11c0d1d2) Thanks [@rinjInTokyo](https://github.com/rinjInTokyo)! - Chore: Tweak comments to manually trigger CI for release PR
+
 ## 2.0.0-next.3
 
 ### Minor Changes
